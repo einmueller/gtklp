@@ -1,0 +1,113 @@
+<table border="0">
+
+<tr>
+<td><img src="design/COLOR_DE.gif" border=0>&nbsp;German</td>
+<td>
+<img src="design/pixelgreen.gif" border="0" height="10px" width="STAT_DEpx"><img src="design/pixelblue.gif" border="0" height="10px" width="STATF_DEpx"><img src="design/pixelred.gif" border="0" height="10px" width="STATR_DEpx">
+</td>
+<td width="10px">&nbsp;</td>
+<td><img src="design/COLOR_EN.gif" border=0>&nbsp;English</td>
+<td>
+<img src="design/pixelgreen.gif" border="0" height="10px" width="STAT_ENpx"><img src="design/pixelblue.gif" border="0" height="10px" width="STATF_ENpx"><img src="design/pixelred.gif" border="0" height="10px" width="STATR_ENpx">
+</td>
+</tr>
+
+<tr>
+<td><img src="design/COLOR_PL.gif" border=0>&nbsp;Polish</td>
+<td>
+<img src="design/pixelgreen.gif" border="0" height="10px" width="STAT_PLpx"><img src="design/pixelblue.gif" border="0" height="10px" width="STATF_PLpx"><img src="design/pixelred.gif" border="0" height="10px" width="STATR_PLpx">
+</td>
+<td width="10px">&nbsp;</td>
+<td><img src="design/COLOR_IT.gif" border=0>&nbsp;Italian</td>
+<td>
+<img src="design/pixelgreen.gif" border="0" height="10px" width="STAT_ITpx"><img src="design/pixelblue.gif" border="0" height="10px" width="STATF_ITpx"><img src="design/pixelred.gif" border="0" height="10px" width="STATR_ITpx">
+</td>
+</tr>
+
+<tr>
+<td><img src="design/COLOR_JA.gif" border=0>&nbsp;Japanese</td>
+<td>
+<img src="design/pixelgreen.gif" border="0" height="10px" width="STAT_JApx"><img src="design/pixelblue.gif" border="0" height="10px" width="STATF_JApx"><img src="design/pixelred.gif" border="0" height="10px" width="STATR_JApx">
+</td>
+<td width="10px">&nbsp;</td>
+<td><img src="design/COLOR_RU.gif" border=0>&nbsp;Russian</td>
+<td>
+<img src="design/pixelgreen.gif" border="0" height="10px" width="STAT_RUpx"><img src="design/pixelblue.gif" border="0" height="10px" width="STATF_RUpx"><img src="design/pixelred.gif" border="0" height="10px" width="STATR_RUpx">
+</td>
+</tr>
+
+<tr>
+<td><img src="design/COLOR_CZ.gif" border=0>&nbsp;Czech</td>
+<td>
+<img src="design/pixelgreen.gif" border="0" height="10px" width="STAT_CZpx"><img src="design/pixelblue.gif" border="0" height="10px" width="STATF_CZpx"><img src="design/pixelred.gif" border="0" height="10px" width="STATR_CZpx">
+</td>
+<td width="10px">&nbsp;</td>
+<td><img src="design/COLOR_ES.gif" border=0>&nbsp;Spanish</td>
+<td>
+<img src="design/pixelgreen.gif" border="0" height="10px" width="STAT_ESpx"><img src="design/pixelblue.gif" border="0" height="10px" width="STATF_ESpx"><img src="design/pixelred.gif" border="0" height="10px" width="STATR_ESpx">
+</td>
+</tr>
+
+<tr>
+<td><img src="design/COLOR_NL.gif" border=0>&nbsp;Dutch</td>
+<td>
+<img src="design/pixelgreen.gif" border="0" height="10px" width="STAT_NLpx"><img src="design/pixelblue.gif" border="0" height="10px" width="STATF_NLpx"><img src="design/pixelred.gif" border="0" height="10px" width="STATR_NLpx">
+</td>
+<td width="10px">&nbsp;</td>
+<td><img src="design/COLOR_FR.gif" border=0>&nbsp;French</td>
+<td>
+<img src="design/pixelgreen.gif" border="0" height="10px" width="STAT_FRpx"><img src="design/pixelblue.gif" border="0" height="10px" width="STATF_FRpx"><img src="design/pixelred.gif" border="0" height="10px" width="STATR_FRpx">
+</td>
+</tr>
+
+<tr>
+<td><img src="design/COLOR_CA.gif" border=0>&nbsp;Catalan</td>
+<td>
+<img src="design/pixelgreen.gif" border="0" height="10px" width="STAT_CApx"><img src="design/pixelblue.gif" border="0" height="10px" width="STATF_CApx"><img src="design/pixelred.gif" border="0" height="10px" width="STATR_CApx">
+</td>
+<td width="10px">&nbsp;</td>
+<td><img src="design/COLOR_CHT.gif" border=0>&nbsp;Traditional Chinese</td>
+<td>
+<img src="design/pixelgreen.gif" border="0" height="10px" width="STAT_CHTpx"><img src="design/pixelblue.gif" border="0" height="10px" width="STATF_CHTpx"><img src="design/pixelred.gif" border="0" height="10px" width="STATR_CHTpx">
+</td>
+</tr>
+
+<tr>
+<td><img src="design/COLOR_PT_BR.gif" border=0>&nbsp;Brazilian</td>
+<td>
+<img src="design/pixelgreen.gif" border="0" height="10px" width="STAT_PT_BRpx"><img src="design/pixelblue.gif" border="0" height="10px" width="STATF_PT_BRpx"><img src="design/pixelred.gif" border="0" height="10px" width="STATR_PT_BRpx">
+</td>
+<td width="10px">&nbsp;</td>
+<td><img src="design/COLOR_HU.gif" border=0>&nbsp;Hungarian</td>
+<td>
+<img src="design/pixelgreen.gif" border="0" height="10px" width="STAT_HUpx"><img src="design/pixelblue.gif" border="0" height="10px" width="STATF_HUpx"><img src="design/pixelred.gif" border="0" height="10px" width="STATR_HUpx">
+</td>
+</tr>
+
+<tr>
+<td><img src="design/COLOR_CHS.gif" border=0>&nbsp;Simplified Chinese</td>
+<td>
+<img src="design/pixelgreen.gif" border="0" height="10px" width="STAT_CHSpx"><img src="design/pixelblue.gif" border="0" height="10px" width="STATF_CHSpx"><img src="design/pixelred.gif" border="0" height="10px" width="STATR_CHSpx">
+</td>
+<td width="10px">&nbsp;</td>
+<td><img src="design/COLOR_CHS.gif" border=0>&nbsp;Ukrainian</td>
+<td>
+<img src="design/pixelgreen.gif" border="0" height="10px" width="STAT_UK_UApx"><img src="design/pixelblue.gif" border="0" height="10px" width="STATF_UK_UApx"><img src="design/pixelred.gif" border="0" height="10px" width="STATR_UK_UApx">
+</td>
+</tr>
+
+<tr>
+<td><img src="design/COLOR_HR.gif" border=0>&nbsp;Croatian</td>
+<td>
+<img src="design/pixelgreen.gif" border="0" height="10px" width="STAT_HRpx"><img src="design/pixelblue.gif" border="0" height="10px" width="STATF_HRpx"><img src="design/pixelred.gif" border="0" height="10px" width="STATR_HRpx">
+</td>
+<td width="10px">&nbsp;</td>
+<td><img src="design/COLOR_HR.gif" border=0>&nbsp;Danish</td>
+<td>
+<img src="design/pixelgreen.gif" border="0" height="10px" width="STAT_DApx"><img src="design/pixelblue.gif" border="0" height="10px" width="STATF_DApx"><img src="design/pixelred.gif" border="0" height="10px" width="STATR_DApx">
+</td>
+</tr>
+
+
+</table>
+

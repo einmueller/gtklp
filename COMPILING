@@ -1,0 +1,35 @@
+Requirements
+------------
+To install, you'll need at least:
+
+    * gtk+ 1.2.8 from gtk.org
+    * glib 1.2.8 from gtk.org
+    * cups 1.10 from cups.org
+
+Maybe it works with different versions too, but it's not tested.
+If you use rpm-packages, don`t forget to install also the devel-packages !
+
+Installation
+------------
+Since version 0.9d you should be able to do it the following way:
+
+    * unpack source-code
+    * execute an ./configure
+    * execute an make or gmake
+    * execute an make install or gmake install
+
+If you want to install it to special locations, or if you have installed cups, or gtk to unusual places, please fiddle around with the command-line options of configure. You can see all options by executing ./configure --help.
+If configure fails on your system, try to edit Makefile.fallback and use make -f Makefile.fallback && make -f Makefile.fallback install or gmake -f Makefile.fallback && gmake -f Makefile.fallback install.
+... or just use some of the precompiled packages !
+
+Languages
+---------
+Since version 0.9d GtkLP uses gettext, so the language of your interface depends on the environment-variables LC_ALL, LC_MESSAGES and LANG.
+If your language is not support right now, please
+
+    * Get the german po-file
+    * Rename it to fit to your language
+    * Translate every german msgstr to your language
+    * Send me this translated file
+    * Thank you very much !
+

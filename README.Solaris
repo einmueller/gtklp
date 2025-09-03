@@ -1,0 +1,12 @@
+Some notes on compling GtkLP on Solaris Systems.
+------------------------------------------------
+Sometimes the compilation fails on some Solaris Systems cause configure
+doesn't add all libs.
+
+Try 
+     ./configure LDFLAGS=-lX11
+or
+     ./configure LDFLAGS=-lX11 -lintl
+to solve those problems.
+
+Have luck!

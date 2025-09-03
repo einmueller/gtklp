@@ -1,0 +1,13 @@
+Some notes on compling GtkLP on Irix Systems. 
+---------------------------------------------
+There are problems compiling gtklp-1.0c under IRIX 6.5.22f, cause
+"basename" was not found when linking gtklp.
+Please use 
+   ./configure LDFLAGS=-lgen
+to solve this Problem.
+
+Also the fonts could look a little big ugly with Gtk2. In this
+case you should use Gtk1 instead:
+   ./configure --enable-gtk1 LDFLAGS=-lgen
+
+Thanks to Dirk Engel for this hints!

@@ -1,0 +1,73 @@
+This is a first description on how to use GtkLP.
+You should also have a look at the manpages !!!
+
+
+USAGE
+-----
+You can call GtkLP in three ways:
+
+    * Without any parameters you can select files via integrated file-dialog
+    * With some filenames as parameter, file-dialog will also appear
+    * Within a pipe, e.g. from netscape, not file-dialog is show
+
+GtkLP knows the following command-line parameters:
+
+    * -P printer   Set the printer to use
+    * -S servername   Cups-Server to print to
+    * -U user   Cups-User to use.
+    * -p port   ipp-port to connect to
+    * -l   Only show the parameters given to lpr, nice for scripting purposes
+    * -D   Debug. Clutters much extra information on screen.
+    * -V   Prints version end exits
+    * -c confdir   Start GtkLP with configfiles in configdir
+    * -# number   Number of Copies
+    * -b   Use builtin defaults
+    * -i   Ignore data on stdin
+    * -o option=value   Pass Extra-Options to GtkLP
+
+Because of security-purposes, there is no parameter to submit the users password. 
+
+START
+-----
+When starting, GtkLP first looks for its config-files at the following places:
+
+   1. the confdir from -c confdir at commandline
+   2. $HOME/.gtklp/
+   3. /etc/gtklp/
+
+After that it uses defaults, which are good on my slackware-linux box ;-)
+and asks the cups-libraries for the default server-settings.
+
+In GtkLP you have also the chance to define the default browser.
+You can choose every html-browser you like, the first "$1" will be substituted by the URL.
+
+ADMINISTRATION
+--------------
+If you want to define global defaults for all users, just call GtkLP and save
+the preferences you like for each printer.
+Then you only have to put all files from your $HOME/.gtklp/ to the global confdir.
+Since version 0.9, you have also to add the default-ppd-options via the cups-webfrontend or lpadmin.
+For some special circumstances it is also usefull to define then following environment
+variables:
+
+    * CUPS_SERVER The default printserver to attach to
+    * IPP_PORT The default port to attach to
+    * PRINTER The default printer to use
+
+===============================================================================================
+
+GtkLPQ
+------
+Since version 0.8 there is also an *very* small queue-tool, GtkLPQ, included.
+It has no config-files, so you have to call it with the following command-line-parameters:
+
+    * -P printer   Set the printer to use
+    * -S servername   Cups-Server to print to
+    * -U user   Cups-User to use.
+    * -p port   ipp-port to connect to
+    * -D   Debug. Clutters much extra information on screen.
+    * -V   Prints version end exits
+    * -t timeout   Sets the timeout value between the queue-updates.
+    * -g XxY   GtkLPQ pops up at position (x,y).
+
+

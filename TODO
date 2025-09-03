@@ -1,0 +1,5 @@
+- lplist: List all available Printers with infos and Status
+- quota support
+- remove the browser support?
+- autoselect the right options for Gtk1, Gtk2 and Gtk2/new
+

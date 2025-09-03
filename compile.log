@@ -1,0 +1,163 @@
+libgtklp.c: In Funktion »exitOnErrorExit«:
+libgtklp.c:776:7: Warnung: Typkonvertierung von Zeiger auf Ganzzahl anderer Breite [-Wpointer-to-int-cast]
+  exit((int)object);
+       ^
+ar: `u' modifier ignored since `D' is the default (see `U')
+gtklp_functions.c: In Funktion »getOptions«:
+gtklp_functions.c:273:20: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(getenv("HOME")==(uintptr_t)NULL)
+                    ^~
+gtklp_functions.c:447:77: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+    if(cupsGetOption("copies",act_printer->num_options,act_printer->options) != (uintptr_t)NULL)
+                                                                             ^~
+gtklp_functions.c:465:79: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("landscape",act_printer->num_options,act_printer->options) != (uintptr_t)NULL) {
+                                                                               ^~
+gtklp_functions.c:470:81: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("page-ranges",act_printer->num_options,act_printer->options) != (uintptr_t)NULL) {
+                                                                                 ^~
+gtklp_functions.c:475:81: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("outputorder",act_printer->num_options,act_printer->options) != (uintptr_t)NULL) {
+                                                                                 ^~
+gtklp_functions.c:482:78: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("page-set",act_printer->num_options,act_printer->options) != (uintptr_t)NULL) {
+                                                                              ^~
+gtklp_functions.c:489:79: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("number-up",act_printer->num_options,act_printer->options) != (uintptr_t)NULL) {
+                                                                               ^~
+gtklp_functions.c:495:86: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("number-up-layout",act_printer->num_options,act_printer->options) != (uintptr_t)NULL) {
+                                                                                      ^~
+gtklp_functions.c:499:76: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("mirror",act_printer->num_options,act_printer->options) != (uintptr_t)NULL) {
+                                                                            ^~
+gtklp_functions.c:504:81: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("page-border",act_printer->num_options,act_printer->options) != (uintptr_t)NULL) {
+                                                                                 ^~
+gtklp_functions.c:508:80: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("brightness",act_printer->num_options,act_printer->options) != (uintptr_t)NULL)
+                                                                                ^~
+gtklp_functions.c:511:75: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("gamma",act_printer->num_options,act_printer->options) != (uintptr_t)NULL)
+                                                                           ^~
+gtklp_functions.c:514:73: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("cpi",act_printer->num_options,act_printer->options) != (uintptr_t)NULL)
+                                                                         ^~
+gtklp_functions.c:517:73: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("lpi",act_printer->num_options,act_printer->options) != (uintptr_t)NULL)
+                                                                         ^~
+gtklp_functions.c:520:77: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("columns",act_printer->num_options,act_printer->options) != (uintptr_t)NULL)
+                                                                             ^~
+gtklp_functions.c:523:78: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("page-top",act_printer->num_options,act_printer->options) != (uintptr_t)NULL)
+                                                                              ^~
+gtklp_functions.c:526:81: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("page-bottom",act_printer->num_options,act_printer->options) != (uintptr_t)NULL)
+                                                                                 ^~
+gtklp_functions.c:529:79: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("page-left",act_printer->num_options,act_printer->options) != (uintptr_t)NULL)
+                                                                               ^~
+gtklp_functions.c:532:80: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("page-right",act_printer->num_options,act_printer->options) != (uintptr_t)NULL)
+                                                                                ^~
+gtklp_functions.c:535:81: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("prettyprint",act_printer->num_options,act_printer->options) != (uintptr_t)NULL) {
+                                                                                 ^~
+gtklp_functions.c:540:74: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("wrap",act_printer->num_options,act_printer->options) != (uintptr_t)NULL) {
+                                                                          ^~
+gtklp_functions.c:545:77: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("scaling",act_printer->num_options,act_printer->options) != (uintptr_t)NULL) {
+                                                                             ^~
+gtklp_functions.c:550:85: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("natural-scaling",act_printer->num_options,act_printer->options) != (uintptr_t)NULL) {
+                                                                                     ^~
+gtklp_functions.c:555:73: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("ppi",act_printer->num_options,act_printer->options) != (uintptr_t)NULL) {
+                                                                         ^~
+gtklp_functions.c:560:73: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("hue",act_printer->num_options,act_printer->options) != (uintptr_t)NULL)
+                                                                         ^~
+gtklp_functions.c:563:80: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("saturation",act_printer->num_options,act_printer->options) != (uintptr_t)NULL)
+                                                                                ^~
+gtklp_functions.c:566:78: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("position",act_printer->num_options,act_printer->options) != (uintptr_t)NULL) {
+                                                                              ^~
+gtklp_functions.c:605:79: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("blackplot",act_printer->num_options,act_printer->options) != (uintptr_t)NULL) {
+                                                                               ^~
+gtklp_functions.c:610:77: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("fitplot",act_printer->num_options,act_printer->options) != (uintptr_t)NULL) {
+                                                                             ^~
+gtklp_functions.c:615:78: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("penwidth",act_printer->num_options,act_printer->options) != (uintptr_t)NULL)
+                                                                              ^~
+gtklp_functions.c:618:80: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("job-sheets",act_printer->num_options,act_printer->options) != (uintptr_t)NULL) {
+                                                                                ^~
+gtklp_functions.c:621:10: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+    if(z1 == (uintptr_t)NULL) {
+          ^~
+gtklp_functions.c:632:73: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+   if(cupsGetOption("raw",act_printer->num_options,act_printer->options) != (uintptr_t)NULL) {
+                                                                         ^~
+gtklp_functions.c: In Funktion »saveOptions«:
+gtklp_functions.c:1213:19: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+  if(getenv("HOME")==(uintptr_t)NULL)
+                   ^~
+gtklp_functions.c: In Funktion »PrintFunc«:
+gtklp_functions.c:1970:30: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+                 if(spoolfile == (uintptr_t)NULL)
+                              ^~
+image.c: In Funktion »imageTabSetDefaults«:
+image.c:78:36: Warnung: Typkonvertierung in Zeiger von Ganzzahl anderer Breite [-Wint-to-pointer-cast]
+  imagePosChanged((GtkWidget *)NULL,(int *)i1);
+                                    ^
+image.c: In Funktion »imagePosChanged«:
+image.c:343:14: Warnung: Typkonvertierung von Zeiger auf Ganzzahl anderer Breite [-Wpointer-to-int-cast]
+  ImagePos[0]=(int)data/10;
+              ^
+image.c:344:14: Warnung: Typkonvertierung von Zeiger auf Ganzzahl anderer Breite [-Wpointer-to-int-cast]
+  ImagePos[1]=(int)data%10;
+              ^
+In file included from /usr/include/gtk-2.0/gtk/gtkcalendar.h:40:0,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:53,
+                 from image.h:27,
+                 from image.c:26:
+image.c: In Funktion »ImagePosFrame«:
+image.c:394:101: Warnung: Typkonvertierung in Zeiger von Ganzzahl anderer Breite [-Wint-to-pointer-cast]
+       gtk_signal_connect(GTK_OBJECT(imagePosBut[i1][i2]),"clicked",GTK_SIGNAL_FUNC(imagePosChanged),(int *)i3);
+                                                                                                     ^
+/usr/include/gtk-2.0/gtk/gtksignal.h:51:62: Anmerkung: in Definition des Makros »gtk_signal_connect«
+    gtk_signal_connect_full ((object), (name), (func), NULL, (func_data), NULL, 0, 0)
+                                                              ^~~~~~~~~
+In file included from /usr/include/gtk-2.0/gtk/gtkcalendar.h:40:0,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:53,
+                 from ppd.h:27,
+                 from ppd.c:26:
+ppd.c: In Funktion »addPPDGroup«:
+ppd.c:244:9: Warnung: Typkonvertierung in Zeiger von Ganzzahl anderer Breite [-Wint-to-pointer-cast]
+         (int *) ppd_entry_count);
+         ^
+/usr/include/gtk-2.0/gtk/gtksignal.h:51:62: Anmerkung: in Definition des Makros »gtk_signal_connect«
+    gtk_signal_connect_full ((object), (name), (func), NULL, (func_data), NULL, 0, 0)
+                                                              ^~~~~~~~~
+special.c: In Funktion »specialTabSetDefaults«:
+special.c:72:2: Warnung: this »if« clause does not guard... [-Wmisleading-indentation]
+  if(JobName[0] != (uintptr_t)NULL);
+  ^~
+special.c:73:3: Anmerkung: ...this statement, but the latter is misleadingly indented as if it is guarded by the »if«
+   gtk_entry_set_text(GTK_ENTRY (jobNameField),JobName);
+   ^~~~~~~~~~~~~~~~~~
+special.c:80:2: Warnung: this »if« clause does not guard... [-Wmisleading-indentation]
+  if(ExtraOpt[0] != (uintptr_t)NULL);
+  ^~
+special.c:81:3: Anmerkung: ...this statement, but the latter is misleadingly indented as if it is guarded by the »if«
+   gtk_entry_set_text(GTK_ENTRY (extraOptField),ExtraOpt);
+   ^~~~~~~~~~~~~~~~~~
+gtklpq.c: In Funktion »main«:
+gtklpq.c:294:15: Warnung: Vergleich zwischen Zeiger und Ganzzahl
+     if(optarg == (uintptr_t)NULL)
+               ^~

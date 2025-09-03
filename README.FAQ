@@ -1,0 +1,12 @@
+1) I need more than xxx printers!
+=================================
+
+GtkLP before version 1.0g:
+--------------------------
+You have to change the value of #define MAX_PRT 100 in include/defaults.h
+*before* compiling GtkLP.
+
+newer versions:
+---------------
+You have to configure GtkLP with "./configure --maxprinters=xxx" before doing the "make".
+That will lead to a version that supports xxx printers.

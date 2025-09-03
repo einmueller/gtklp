@@ -1,0 +1,461 @@
+#!/bin/bash
+
+# Version: 13.2.2006
+PATH=$PATH
+
+clear
+
+echo "Warning !"
+echo "Dont use this script if you dont know what it is doing !"
+echo "Press CTRL-C to abort !"
+read a
+clear
+
+echo "Get version from configure.in"
+VERSION=`cat configure.in | grep AM_INIT_AUTOMAKE | cut -d, -f2 | cut -d" " -f2 | cut -d\) -f1`
+DATE=`date +%Y%m%d`
+TIME=`date +%H%M%S`
+RPMDIR="/usr/src/rpm"
+
+ALLDOCS="AUTHORS BUGS ChangeLog COPYING NEWS README README.* TODO USAGE man/gtklp-*.1 man/gtklpq-*.1"
+
+
+echo "Building all packages for version $VERSION"
+echo "Revision [1] :"
+read a
+if [ "$a" == "" ]
+then
+	REV=1
+else
+	REV=$a
+fi
+echo "Processor [i386] : "
+read a
+if [ "$a" == "" ]
+then
+	PROC=i386
+else
+	PROC=$a
+fi
+
+echo "Gtk-Version 1 oder 2 [2] :"
+read a
+if [ "$a" == "1" ]
+then
+	GTKVERS="--enable-gtk1"
+	GTKTAG="-gtk1"
+	GTKINFO="1"
+else
+	GTKVERS=""
+	GTKTAG=""
+	GTKINFO="2"
+fi
+
+echo "---"
+echo "Building"
+echo "Version: "$VERSION
+echo "Revision: "$REV
+echo "Gtk: "$GTKINFO
+echo "Processor: "$PROC
+echo "---"
+echo "Press the anykey..."
+read a
+
+SPEC="gtklp-"$VERSION".spec"
+rm *.spec
+
+echo "Backup..."
+tar -cf ../backup.$DATE.$TIME.tar .
+
+echo "Building one time to get config.h.fallback"
+sh autogen.sh
+./configure $GTKVERS
+cp config.h config.h.fallback
+
+echo "Tidy up..."
+make clean
+make distclean
+rm -f po/stamp-po
+rm -f po/*.gmo
+rm -f po/*.mo
+rm -f po/gtklp.pot
+rm -f po/Makefile.in
+rm -f po/Makefile
+rm -f po/*.gmo
+rm -f po/POTFILES
+rm -rf autom4te.cache
+find . -name "*~" -exec rm {} \;
+find . -name "core" -exec rm -f {} \;
+find . -name "out" -exec rm -f {} \;
+find . -name ".xvpics" -type d -exec rm -rf {} \;
+find . -name "*.o" -exec rm -rf {} \;
+find . -name "*.a" -exec rm -rf {} \;
+find . -name ".deps" -type d -exec rm -rf {} \;
+cd po
+make clean
+ln -s chs.po zh_CN.po
+ln -s cht.po zh_TW.po
+cd ..
+rm -f config.h
+rm -f config.h.in
+rm -f gtklp/Makefile.in
+rm -f gtklp/Makefile
+rm -f gtklp/.deps/
+rm -f gtklp/gtklp
+rm -f gtklpq/gtklpq
+rm -f gtklpq/Makefile.in
+rm -f gtklpq/Makefile
+rm -f intl/Makefile
+rm -f libgtklp/Makefile.in
+rm -f libgtklp/Makefile
+rm -f aclocal.m4
+rm -f INSTALL
+rm -f stamp-h.in
+rm -f stamp-h1
+rm -f Makefile.in
+rm -f configure
+rm -f config.log
+rm -f config.status
+rm -f Makefile
+rm -f config.h
+rm -f config.h.in
+rm -f stamp-h
+rm -f gtklp/lpr
+rm -f gtklp/lp
+rm -f gtklpq/lpq
+rm -f gtklpq/lprm
+rm -f gtklpq/lpstat
+rm -f gtklpq/enable
+rm -f gtklpq/disable
+rm -f gtklpq/reject
+rm -f gtklpq/accept
+
+echo "Rebuilding po-Files"
+cp stats.template stats.shtml
+FLAGS='--keyword=_ --add-comments --omit-header -L C'
+export LC_ALL=en_US
+rm -f po/gtklp.pot
+xgettext $FLAGS -o po/gtklp.pot gtklp/*.c libgtklp/*.c gtklpq/*.c
+for entry in po/*.po
+do
+  PO=$entry
+  MO=`echo $entry | sed -e s/\.po/\.gmo/`
+  NAME=`echo $entry | sed -e s/"po\/"/""/ | sed -e s/"\.po"/""/`
+  msgmerge -U $PO po/gtklp.pot
+  OUT=`msgfmt -c --statistics -o $MO $PO 2>&1`
+
+  TRANS=`echo $OUT | cut -d" " -f1`
+  FUZZY=`echo $OUT | cut -d" " -f4`
+  NOTR=`echo $OUT | cut -d" " -f7`
+
+	if [ "$TRANS" == "msgfmt:" ]
+	then
+		echo "CRITICAL ERROR ON GENERATING PO FOR $NAME"
+		echo $OUT
+		exit
+	fi
+
+  if [ "$FUZZY" == "" ]
+  then
+    FUZZY="0"
+  fi
+
+  if [ "$NOTR" == "" ]
+  then
+    NOTR="0"
+  fi
+
+  ALL=$[$TRANS + $FUZZY + $NOTR]
+  STATUS=$[(100 * $TRANS) / $ALL]
+	STATUSF=$[(100 * $FUZZY) / $ALL]
+	REST=$[100 - $STATUS - $STATUSF]
+	
+	COLOR="red"
+	if [ "$STATUS" -ge "70" ]
+	then
+		COLOR="blue"
+	fi
+	if [ "$STATUS" -ge "95" ]
+	then
+		COLOR="green"
+	fi
+
+	COLTAG=COLOR_`echo $NAME | tr [a-z] [A-Z]`
+	STATAG=STAT_`echo $NAME | tr [a-z] [A-Z]`
+	STATAF=STATF_`echo $NAME | tr [a-z] [A-Z]`
+	STATAR=STATR_`echo $NAME | tr [a-z] [A-Z]`
+	cat stats.shtml | sed -e s/$COLTAG/$COLOR/g >stats.shtml.tmp
+	cp stats.shtml.tmp stats.shtml
+	cat stats.shtml | sed -e s/$STATAG/$STATUS/g >stats.shtml.tmp
+	cp stats.shtml.tmp stats.shtml
+	cat stats.shtml | sed -e s/$STATAF/$STATUSF/g >stats.shtml.tmp
+	cp stats.shtml.tmp stats.shtml
+	cat stats.shtml | sed -e s/$STATAR/$REST/g >stats.shtml.tmp
+	cp stats.shtml.tmp stats.shtml
+
+	echo "$NAME: $STATUS% translated, $NOTR messages untranslated"
+
+done
+rm stats.shtml.tmp
+
+echo "Press the any key to continue"
+read a
+
+echo
+echo "Check version number in configure.in"
+cat configure.in | sed -e s/"AC_INIT(\[gtklp\],\[[0-9]*\.[0-9]*.*\])"/"AC_INIT([gtklp],[$VERSION])"/ >.tmp
+cp .tmp configure.in
+rm .tmp
+
+echo
+echo "Put languages into configure.in"
+LANGS=""
+for entry in po/*.po
+do
+	LANGS=$LANGS" "`basename $entry | sed -e s/"\.po"//`
+done
+LANGS=`echo \"$LANGS\" | sed -e s/" "//`
+echo "Found: $LANGS"
+
+echo
+echo "Check version number in config.h.fallback"
+cat config.h.fallback | sed -e s/"\#define VERSION \".*\""/"\#define VERSION \"$VERSION\""/ >.tmp
+cp .tmp config.h.fallback
+rm .tmp
+
+echo
+echo "Check version number in man/gtklp.1"
+IDSTR=`grep -e "\.TH \"gtklp\" \"1\" \"$VERSION\" \"Tobias Mueller\" \"Printing\"" man/gtklp.1`
+if [ "$IDSTR" == "" ]
+then
+	echo "Version not changed !"
+	#echo "Perhaps *you* have to change something in it ?!"
+	#echo "(C)hange version numbers automaticly ?"
+	#read a
+	#if [ "$a" == "C" ] || [ "$a" == "c" ]
+	#then
+		echo "Change it..."
+		cat man/gtklp.1 | sed -e s/"\.TH \"gtklp\" \"1\" \"[0-9]*\.[0-9]*.*\" \"Tobias Mueller\" \"Printing\""/"\.TH \"gtklp\" \"1\" \"$VERSION\" \"Tobias Mueller\" \"Printing\""/ >.tmp
+		cp .tmp man/gtklp.1
+		rm .tmp
+	#else
+	#	echo "Leaving old version number."
+	#fi
+fi
+
+echo
+echo "Check version number in man/gtklpq.1"
+IDSTR=`grep -e "\.TH \"gtklpq\" \"1\" \"$VERSION\" \"Tobias Mueller\" \"Printing\"" man/gtklpq.1`
+if [ "$IDSTR" == "" ]
+then
+	echo "Version not changed !"
+	#echo "(C)hange version numbers automaticly ?"
+	#read a
+	#if [ "$a" == "C" ] || [ "$a" == "c" ]
+	#then
+		echo "Change it..."
+		cat man/gtklpq.1 | sed -e s/"\.TH \"gtklpq\" \"1\" \"[0-9]*\.[0-9]*.*\" \"Tobias Mueller\" \"Printing\""/"\.TH \"gtklpq\" \"1\" \"$VERSION\" \"Tobias Mueller\" \"Printing\""/ >.tmp
+		cp .tmp man/gtklpq.1
+		rm .tmp
+	#else
+	#	echo "Leaving old version number."
+	#fi
+fi
+
+
+echo
+echo "Check if all po-files are changed to new version"
+for entry in po/*.po
+do
+	echo
+	echo "Check $entry..."
+	IDSTR=`grep -i "Project-Id-Version" "$entry" | grep "$VERSION"`
+	if [ "$IDSTR" == "" ]
+	then
+		echo "File not changed !"
+		#echo "Perhaps *you* have to change something in it ?!"
+		#echo "(C)hange version numbers automaticly ?"
+		#read a
+		#if [ "$a" == "C" ] || [ "$a" == "c" ]
+		#then
+			echo "Change it..."
+			cat $entry | sed -e s/"\"Project-Id-Version: gtklp [0-9]*\.[0-9]*.*\\\n\""/"\"Project-Id-Version: gtklp $VERSION\\\n\""/ >.tmp
+			cp .tmp $entry
+			rm .tmp
+		#else
+		#	echo "Leaving old version number."
+		#fi
+	fi
+done
+
+echo "Building spec-file..."
+echo "Summary: a gtk frontend to CUPS" >$SPEC
+echo "Name: gtklp" >>$SPEC
+echo "Version: $VERSION" >>$SPEC
+echo "Release: $REV" >>$SPEC
+echo "License: GPL" >>$SPEC
+echo "Vendor: SirTobi" >>$SPEC
+echo "Group: Utilities/Printing" >>$SPEC
+echo "Source: http://belnet.dl.sourceforge.net/sourceforge/gtklp/gtklp-%{version}.src.tar.gz" >>$SPEC
+echo "BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root" >>$SPEC
+echo "BuildPrereq: cups-devel > 1.1 gtk+-devel" >>$SPEC
+echo "Requires: cups > 1.1" >>$SPEC
+echo "%description" >>$SPEC
+echo "a gtk frontend to CUPS" >>$SPEC
+echo "" >>$SPEC
+echo "%prep" >>$SPEC
+echo "%setup" >>$SPEC
+echo "" >>$SPEC
+echo "%build" >>$SPEC
+echo "./configure --prefix=%{_prefix}" $GTKVERS >>$SPEC
+echo "make" >>$SPEC
+echo "" >>$SPEC
+echo "%install" >>$SPEC
+echo "rm -rf %{buildroot}" >>$SPEC
+echo "make install prefix=%{buildroot}%{_prefix}" >>$SPEC
+echo "strip %{buildroot}%{_prefix}/bin/* || :" >>$SPEC
+echo "mkdir -p %{buildroot}%{_docdir}/gtklp-%{version}" >>$SPEC
+echo "cp AUTHORS BUGS ChangeLog COPYING NEWS README README.Irix TODO USAGE %{buildroot}%{_docdir}/gtklp-%{version}/" >>$SPEC
+echo "" >>$SPEC
+echo "%clean" >>$SPEC
+echo "rm -rf %{buildroot}" >>$SPEC
+echo "" >>$SPEC
+echo "%files" >>$SPEC
+echo "%defattr(-,root,root)" >>$SPEC
+echo "%{_prefix}" >>$SPEC
+echo "" >>$SPEC
+echo "%changelog" >>$SPEC
+cat ChangeLog >>$SPEC
+
+echo "autogen..."
+/bin/sh autogen.sh
+
+echo "Creating ../packages..."
+mkdir -p ../packages
+rm -rf ../packages/*
+echo "Creating ../packages/tmp..."
+mkdir -p ../packages/tmp
+rm -rf ../packages/tmp/*
+echo "Creating ../packages/tmp/usr/doc/gtklp-$VERSION..."
+mkdir -p ../packages/tmp/usr/doc/gtklp-$VERSION
+rm -rf ../packages/tmp/usr/doc/gtklp-$VERSION/*
+
+echo "Copying spec-file..."
+cp $SPEC ../packages/$SPEC$GTKTAG
+
+echo "Tidy up..."
+rm -f po/stamp-po
+rm -f po/*.gmo
+rm -f po/*.mo
+rm -f po/Makefile.in
+rm -f po/Makefile
+rm -f po/*.gmo
+rm -f po/POTFILES
+rm -rf autom4te.cache
+find . -name "*~" -exec rm {} \;
+find . -name "core" -exec rm -f {} \;
+find . -name "out" -exec rm -f {} \;
+find . -name ".xvpics" -type d -exec rm -rf {} \;
+find . -name "*.o" -exec rm -rf {} \;
+find . -name "*.a" -exec rm -rf {} \;
+find . -name ".deps" -type d -exec rm -rf {} \;
+cd po
+ln -s chs.po zh_CN.po
+ln -s cht.po zh_TW.po
+cd ..
+rm -f config.h
+rm -f gtklp/Makefile
+rm -f gtklp/.deps/
+rm -f gtklp/gtklp
+rm -f gtklpq/gtklpq
+rm -f gtklpq/Makefile
+rm -f intl/Makefile
+rm -f libgtklp/Makefile
+rm -f aclocal.m4
+rm -f INSTALL
+rm -f stamp-h1
+rm -f config.log
+rm -f config.status
+rm -f Makefile
+rm -f config.h
+rm -f stamp-h
+rm -f gtklp/lpr
+rm -f gtklp/lp
+rm -f gtklpq/lpq
+rm -f gtklpq/lprm
+rm -f gtklpq/lpstat
+rm -f gtklpq/enable
+rm -f gtklpq/disable
+rm -f gtklpq/reject
+rm -f gtklpq/accept
+
+echo "Building source-package..."
+mkdir -p ../packages/tmp/gtklp-$VERSION
+cp -R . ../packages/tmp/gtklp-$VERSION/
+cd ../packages/tmp/
+tar czf ../gtklp-$VERSION.src.tar.gz gtklp-$VERSION
+rm -rf gtklp-$VERSION
+cd ../../src
+
+echo "Building gtklp..."
+./configure --prefix=/usr $GTKVERS
+make
+make install prefix=$PWD/../packages/tmp/usr
+strip $PWD/../packages/tmp/usr/bin/*
+
+echo "Gzip man-pages"
+gzip $PWD/../packages/tmp/usr/share/man/man1/gtklp.1
+gzip $PWD/../packages/tmp/usr/share/man/man1/gtklpq.1
+
+echo "Filling doc"
+cp $ALLDOCS ../packages/tmp/usr/doc/gtklp-$VERSION/
+
+echo "Creating SlackWare Package Files"
+mkdir ../packages/tmp/install
+echo "gtklp: GtkLP and GtkLPQ                                                      " >../packages/tmp/install/slack-desc
+echo "gtklp:                                                                       " >>../packages/tmp/install/slack-desc
+echo "gtklp: GtkLP is a graphical tool for printing via cups.                      " >>../packages/tmp/install/slack-desc
+echo "gtklp: You can easily select all (printer specific) cups-options, just       " >>../packages/tmp/install/slack-desc
+echo "gtklp: with a click and without remembering the options whole name.          " >>../packages/tmp/install/slack-desc
+echo "gtklp: GtkLPQ is a graphical queue tool for cups, heavily inspired by        " >>../packages/tmp/install/slack-desc
+echo "gtklp: novells old queue tool.                                               " >>../packages/tmp/install/slack-desc
+echo "gtklp: Both tools can also be used in console environment.                   " >>../packages/tmp/install/slack-desc
+echo "gtklp:                                                                       " >>../packages/tmp/install/slack-desc
+echo "gtklp: Homepage: http://gtklp.sourceforge.net/                               " >>../packages/tmp/install/slack-desc
+echo "gtklp: Package created by SirTobi                                            " >>../packages/tmp/install/slack-desc
+
+echo "Please enter root-password to give the right ownerships"
+su -c "find ../packages/tmp/ -exec chown root.root {} \;;chown -R root.bin ../packages/tmp/usr/bin;find ../packages/tmp/ -exec chmod 0644 {} \;; find ../packages/tmp/ -type d -exec chmod 755 {} \;;chmod 755 ../packages/tmp/usr/bin/*;echo 'Creating Slack-Packages new style';cd ../packages/tmp;/sbin/makepkg -c n ../'gtklp'$GTKTAG'-'$VERSION'-'$PROC'-'$REV'sir.tgz' ."
+
+
+GROUP=`groups | cut -d" " -f1`
+echo "Please enter root-password to remove ownerships"
+su -c "find ../packages/tmp/ -exec chown $USER.$GROUP {} \;"
+
+rm -rf ../packages/tmp
+
+echo "Build rpms..."
+mkdir -p $RPMDIR/BUILD
+mkdir -p $RPMDIR/SRPMS
+mkdir -p $RPMDIR/RPMS/i386
+mkdir -p $RPMDIR/SOURCES
+cp ../packages/gtklp-$VERSION.src.tar.gz $RPMDIR/SOURCES
+
+rpmbuild --nodeps -ba $SPEC
+
+cp $RPMDIR/RPMS/$PROC/gtklp-$VERSION-$REV.$PROC.rpm ../packages/gtklp$GTKTAG-$VERSION-$REV.$PROC.rpm
+cp $RPMDIR/SRPMS/gtklp-$VERSION-$REV.src.rpm ../packages/gtklp$GTKTAG-$VERSION-$REV.src.rpm
+
+# Pot-File
+cp po/gtklp.pot ../packages/
+
+# stats
+cp stats.shtml ../packages/
+
+# md5sums
+cd ../packages
+for entry in *
+do
+	md5sum $entry >$entry.md5
+done
+cd ..
