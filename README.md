@@ -1,4 +1,4 @@
-# Overview 
+![Logo](images/logo.png)
 
 **GtkLP** and **GtkLPQ** are graphical frontends for CUPS. 
 The development started around 2000 when I was a student and read about CUPS as the new printing system for Linux and programming in Gtk.
@@ -20,6 +20,10 @@ The latest release is 1.3.4 from November 2019.
 - Support for both, gtk1 and gtk2
 - hide printers
 - select favorite printers
+
+# Screenshots
+
+
 
 # Language status report
 ![Translation-Status](images/translations.png)
