@@ -21,4 +21,5 @@ The latest release is 1.3.4 from November 2019.
 - hide printers
 - select favorite printers
 
-
+# Language status report
+![Translation-Status](images/translations.png)
