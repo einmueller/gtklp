@@ -1,0 +1,937 @@
+# Danish translation for gtklp
+# This file is distributed under the same license as the gtklp package.
+# Copyright (C) 2006 Tobias Mueller
+# <sirtobi@stud.uni-hannover.de>, 2006.
+# scootergrisen, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtklp 1.3.4\n"
+"Report-Msgid-Bugs-To: gtklp@sirtobi.com\n"
+"POT-Creation-Date: 2007-09-08 14:32+0200\n"
+"PO-Revision-Date: 2017-01-06 00:00+0100\n"
+"Last-Translator: scootergrisen\n"
+"Language-Team: Danish\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: gtklp/file.c:285 gtklp/file.c:288
+msgid "Print File..."
+msgstr "Udskriv fil..."
+
+#: gtklp/file.c:435
+msgid "Files to print"
+msgstr "Udskriv filer"
+
+#: gtklp/file.c:473
+msgid "Add"
+msgstr "Tilføj"
+
+#: gtklp/file.c:482 gtklp/gtklp_functions.c:2963
+msgid "Remove"
+msgstr "Fjern"
+
+#: gtklp/file.c:491
+msgid "Remove All"
+msgstr "Fjern alle"
+
+#: gtklp/file.c:516
+msgid "File"
+msgstr "Fil"
+
+#. PrinterLocation
+#: gtklp/general.c:74
+msgid "Location"
+msgstr "Placering"
+
+#: gtklp/general.c:455
+msgid "Duplex Settings"
+msgstr "Duplexindstillinger"
+
+#: gtklp/general.c:479
+msgid "No Duplex"
+msgstr "Ingen duplex"
+
+#: gtklp/general.c:496
+msgid "Long edge binding"
+msgstr "Duplex, lang side"
+
+#: gtklp/general.c:513
+msgid "Short edge binding"
+msgstr "Duplex, kort side"
+
+#: gtklp/general.c:542
+msgid "Media Selections"
+msgstr "Papirvalg"
+
+#: gtklp/general.c:556
+msgid "Media Size"
+msgstr "Papirstørrelse"
+
+#: gtklp/general.c:631
+msgid "Media Type"
+msgstr "Papirtype"
+
+#: gtklp/general.c:653
+msgid "Media Source"
+msgstr "Papirbakke"
+
+#: gtklp/general.c:704
+msgid "Number of Copies"
+msgstr "Kopier"
+
+#: gtklp/general.c:724
+msgid "Collate Copies"
+msgstr "Sætvise kopier"
+
+#: gtklp/general.c:924
+msgid "Other actions"
+msgstr "Andre funktioner"
+
+#. Button
+#: gtklp/general.c:935
+msgid "Call GtkLPQ"
+msgstr "Start GtkLPQ"
+
+#: gtklp/general.c:955 gtklpq/printer.c:161
+msgid "Printer"
+msgstr "Printer"
+
+#. Add Favorites Button
+#: gtklp/general.c:989
+msgid "Add favorite"
+msgstr "Tilføj favorit"
+
+#. Remove Favorites Button
+#: gtklp/general.c:996
+msgid "Remove favorite"
+msgstr "Fjern favorit"
+
+#: gtklp/general.c:1041
+msgid "General"
+msgstr "Generelt"
+
+#: gtklp/gtklp.c:266
+msgid "Please wait!"
+msgstr "Vent venligst!"
+
+#: gtklp/gtklp.c:290 gtklpq/gtklpq.c:306
+msgid "This option requires an value !"
+msgstr "Dette argument kræver en tilhørende værdi!"
+
+#: gtklp/gtklp.c:327
+msgid ""
+"Usage: gtklp [-P|-d printer] [-c configdir] [-S server] [-U user] [-p port] "
+"[-l] [-D] [-V] [-b] [-i] [-# n] [-C] [-H] [-E] [-J jobname] [-q priority] [-"
+"o option=value ...] [file(s)]\n"
+msgstr ""
+"Brug: gtklp [-P|-d printer] [-c konfigurationsmappe] [-S server] [-U bruger] "
+"[-p port] [-l] [-D] [-V] [-b] [-i] [-# n] [-C] [-H] [-E] [-J jobnavn] [-q "
+"prioritet] [-o argument=værdi ...] [fil(er)]\n"
+
+#: gtklp/gtklp.c:340
+msgid "Function is not supported for now !"
+msgstr "Funktionen er p.t. ikke understøttet!"
+
+#: gtklp/gtklp.c:369 gtklpq/gtklpq.c:261
+msgid "Invalid Portnumber !"
+msgstr "Ugyldigt portnummer!"
+
+#: gtklp/gtklp.c:397 gtklpq/gtklpq.c:281
+msgid "Invalid Printername !"
+msgstr "Ugyldigt printernavn!"
+
+#: gtklp/gtklp.c:416 gtklpq/gtklpq.c:317
+msgid "Invalid Servername !"
+msgstr "Ugyldigt servernavn!"
+
+#: gtklp/gtklp.c:428 gtklpq/gtklpq.c:329
+msgid "Invalid Username !"
+msgstr "Ugyldigt brugernavn!"
+
+#: gtklp/gtklp.c:469 gtklp/gtklptab.c:678 gtklpq/gtklpq.c:338
+msgid "version"
+msgstr "version"
+
+#: gtklp/gtklp.c:536
+#, c-format
+msgid "-E: %s\n"
+msgstr "-E: %s\n"
+
+#: gtklp/gtklp.c:538 gtklpq/gtklpq.c:364
+msgid "Sorry, this function is not compiled in !"
+msgstr "Beklager, denne funktion er ikke blevet inkluderet!"
+
+#: gtklp/gtklp.c:572
+msgid "Too many files to print !"
+msgstr "Listen af filer der skal udskrives er for lang!"
+
+#: gtklp/gtklp.c:624 gtklpq/gtklpq.c:387
+msgid "No Cups-Server found !"
+msgstr "Kunne ikke finde nogen Cups-server!"
+
+#: gtklp/gtklp.c:652 gtklpq/gtklpq.c:399
+#, c-format
+msgid "Unable to connect to Server %s !"
+msgstr "Kunne ikke forbinde til Cups-server %s!"
+
+#: gtklp/gtklp.c:708 gtklpq/gtklpq.c:450
+msgid "No Printer found to use as default !"
+msgstr "Ingen standardprinter valgt!"
+
+#: gtklp/gtklp.c:737
+msgid "Print"
+msgstr "Print"
+
+#: gtklp/gtklp.c:751
+msgid "Reset All"
+msgstr "Genskab alle standardindstillinger"
+
+#: gtklp/gtklp.c:763
+msgid "Templates"
+msgstr "Skabeloner"
+
+#: gtklp/gtklp.c:775
+msgid "Close"
+msgstr "Luk"
+
+#: gtklp/gtklp_functions.c:916
+msgid ""
+"The PPD for this printer has changed!\n"
+"Resetting..."
+msgstr ""
+"PPD-filen for denne printer er ændret!\n"
+"Genindlæser..."
+
+#: gtklp/gtklp_functions.c:1560 gtklp/gtklp_functions.c:1584
+#: gtklp/gtklp_functions.c:1699
+msgid "Error saving user-settings!"
+msgstr "Brugerindstillinger kunne ikke gemmes!"
+
+#: gtklp/gtklp_functions.c:1643
+msgid "Too many printers!"
+msgstr "For mange printere!"
+
+#: gtklp/gtklp_functions.c:1654
+msgid "Unable to add instance!"
+msgstr "Kunne ikke tilføje enhed!"
+
+#: gtklp/gtklp_functions.c:2169 gtklp/gtklp_functions.c:2174
+#: gtklp/gtklp_functions.c:2781
+msgid "Options saved!"
+msgstr "Indstillingerne er gemt!"
+
+#: gtklp/gtklp_functions.c:2244
+msgid "Instance removed!"
+msgstr "Enhed fjernet!"
+
+#: gtklp/gtklp_functions.c:2253
+msgid "Saved Defaults loaded!"
+msgstr "Gemte standardindstillinger er indlæst!"
+
+#: gtklp/gtklp_functions.c:2324
+msgid ""
+"Unable to print,\n"
+"unknown file format!"
+msgstr ""
+"Kunne ikke udskrive filen,\n"
+"ukendt filformat!"
+
+#: gtklp/gtklp_functions.c:2329 gtklp/gtklp_functions.c:2396
+msgid "JobID"
+msgstr "JobID"
+
+#: gtklp/gtklp_functions.c:2337
+msgid "Dont know what to print!"
+msgstr "Har ikke noget at printe!"
+
+#: gtklp/gtklp_functions.c:2357 gtklp/gtklp_functions.c:2366
+#: gtklp/gtklp_functions.c:2392
+msgid "Unable to print!"
+msgstr "Kan ikke printe!"
+
+#: gtklp/gtklp_functions.c:2388
+msgid "(stdin)"
+msgstr "(stdin)"
+
+#: gtklp/gtklp_functions.c:2503 gtklp/gtklp_functions.c:2509
+msgid "Conflicts"
+msgstr "Konflikter"
+
+#: gtklp/gtklp_functions.c:2556 gtklp/gtklptab.c:753 libgtklp/libgtklp.c:130
+#: libgtklp/libgtklp.c:741 libgtklp/libgtklp.c:958
+msgid "Ok"
+msgstr "Ok"
+
+#: gtklp/gtklp_functions.c:2793 gtklp/gtklp_functions.c:2816
+#: gtklp/gtklp_functions.c:2958 gtklp/gtklptab.c:952
+msgid "Save"
+msgstr "Gem"
+
+#: gtklp/gtklp_functions.c:2829
+msgid "New"
+msgstr "Ny"
+
+#: gtklp/gtklp_functions.c:2863 gtklp/gtklp_functions.c:2869
+msgid "Printer Templates"
+msgstr "Printerskabeloner"
+
+#: gtklp/gtklp_functions.c:2900
+msgid "Printer: "
+msgstr "Printer: "
+
+#: gtklp/gtklp_functions.c:2905
+msgid "Instance: "
+msgstr "Enhed: "
+
+#: gtklp/gtklp_functions.c:2971 libgtklp/libgtklp.c:745
+msgid "Cancel"
+msgstr "Annuller"
+
+#: gtklp/gtklptab.c:288
+msgid "Look"
+msgstr "Vis"
+
+#: gtklp/gtklptab.c:305
+msgid "Show Output"
+msgstr "Vis resultat"
+
+#: gtklp/gtklptab.c:312
+msgid "Show Text"
+msgstr "Vis tekst"
+
+#: gtklp/gtklptab.c:319
+msgid "Show Image"
+msgstr "Vis billede"
+
+#: gtklp/gtklptab.c:326
+msgid "Show HP-GL/2"
+msgstr "Vis HP-GL/2"
+
+#: gtklp/gtklptab.c:333
+msgid "Show Special"
+msgstr "Vis speciel"
+
+#: gtklp/gtklptab.c:339
+msgid "Show PPD"
+msgstr "Vis PPD"
+
+#: gtklp/gtklptab.c:452
+msgid "Feel"
+msgstr "Opførsel"
+
+#: gtklp/gtklptab.c:470
+msgid "Remember last printer"
+msgstr "Husk sidste printer"
+
+#: gtklp/gtklptab.c:477
+msgid "Remember last Tab"
+msgstr "Husk sidste faneblad"
+
+#: gtklp/gtklptab.c:486
+msgid "Save all preferences on exit"
+msgstr "Gem indstillinger når programmet lukkes"
+
+#: gtklp/gtklptab.c:495
+msgid "Save number of copies on exit"
+msgstr "Gem antallet af kopier når programmet lukkes"
+
+#: gtklp/gtklptab.c:503
+msgid "Clear file list on print"
+msgstr "Ryd fillisten ved udskrivning"
+
+#: gtklp/gtklptab.c:510
+msgid "Exit on print"
+msgstr "Luk ved udskrivning"
+
+#: gtklp/gtklptab.c:517
+msgid "Show JobIDs"
+msgstr "Vis JobIDer"
+
+#: gtklp/gtklptab.c:529
+msgid "Enable Constraints check"
+msgstr "Slå kontrol af begrænsninger til"
+
+#: gtklp/gtklptab.c:535
+msgid "Check now"
+msgstr "Kontroller nu"
+
+#: gtklp/gtklptab.c:545
+msgid "Remember size and position"
+msgstr "Husk størrelse og position"
+
+#. from
+#: gtklp/gtklptab.c:690
+msgid "written by"
+msgstr "skrevet af"
+
+#. for
+#: gtklp/gtklptab.c:717
+msgid "written for cups"
+msgstr "skrevet til cups"
+
+#: gtklp/gtklptab.c:787
+msgid "Help"
+msgstr "Hjælp"
+
+#. Buttons
+#: gtklp/gtklptab.c:798
+msgid "Help on Options"
+msgstr "Hjælp om argumenter"
+
+#: gtklp/gtklptab.c:805
+#, c-format
+msgid "About %s"
+msgstr "Om %s"
+
+#: gtklp/gtklptab.c:846
+msgid "Commands and Paths"
+msgstr "Programmer og stier"
+
+#: gtklp/gtklptab.c:859
+msgid "Browser Command"
+msgstr "Browser-kommando"
+
+#: gtklp/gtklptab.c:872
+msgid "Help URL"
+msgstr "Adresse til hjælp"
+
+#: gtklp/gtklptab.c:885
+msgid "Gtklpq Command"
+msgstr "GtkLPQ-kommando"
+
+#: gtklp/hpgl2.c:114 gtklp/special.c:353
+msgid "Options"
+msgstr "Indstillinger"
+
+#: gtklp/hpgl2.c:131
+msgid "Printing in Black"
+msgstr "Udskriv sort/hvid"
+
+#: gtklp/hpgl2.c:138
+msgid "Fit on Page"
+msgstr "Tilpas siden"
+
+#: gtklp/hpgl2.c:185
+msgid "Pen Width"
+msgstr "Stregtykkelse"
+
+#. label
+#: gtklp/hpgl2.c:205
+msgid "micrometers"
+msgstr "mikrometer"
+
+#. Buttons
+#. Buttons CPI
+#. Buttons LPI
+#. Buttons CPI
+#: gtklp/hpgl2.c:210 gtklp/image.c:304 gtklp/image.c:358 gtklp/output.c:767
+#: gtklp/output.c:846 gtklp/text.c:270 gtklp/text.c:297 gtklp/text.c:324
+msgid "Default"
+msgstr "Standard"
+
+#: gtklp/hpgl2.c:228
+msgid "HP-GL/2"
+msgstr "HP-GL/2"
+
+#: gtklp/image.c:138 gtklp/image.c:231
+msgid "None"
+msgstr "Ingen"
+
+#: gtklp/image.c:140 gtklp/image.c:232
+msgid "Sheet relativ"
+msgstr "Relativt til papir"
+
+#: gtklp/image.c:142 gtklp/image.c:233
+msgid "Image relativ"
+msgstr "Relativt til billede"
+
+#: gtklp/image.c:144 gtklp/image.c:234
+msgid "PPI"
+msgstr "PPI"
+
+#: gtklp/image.c:212
+msgid "Scaling"
+msgstr "Skalering"
+
+#: gtklp/image.c:277
+msgid "Color HUE rotation"
+msgstr "Farvehjul-rotation"
+
+#: gtklp/image.c:310 gtklp/image.c:364 gtklp/output.c:773 gtklp/output.c:852
+msgid "Reset"
+msgstr "Nulstil"
+
+#: gtklp/image.c:331
+msgid "Color saturation"
+msgstr "Farvemætning"
+
+#: gtklp/image.c:433
+msgid "Position"
+msgstr "Position"
+
+#: gtklp/image.c:491
+msgid "Image"
+msgstr "Billede"
+
+#: gtklp/output.c:413
+msgid "Sheet Usage"
+msgstr "Papirbrug"
+
+#: gtklp/output.c:425
+msgid "Sheets per page"
+msgstr "Ark pr. side"
+
+#: gtklp/output.c:456
+msgid "Layout"
+msgstr "Layout"
+
+#: gtklp/output.c:491
+msgid "Border"
+msgstr "Kant"
+
+#: gtklp/output.c:577
+msgid "Orientation"
+msgstr "Orientering"
+
+#: gtklp/output.c:609
+msgid "Mirror Output"
+msgstr "Spejlvend"
+
+#: gtklp/output.c:633
+msgid "Ranges"
+msgstr "Intervaller"
+
+#: gtklp/output.c:645
+msgid "Print Range"
+msgstr "Udskriftsinterval"
+
+#: gtklp/output.c:659
+msgid "(e.g. 1-4,9,10-12)"
+msgstr "(f.eks. 1-4,9,10-12)"
+
+#: gtklp/output.c:670
+msgid "All"
+msgstr "Alle"
+
+#: gtklp/output.c:677
+msgid "Even"
+msgstr "Lige"
+
+#: gtklp/output.c:683
+msgid "Odd"
+msgstr "Ulige"
+
+#: gtklp/output.c:689
+msgid "Reverse Output Order"
+msgstr "Omvendt rækkefølge"
+
+#: gtklp/output.c:719
+msgid "Brightness"
+msgstr "Lysstyrke"
+
+#: gtklp/output.c:798
+msgid "Gamma correction"
+msgstr "Gammakorrektion"
+
+#: gtklp/output.c:868
+msgid "Output"
+msgstr "Resultat"
+
+#: gtklp/ppd.c:441
+msgid "PPD"
+msgstr "PPD"
+
+#: gtklp/special.c:116
+msgid "Banners"
+msgstr "Bannere"
+
+#. Start
+#: gtklp/special.c:139
+msgid "Start:"
+msgstr "Start:"
+
+#. Stop
+#: gtklp/special.c:162
+msgid "End:"
+msgstr "Slut:"
+
+#: gtklp/special.c:206
+msgid ""
+"You have chosen to store your password on the disk.\n"
+"This is not secure, so I recommend against doing so.\n"
+"You have been warned."
+msgstr ""
+"Du har valgt at gemme dit password på harddisken.\n"
+"Dette er ikke sikkerhedsmæssigt forsvarligt, og jeg\n"
+"anbefaler at du lader være.\n"
+"Nu er du advaret."
+
+#: gtklp/special.c:222
+msgid "Password"
+msgstr "Adgangskode"
+
+#. Login
+#: gtklp/special.c:245 libgtklp/libgtklp.c:703
+msgid "Login:"
+msgstr "Brugernavn:"
+
+#. Password
+#: gtklp/special.c:261 libgtklp/libgtklp.c:708
+msgid "Password:"
+msgstr "Adgangskode:"
+
+#: gtklp/special.c:300
+msgid "Job Name"
+msgstr "Jobnavn"
+
+#: gtklp/special.c:369
+msgid "Raw output"
+msgstr "Rå output"
+
+#: gtklp/special.c:395
+msgid "Extra Options"
+msgstr "Ekstra argumenter"
+
+#: gtklp/special.c:428
+msgid "Special"
+msgstr "Speciel"
+
+#: gtklp/text.c:238
+msgid "Sizes and Spacings"
+msgstr "Størrelser og mellemrum"
+
+#. Label CPI
+#: gtklp/text.c:254
+msgid "Chars per Inch"
+msgstr "Tegn pr. tomme"
+
+#. Label LPI
+#: gtklp/text.c:281
+msgid "Lines per Inch"
+msgstr "Linier pr. tomme"
+
+#. Label CPP
+#: gtklp/text.c:308
+msgid "Columns per Page"
+msgstr "Kolonner pr. side"
+
+#: gtklp/text.c:474
+msgid "Margins"
+msgstr "Marginer"
+
+#. Label Top
+#: gtklp/text.c:490
+msgid "Top"
+msgstr "Top"
+
+#. Label Bottom
+#: gtklp/text.c:541
+msgid "Bottom"
+msgstr "Bund"
+
+#. Label Left
+#: gtklp/text.c:593
+msgid "Left"
+msgstr "Venstre"
+
+#. Label Right
+#: gtklp/text.c:644
+msgid "Right"
+msgstr "Højre"
+
+#: gtklp/text.c:736
+msgid "Text formatting"
+msgstr "Tekstformattering"
+
+#: gtklp/text.c:753
+msgid "Use Pretty Print"
+msgstr "Brug fine indstillinger"
+
+#: gtklp/text.c:757
+msgid "Wrap text"
+msgstr "Ombryd tekst"
+
+#: gtklp/text.c:773
+msgid "Text"
+msgstr "Tekst"
+
+#. --- Info ---
+#: libgtklp/libgtklp.c:152
+msgid "Message"
+msgstr "Besked"
+
+#. --- Error ---
+#: libgtklp/libgtklp.c:169 libgtklp/libgtklp.c:890 libgtklp/libgtklp.c:903
+#: gtklpq/printer.c:691 gtklpq/printer.c:992
+msgid "Error"
+msgstr "Fejl"
+
+#: libgtklp/libgtklp.c:187
+msgid "Fehlerteufel"
+msgstr "Fejldjævel"
+
+#: libgtklp/libgtklp.c:199
+msgid "Warning!"
+msgstr "Advarsel!"
+
+#: libgtklp/libgtklp.c:537 libgtklp/libgtklp.c:565
+msgid "No printers found !"
+msgstr "Kunne ikke finde nogen printere!"
+
+#: libgtklp/libgtklp.c:550 libgtklp/libgtklp.c:552
+msgid "The given printer does not exist!"
+msgstr "Printeren findes ikke!"
+
+#: libgtklp/libgtklp.c:594
+msgid "Internal program error !"
+msgstr "Intern programfejl!"
+
+#: libgtklp/libgtklp.c:661 libgtklp/libgtklp.c:671
+msgid "Password verification"
+msgstr "Bekræft adgangskode"
+
+#: gtklpq/gtklpq.c:223
+msgid "GtkLPQ"
+msgstr "GtkLPQ"
+
+#: gtklpq/gtklpq.c:299
+msgid ""
+"Usage: gtklpq [-P|-d Printer] [-S server] [-p port] [-D] [-V] [-U user] [-t "
+"timeout] [-g geometry] [-C] [-h] [-E]"
+msgstr ""
+"Brug: gtklpq [-P|-d Printer] [-S server] [-p port] [-D] [-V] [-U bruger] [-t "
+"timeout] [-g geometri] [-C] [-h] [-E]"
+
+#: gtklpq/gtklpq.c:560 gtklpq/gtklpq.c:561
+msgid "Cancel Job"
+msgstr "Annuller job"
+
+#: gtklpq/gtklpq.c:574 gtklpq/gtklpq.c:575
+msgid "Cancel All"
+msgstr "Annuller alle"
+
+#: gtklpq/gtklpq.c:588 gtklpq/gtklpq.c:589 gtklpq/printer.c:262
+#: gtklpq/printer.c:263 gtklpq/printer.c:951 gtklpq/printer.c:953
+msgid "Hold Job"
+msgstr "Tilbagehold job"
+
+#: gtklpq/gtklpq.c:602 gtklpq/gtklpq.c:603
+msgid "Move Job"
+msgstr "Flyt job"
+
+#: gtklpq/gtklpq.c:618 gtklpq/gtklpq.c:619 gtklpq/printer.c:521
+#: gtklpq/printer.c:523
+msgid "Reject Jobs"
+msgstr "Afvis job"
+
+#: gtklpq/gtklpq.c:634 gtklpq/gtklpq.c:635 gtklpq/printer.c:483
+#: gtklpq/printer.c:485
+msgid "Stop Printer"
+msgstr "Stop printer"
+
+#: gtklpq/gtklpq.c:648 gtklpq/gtklpq.c:649
+msgid "Priority"
+msgstr "Prioritet"
+
+#: gtklpq/gtklpq.c:669
+msgid "Exit"
+msgstr "Luk"
+
+#. Hold 4
+#: gtklpq/printer.c:243 gtklpq/printer.c:846
+msgid "H"
+msgstr "H"
+
+#: gtklpq/printer.c:251 gtklpq/printer.c:252 gtklpq/printer.c:932
+#: gtklpq/printer.c:934
+msgid "Release Job"
+msgstr "Fortsæt job"
+
+#. Active 5
+#: gtklpq/printer.c:266 gtklpq/printer.c:842
+msgid "A"
+msgstr "A"
+
+#: gtklpq/printer.c:280 gtklpq/printer.c:335 gtklpq/printer.c:358
+#: gtklpq/printer.c:714 gtklpq/printer.c:738
+msgid "Rank"
+msgstr "Nummer"
+
+#: gtklpq/printer.c:281 gtklpq/printer.c:340 gtklpq/printer.c:364
+#: gtklpq/printer.c:715 gtklpq/printer.c:740
+msgid "Owner"
+msgstr "Ejer"
+
+#: gtklpq/printer.c:282 gtklpq/printer.c:345 gtklpq/printer.c:370
+#: gtklpq/printer.c:716 gtklpq/printer.c:742
+msgid "Job"
+msgstr "Job"
+
+#: gtklpq/printer.c:283 gtklpq/printer.c:351 gtklpq/printer.c:377
+msgid "File(s)"
+msgstr "Fil(er)"
+
+#: gtklpq/printer.c:284 gtklpq/printer.c:717 gtklpq/printer.c:746
+msgid "#"
+msgstr "#"
+
+#: gtklpq/printer.c:285 gtklpq/printer.c:718 gtklpq/printer.c:748
+msgid "Size"
+msgstr "Størrelse"
+
+#: gtklpq/printer.c:298
+msgid "Queue"
+msgstr "Kø"
+
+#: gtklpq/printer.c:415
+msgid "Printer Idle"
+msgstr "Printer klar"
+
+#: gtklpq/printer.c:420
+msgid "Printer Processing"
+msgstr "Printer arbejder"
+
+#: gtklpq/printer.c:425
+msgid "Printer Stopped"
+msgstr "Printer standset"
+
+#: gtklpq/printer.c:465 gtklpq/printer.c:467
+msgid "Start Printer"
+msgstr "Start printer"
+
+#: gtklpq/printer.c:503 gtklpq/printer.c:505
+msgid "Accept Jobs"
+msgstr "Accepter jobs"
+
+#: gtklpq/printer.c:719 gtklpq/printer.c:744
+msgid "Job(s)"
+msgstr "Job"
+
+#: gtklpq/printer.c:779
+msgid "Untitled"
+msgstr "Unavngivet"
+
+#. Pending 3
+#: gtklpq/printer.c:850
+msgid "P"
+msgstr "P"
+
+#: gtklpq/printer.c:854
+msgid "S"
+msgstr "S"
+
+#: gtklpq/printer.c:858
+msgid "ca"
+msgstr "ca"
+
+#: gtklpq/printer.c:862
+msgid "ab"
+msgstr "ab"
+
+#: gtklpq/printer.c:866
+msgid "."
+msgstr "."
+
+#: gtklpq/printer.c:1002
+msgid "No jobs."
+msgstr "Ingen job."
+
+#: gtklpq/printer.c:1036 gtklpq/printer.c:1040 gtklpq/printer.c:1049
+msgid "Are you sure?"
+msgstr "Er du sikker?"
+
+#: gtklpq/printer.c:1110
+msgid "And for what reason ?"
+msgstr "Af hvilken grund?"
+
+#: gtklpq/printer.c:1145
+msgid "Yes"
+msgstr "Ja"
+
+#: gtklpq/printer.c:1149
+msgid "No"
+msgstr "Nej"
+
+#: gtklpq/printer.c:1163
+msgid "Do you really want to cancel this job?"
+msgstr "Er du sikker på at du vil annullere dette job?"
+
+#: gtklpq/printer.c:1174
+msgid "Do you really want to cancel ALL jobs?"
+msgstr "Er du sikker på at du vil annullere ALLE job?"
+
+#: gtklpq/printer.c:1186
+msgid "Do you really want to hold this job?"
+msgstr "Er du sikker på at du vil tilbageholde dette job?"
+
+#: gtklpq/printer.c:1196
+msgid "Do you really want to release this job?"
+msgstr "Er du sikker på at du vil fortsætte dette job?"
+
+#: gtklpq/printer.c:1211
+msgid "Do you really want to move this Job to the following queue?"
+msgstr "Er du sikker på at du vil flytte dette job til køen?"
+
+#: gtklpq/printer.c:1223
+msgid "Do you really want to stop this printer?"
+msgstr "Er du sikker på at du vil stoppe denne printer?"
+
+#: gtklpq/printer.c:1233
+msgid "Do you really want to start this printer?"
+msgstr "Er du sikker på at du vil starte denne printer?"
+
+#: gtklpq/printer.c:1246
+msgid "Do you really want to change the job priority?"
+msgstr "Er du sikker på at du vil ændre prioriteten af dette job?"
+
+#: gtklpq/printer.c:1259
+msgid "Do you really want to reject jobs for this printer?"
+msgstr "Er du sikker på at du vil afvise job for denne printer?"
+
+#: gtklpq/printer.c:1269
+msgid "Do you really want to accept jobs for this printer?"
+msgstr "Er du sikker på at du vil modtage job på denne printer?"
+
+#: gtklpq/printer.c:1348 gtklpq/printer.c:1358
+msgid "Unable to change priority!"
+msgstr "Kunne ikke ændre prioritet!"
+
+#: gtklpq/printer.c:1542
+msgid "Job or printer not found!"
+msgstr "Kunne ikke finde job eller printer!"
+
+#: gtklpq/printer.c:1546
+msgid "Authorization failed!"
+msgstr "Login mislykkedes!"
+
+#: gtklpq/printer.c:1549
+msgid "You don't own this job!"
+msgstr "Du er ikke ejeren af dette job!"
+
+#: gtklpq/printer.c:1553 gtklpq/printer.c:1589
+msgid "Unable to do so!"
+msgstr "Handlingen fejlede!"
+
+#: gtklpq/printer.c:1561
+msgid "Unable to cancel job(s)!"
+msgstr "Kunne ikke annullere job!"
+
+#: gtklpq/printer.c:1566
+msgid "Unable to cancel printer!"
+msgstr "Kunne ikke annullere printeren!"
+
+#: gtklpq/printer.c:1572
+msgid "Unable to start printer!"
+msgstr "Kunne ikke starte printeren!"
+
+#: gtklpq/printer.c:1578
+msgid "Unable to accept jobs for this printer!"
+msgstr "Kunne ikke modtage job på denne printer!"
+
+#: gtklpq/printer.c:1584
+msgid "Unable to reject jobs for this printer!"
+msgstr "Kunne ikke afvise job for denne printer!"

@@ -1,0 +1,941 @@
+# Polish translation of gtklp.
+# Copyright (C) 2006 Tobias Müller
+# This file is distributed under the same license as the gtklp package.
+# <sirtobi@stud.uni-hannover.de>, 2006.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtklp 1.3.4\n"
+"Report-Msgid-Bugs-To: gtklp@sirtobi.com\n"
+"POT-Creation-Date: 2007-09-08 14:32+0200\n"
+"PO-Revision-Date: 2006-02-20 11:26+0100\n"
+"Last-Translator:  <sirtobi@stud.uni-hannover.de>\n"
+"Language-Team: Polish <pl@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gtklp/file.c:285 gtklp/file.c:288
+msgid "Print File..."
+msgstr "Drukuj plik..."
+
+#: gtklp/file.c:435
+msgid "Files to print"
+msgstr "Pliki do wydruku"
+
+#: gtklp/file.c:473
+msgid "Add"
+msgstr "Dodaj"
+
+#: gtklp/file.c:482 gtklp/gtklp_functions.c:2963
+msgid "Remove"
+msgstr "Usuń"
+
+#: gtklp/file.c:491
+msgid "Remove All"
+msgstr "Usuń wszystko"
+
+#: gtklp/file.c:516
+msgid "File"
+msgstr "Plik"
+
+#. PrinterLocation
+#: gtklp/general.c:74
+msgid "Location"
+msgstr "Położenie"
+
+#: gtklp/general.c:455
+msgid "Duplex Settings"
+msgstr "Dupleks"
+
+#: gtklp/general.c:479
+msgid "No Duplex"
+msgstr "Druk jednostronny"
+
+#: gtklp/general.c:496
+msgid "Long edge binding"
+msgstr "Otwieranie na lewo"
+
+#: gtklp/general.c:513
+msgid "Short edge binding"
+msgstr "Otwieranie do góry"
+
+#: gtklp/general.c:542
+msgid "Media Selections"
+msgstr "Wybór papieru"
+
+#: gtklp/general.c:556
+msgid "Media Size"
+msgstr "Rozmiar"
+
+#: gtklp/general.c:631
+msgid "Media Type"
+msgstr "Typ"
+
+#: gtklp/general.c:653
+msgid "Media Source"
+msgstr "Źródło"
+
+#: gtklp/general.c:704
+msgid "Number of Copies"
+msgstr "Ilość kopi"
+
+#: gtklp/general.c:724
+msgid "Collate Copies"
+msgstr "Uporządkuj kopie"
+
+#: gtklp/general.c:924
+msgid "Other actions"
+msgstr "Inne akcje"
+
+#. Button
+#: gtklp/general.c:935
+msgid "Call GtkLPQ"
+msgstr "Uruchom GtkLPQ"
+
+#: gtklp/general.c:955 gtklpq/printer.c:161
+msgid "Printer"
+msgstr "Drukarka"
+
+#. Add Favorites Button
+#: gtklp/general.c:989
+msgid "Add favorite"
+msgstr ""
+
+#. Remove Favorites Button
+#: gtklp/general.c:996
+msgid "Remove favorite"
+msgstr ""
+
+#: gtklp/general.c:1041
+msgid "General"
+msgstr "Główne"
+
+#: gtklp/gtklp.c:266
+msgid "Please wait!"
+msgstr "Prosze czekać!"
+
+#: gtklp/gtklp.c:290 gtklpq/gtklpq.c:306
+msgid "This option requires an value !"
+msgstr "Ta opcja musi zostać wypełniona!"
+
+#: gtklp/gtklp.c:327
+msgid ""
+"Usage: gtklp [-P|-d printer] [-c configdir] [-S server] [-U user] [-p port] "
+"[-l] [-D] [-V] [-b] [-i] [-# n] [-C] [-H] [-E] [-J jobname] [-q priority] [-"
+"o option=value ...] [file(s)]\n"
+msgstr ""
+"Użycie: gtklp [-P|-d drukarka] [-c kat_konfig.] [-S serwer] [-U użytkownik] "
+"[-d port] [-l] [-D] [-V] [-b] [-i] [-# n] [-C] [-H] [-E] [-J nazwa_zadania] "
+"[-q priorytet][-o opcja=wartość ...] [plik(i)]\n"
+
+#: gtklp/gtklp.c:340
+msgid "Function is not supported for now !"
+msgstr "Funkcja jest aktualnie niedostępna!"
+
+#: gtklp/gtklp.c:369 gtklpq/gtklpq.c:261
+msgid "Invalid Portnumber !"
+msgstr "Błędny numer portu!"
+
+#: gtklp/gtklp.c:397 gtklpq/gtklpq.c:281
+msgid "Invalid Printername !"
+msgstr "Błędna nazwa drukarki!"
+
+#: gtklp/gtklp.c:416 gtklpq/gtklpq.c:317
+msgid "Invalid Servername !"
+msgstr "Błędna nazwa serwera!"
+
+#: gtklp/gtklp.c:428 gtklpq/gtklpq.c:329
+msgid "Invalid Username !"
+msgstr "Błędna nazwa użytkownika!"
+
+#: gtklp/gtklp.c:469 gtklp/gtklptab.c:678 gtklpq/gtklpq.c:338
+msgid "version"
+msgstr "wersja"
+
+#: gtklp/gtklp.c:536
+#, c-format
+msgid "-E: %s\n"
+msgstr "-E:·%s\n"
+
+#: gtklp/gtklp.c:538 gtklpq/gtklpq.c:364
+msgid "Sorry, this function is not compiled in !"
+msgstr "Przykro mi, ta funkcja nie została wkompilowana!"
+
+#: gtklp/gtklp.c:572
+msgid "Too many files to print !"
+msgstr "Za dużo plików do wydrukowania!"
+
+#: gtklp/gtklp.c:624 gtklpq/gtklpq.c:387
+msgid "No Cups-Server found !"
+msgstr "Nie znaleziono serwera Cups!"
+
+#: gtklp/gtklp.c:652 gtklpq/gtklpq.c:399
+#, c-format
+msgid "Unable to connect to Server %s !"
+msgstr "Nie można połączyć się z serwerem %s!"
+
+#: gtklp/gtklp.c:708 gtklpq/gtklpq.c:450
+msgid "No Printer found to use as default !"
+msgstr "Żadna drukarka nie jest ustawiona jako domyślna!"
+
+#: gtklp/gtklp.c:737
+msgid "Print"
+msgstr "Drukuj"
+
+#: gtklp/gtklp.c:751
+msgid "Reset All"
+msgstr "Zeruj wszystko"
+
+#: gtklp/gtklp.c:763
+msgid "Templates"
+msgstr "Szablony"
+
+#: gtklp/gtklp.c:775
+msgid "Close"
+msgstr "Zamknij"
+
+#: gtklp/gtklp_functions.c:916
+msgid ""
+"The PPD for this printer has changed!\n"
+"Resetting..."
+msgstr ""
+"PPD dla tej drukarki zostało zmienione!\n"
+"Ponowne uruchamianie..."
+
+#: gtklp/gtklp_functions.c:1560 gtklp/gtklp_functions.c:1584
+#: gtklp/gtklp_functions.c:1699
+msgid "Error saving user-settings!"
+msgstr "Błąd zapisu ustawień użytkownika!"
+
+#: gtklp/gtklp_functions.c:1643
+msgid "Too many printers!"
+msgstr "Za dużo drukarek!"
+
+#: gtklp/gtklp_functions.c:1654
+msgid "Unable to add instance!"
+msgstr "Nie można dodać instancji!"
+
+#: gtklp/gtklp_functions.c:2169 gtklp/gtklp_functions.c:2174
+#: gtklp/gtklp_functions.c:2781
+msgid "Options saved!"
+msgstr "Opcje zapisane!"
+
+#: gtklp/gtklp_functions.c:2244
+msgid "Instance removed!"
+msgstr "Instancja usunięta!"
+
+#: gtklp/gtklp_functions.c:2253
+msgid "Saved Defaults loaded!"
+msgstr "Przywrócono domyślne ustawienia!"
+
+#: gtklp/gtklp_functions.c:2324
+msgid ""
+"Unable to print,\n"
+"unknown file format!"
+msgstr ""
+"Nie można drukować,\n"
+"nieznany format pliku!"
+
+#: gtklp/gtklp_functions.c:2329 gtklp/gtklp_functions.c:2396
+msgid "JobID"
+msgstr "ID zadania"
+
+#: gtklp/gtklp_functions.c:2337
+msgid "Dont know what to print!"
+msgstr "Nie wiem co mam drukować!"
+
+#: gtklp/gtklp_functions.c:2357 gtklp/gtklp_functions.c:2366
+#: gtklp/gtklp_functions.c:2392
+msgid "Unable to print!"
+msgstr "Nie można drukować!"
+
+#: gtklp/gtklp_functions.c:2388
+msgid "(stdin)"
+msgstr "(stdin)"
+
+#: gtklp/gtklp_functions.c:2503 gtklp/gtklp_functions.c:2509
+msgid "Conflicts"
+msgstr "Konflikty"
+
+#: gtklp/gtklp_functions.c:2556 gtklp/gtklptab.c:753 libgtklp/libgtklp.c:130
+#: libgtklp/libgtklp.c:741 libgtklp/libgtklp.c:958
+msgid "Ok"
+msgstr "Ok"
+
+#: gtklp/gtklp_functions.c:2793 gtklp/gtklp_functions.c:2816
+#: gtklp/gtklp_functions.c:2958 gtklp/gtklptab.c:952
+msgid "Save"
+msgstr "Zapisz"
+
+#: gtklp/gtklp_functions.c:2829
+msgid "New"
+msgstr "Nowy"
+
+#: gtklp/gtklp_functions.c:2863 gtklp/gtklp_functions.c:2869
+msgid "Printer Templates"
+msgstr "Szablony drukarek"
+
+#: gtklp/gtklp_functions.c:2900
+msgid "Printer: "
+msgstr "Drukarka: "
+
+#: gtklp/gtklp_functions.c:2905
+msgid "Instance: "
+msgstr "Instancja:"
+
+#: gtklp/gtklp_functions.c:2971 libgtklp/libgtklp.c:745
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: gtklp/gtklptab.c:288
+msgid "Look"
+msgstr "Wygląd"
+
+#: gtklp/gtklptab.c:305
+msgid "Show Output"
+msgstr "Pokaż wyjścia"
+
+#: gtklp/gtklptab.c:312
+msgid "Show Text"
+msgstr "Pokaż tekst"
+
+#: gtklp/gtklptab.c:319
+msgid "Show Image"
+msgstr "Pokaż obrazki"
+
+#: gtklp/gtklptab.c:326
+msgid "Show HP-GL/2"
+msgstr "Pokaż HP-GL/2"
+
+#: gtklp/gtklptab.c:333
+msgid "Show Special"
+msgstr "Pokaż specjalne"
+
+#: gtklp/gtklptab.c:339
+msgid "Show PPD"
+msgstr "Pokaż PPD"
+
+#: gtklp/gtklptab.c:452
+msgid "Feel"
+msgstr "Ustawienia"
+
+#: gtklp/gtklptab.c:470
+msgid "Remember last printer"
+msgstr "Zapamiętanie ostatniej drukarki"
+
+#: gtklp/gtklptab.c:477
+msgid "Remember last Tab"
+msgstr "Zapamiętanie ostatniej zakładki"
+
+#: gtklp/gtklptab.c:486
+msgid "Save all preferences on exit"
+msgstr "Zapis ustawień przed wyjściem"
+
+#: gtklp/gtklptab.c:495
+msgid "Save number of copies on exit"
+msgstr "Zapis liczby kopii przed wyjściem"
+
+#: gtklp/gtklptab.c:503
+msgid "Clear file list on print"
+msgstr "Wyczyść listę plików po wydruku"
+
+#: gtklp/gtklptab.c:510
+msgid "Exit on print"
+msgstr "Zakończ program po wydruku"
+
+#: gtklp/gtklptab.c:517
+msgid "Show JobIDs"
+msgstr "Pokaż numery zadań"
+
+#: gtklp/gtklptab.c:529
+msgid "Enable Constraints check"
+msgstr "Sprawdzanie konfliktów"
+
+#: gtklp/gtklptab.c:535
+msgid "Check now"
+msgstr "Sprawdź teraz"
+
+#: gtklp/gtklptab.c:545
+msgid "Remember size and position"
+msgstr "Zapamiętaj rozmiar i pozycje"
+
+#. from
+#: gtklp/gtklptab.c:690
+msgid "written by"
+msgstr "napisany przez"
+
+#. for
+#: gtklp/gtklptab.c:717
+msgid "written for cups"
+msgstr "napisany dla cups"
+
+#: gtklp/gtklptab.c:787
+msgid "Help"
+msgstr "Pomoc"
+
+#. Buttons
+#: gtklp/gtklptab.c:798
+msgid "Help on Options"
+msgstr "Opcje"
+
+#: gtklp/gtklptab.c:805
+#, c-format
+msgid "About %s"
+msgstr "O %s"
+
+#: gtklp/gtklptab.c:846
+msgid "Commands and Paths"
+msgstr "Polecenia i ścieżki"
+
+#: gtklp/gtklptab.c:859
+msgid "Browser Command"
+msgstr "Przeglądarka"
+
+#: gtklp/gtklptab.c:872
+msgid "Help URL"
+msgstr "URL pomocy"
+
+#: gtklp/gtklptab.c:885
+msgid "Gtklpq Command"
+msgstr "Komenda gtklpq"
+
+#: gtklp/hpgl2.c:114 gtklp/special.c:353
+msgid "Options"
+msgstr "Opcje"
+
+#: gtklp/hpgl2.c:131
+msgid "Printing in Black"
+msgstr "Druk czarno-biały"
+
+#: gtklp/hpgl2.c:138
+msgid "Fit on Page"
+msgstr "Dopasuj do strony"
+
+#: gtklp/hpgl2.c:185
+msgid "Pen Width"
+msgstr "Szerokość pióra"
+
+#. label
+#: gtklp/hpgl2.c:205
+msgid "micrometers"
+msgstr "mikrometrów"
+
+#. Buttons
+#. Buttons CPI
+#. Buttons LPI
+#. Buttons CPI
+#: gtklp/hpgl2.c:210 gtklp/image.c:304 gtklp/image.c:358 gtklp/output.c:767
+#: gtklp/output.c:846 gtklp/text.c:270 gtklp/text.c:297 gtklp/text.c:324
+msgid "Default"
+msgstr "Domyślne"
+
+#: gtklp/hpgl2.c:228
+msgid "HP-GL/2"
+msgstr "HP-GL/2"
+
+#: gtklp/image.c:138 gtklp/image.c:231
+msgid "None"
+msgstr "Żadne"
+
+#: gtklp/image.c:140 gtklp/image.c:232
+msgid "Sheet relativ"
+msgstr "Względem strony"
+
+#: gtklp/image.c:142 gtklp/image.c:233
+msgid "Image relativ"
+msgstr "Względem obrazka"
+
+#: gtklp/image.c:144 gtklp/image.c:234
+msgid "PPI"
+msgstr "PPI"
+
+#: gtklp/image.c:212
+msgid "Scaling"
+msgstr "Skalowanie"
+
+#: gtklp/image.c:277
+msgid "Color HUE rotation"
+msgstr "Zmiana barw"
+
+#: gtklp/image.c:310 gtklp/image.c:364 gtklp/output.c:773 gtklp/output.c:852
+msgid "Reset"
+msgstr "Zerowanie"
+
+#: gtklp/image.c:331
+msgid "Color saturation"
+msgstr "Nasycenie koloru"
+
+#: gtklp/image.c:433
+msgid "Position"
+msgstr "Pozycja"
+
+#: gtklp/image.c:491
+msgid "Image"
+msgstr "Obrazek"
+
+#: gtklp/output.c:413
+msgid "Sheet Usage"
+msgstr "Ustawienia strony"
+
+#: gtklp/output.c:425
+msgid "Sheets per page"
+msgstr "Stron na kartkę"
+
+#: gtklp/output.c:456
+msgid "Layout"
+msgstr "Położenie"
+
+#: gtklp/output.c:491
+msgid "Border"
+msgstr "Ramka"
+
+#: gtklp/output.c:577
+msgid "Orientation"
+msgstr "Orientacja"
+
+#: gtklp/output.c:609
+msgid "Mirror Output"
+msgstr "Odbicie lustrzane"
+
+#: gtklp/output.c:633
+msgid "Ranges"
+msgstr "Zakresy"
+
+#: gtklp/output.c:645
+msgid "Print Range"
+msgstr "Zakres wydruku"
+
+#: gtklp/output.c:659
+msgid "(e.g. 1-4,9,10-12)"
+msgstr "(np. 1-4,9,10-12)"
+
+#: gtklp/output.c:670
+msgid "All"
+msgstr "Wszystko"
+
+#: gtklp/output.c:677
+msgid "Even"
+msgstr "Parzyste"
+
+#: gtklp/output.c:683
+msgid "Odd"
+msgstr "Nieparzyste"
+
+#: gtklp/output.c:689
+msgid "Reverse Output Order"
+msgstr "Drukowanie od końca"
+
+#: gtklp/output.c:719
+msgid "Brightness"
+msgstr "Jasność"
+
+#: gtklp/output.c:798
+msgid "Gamma correction"
+msgstr "Korekcja gamma"
+
+#: gtklp/output.c:868
+msgid "Output"
+msgstr "Wyjście"
+
+#: gtklp/ppd.c:441
+msgid "PPD"
+msgstr "PPD"
+
+#: gtklp/special.c:116
+msgid "Banners"
+msgstr "Oznaczenia"
+
+#. Start
+#: gtklp/special.c:139
+msgid "Start:"
+msgstr "Start:"
+
+#. Stop
+#: gtklp/special.c:162
+msgid "End:"
+msgstr "Koniec:"
+
+#: gtklp/special.c:206
+msgid ""
+"You have chosen to store your password on the disk.\n"
+"This is not secure, so I recommend against doing so.\n"
+"You have been warned."
+msgstr ""
+"Została wybrana opcja zachowania hasła na dysku.\n"
+" Nie jest to bezpieczne, więc nie zalecam tego robić.\n"
+"Zostałeś ostrzeżony."
+
+#: gtklp/special.c:222
+msgid "Password"
+msgstr "Hasło"
+
+#. Login
+#: gtklp/special.c:245 libgtklp/libgtklp.c:703
+msgid "Login:"
+msgstr "Login:"
+
+#. Password
+#: gtklp/special.c:261 libgtklp/libgtklp.c:708
+msgid "Password:"
+msgstr "Hasło:"
+
+#: gtklp/special.c:300
+msgid "Job Name"
+msgstr "Nazwa zadania"
+
+#: gtklp/special.c:369
+msgid "Raw output"
+msgstr "Surowe wyjście"
+
+#: gtklp/special.c:395
+msgid "Extra Options"
+msgstr "Dodatkowe opcje"
+
+#: gtklp/special.c:428
+msgid "Special"
+msgstr "Specjalne"
+
+#: gtklp/text.c:238
+msgid "Sizes and Spacings"
+msgstr "Rozmiary i odstępy"
+
+#. Label CPI
+#: gtklp/text.c:254
+msgid "Chars per Inch"
+msgstr "Znaków na cal"
+
+#. Label LPI
+#: gtklp/text.c:281
+msgid "Lines per Inch"
+msgstr "Linii na cal"
+
+#. Label CPP
+#: gtklp/text.c:308
+msgid "Columns per Page"
+msgstr "Kolumn na stronę"
+
+#: gtklp/text.c:474
+msgid "Margins"
+msgstr "Marginesy"
+
+#. Label Top
+#: gtklp/text.c:490
+msgid "Top"
+msgstr "Góra"
+
+#. Label Bottom
+#: gtklp/text.c:541
+msgid "Bottom"
+msgstr "Dół"
+
+#. Label Left
+#: gtklp/text.c:593
+msgid "Left"
+msgstr "Lewo"
+
+#. Label Right
+#: gtklp/text.c:644
+msgid "Right"
+msgstr "Prawo"
+
+#: gtklp/text.c:736
+msgid "Text formatting"
+msgstr "Formatowanie tekstu"
+
+#: gtklp/text.c:753
+msgid "Use Pretty Print"
+msgstr "Użyj druku wysokiej jakości"
+
+#: gtklp/text.c:757
+msgid "Wrap text"
+msgstr "Zawijaj tekst"
+
+#: gtklp/text.c:773
+msgid "Text"
+msgstr "Tekst"
+
+#. --- Info ---
+#: libgtklp/libgtklp.c:152
+msgid "Message"
+msgstr "Komunikat"
+
+#. --- Error ---
+#: libgtklp/libgtklp.c:169 libgtklp/libgtklp.c:890 libgtklp/libgtklp.c:903
+#: gtklpq/printer.c:691 gtklpq/printer.c:992
+msgid "Error"
+msgstr "Błąd"
+
+#: libgtklp/libgtklp.c:187
+msgid "Fehlerteufel"
+msgstr "Fehlerteufel"
+
+#: libgtklp/libgtklp.c:199
+msgid "Warning!"
+msgstr "Ostrzeżenie!"
+
+#: libgtklp/libgtklp.c:537 libgtklp/libgtklp.c:565
+msgid "No printers found !"
+msgstr "Nie została znaleziona żadna drukarka!"
+
+#: libgtklp/libgtklp.c:550 libgtklp/libgtklp.c:552
+msgid "The given printer does not exist!"
+msgstr "Podana drukarka nie istnieje!"
+
+#: libgtklp/libgtklp.c:594
+msgid "Internal program error !"
+msgstr "Wewnętrzny błąd programu!"
+
+#: libgtklp/libgtklp.c:661 libgtklp/libgtklp.c:671
+msgid "Password verification"
+msgstr "Weryfikacja hasła"
+
+#: gtklpq/gtklpq.c:223
+msgid "GtkLPQ"
+msgstr "GtkLPQ"
+
+#: gtklpq/gtklpq.c:299
+msgid ""
+"Usage: gtklpq [-P|-d Printer] [-S server] [-p port] [-D] [-V] [-U user] [-t "
+"timeout] [-g geometry] [-C] [-h] [-E]"
+msgstr ""
+"Użycie: gtklpq [-P|-d drukarka] [-S serwer] [-p port] [-D] [-V] [-U "
+"użytkownik] [-t timeout] [-g geometria] [-C] [-h] [-E]"
+
+#: gtklpq/gtklpq.c:560 gtklpq/gtklpq.c:561
+msgid "Cancel Job"
+msgstr "Anuluj zadanie"
+
+#: gtklpq/gtklpq.c:574 gtklpq/gtklpq.c:575
+msgid "Cancel All"
+msgstr "Anuluj wszystkie"
+
+#: gtklpq/gtklpq.c:588 gtklpq/gtklpq.c:589 gtklpq/printer.c:262
+#: gtklpq/printer.c:263 gtklpq/printer.c:951 gtklpq/printer.c:953
+msgid "Hold Job"
+msgstr "Wstrzymaj zadanie"
+
+#: gtklpq/gtklpq.c:602 gtklpq/gtklpq.c:603
+msgid "Move Job"
+msgstr "Przesuń zadanie"
+
+#: gtklpq/gtklpq.c:618 gtklpq/gtklpq.c:619 gtklpq/printer.c:521
+#: gtklpq/printer.c:523
+msgid "Reject Jobs"
+msgstr "Odrzuć zadania"
+
+#: gtklpq/gtklpq.c:634 gtklpq/gtklpq.c:635 gtklpq/printer.c:483
+#: gtklpq/printer.c:485
+msgid "Stop Printer"
+msgstr "Zatrzymaj drukarkę"
+
+#: gtklpq/gtklpq.c:648 gtklpq/gtklpq.c:649
+msgid "Priority"
+msgstr "Priorytet"
+
+#: gtklpq/gtklpq.c:669
+msgid "Exit"
+msgstr "Wyjdź"
+
+#. Hold 4
+#: gtklpq/printer.c:243 gtklpq/printer.c:846
+msgid "H"
+msgstr "H"
+
+#: gtklpq/printer.c:251 gtklpq/printer.c:252 gtklpq/printer.c:932
+#: gtklpq/printer.c:934
+msgid "Release Job"
+msgstr "Wznów zadanie"
+
+#. Active 5
+#: gtklpq/printer.c:266 gtklpq/printer.c:842
+msgid "A"
+msgstr "A"
+
+#: gtklpq/printer.c:280 gtklpq/printer.c:335 gtklpq/printer.c:358
+#: gtklpq/printer.c:714 gtklpq/printer.c:738
+msgid "Rank"
+msgstr "Miejscie"
+
+#: gtklpq/printer.c:281 gtklpq/printer.c:340 gtklpq/printer.c:364
+#: gtklpq/printer.c:715 gtklpq/printer.c:740
+msgid "Owner"
+msgstr "Właściciel"
+
+#: gtklpq/printer.c:282 gtklpq/printer.c:345 gtklpq/printer.c:370
+#: gtklpq/printer.c:716 gtklpq/printer.c:742
+msgid "Job"
+msgstr "Zadanie"
+
+#: gtklpq/printer.c:283 gtklpq/printer.c:351 gtklpq/printer.c:377
+msgid "File(s)"
+msgstr "Plik(i)"
+
+#: gtklpq/printer.c:284 gtklpq/printer.c:717 gtklpq/printer.c:746
+msgid "#"
+msgstr "#"
+
+#: gtklpq/printer.c:285 gtklpq/printer.c:718 gtklpq/printer.c:748
+msgid "Size"
+msgstr "Rozmiar"
+
+#: gtklpq/printer.c:298
+msgid "Queue"
+msgstr "Kolejka"
+
+#: gtklpq/printer.c:415
+msgid "Printer Idle"
+msgstr "Bezczynna drukarka"
+
+#: gtklpq/printer.c:420
+msgid "Printer Processing"
+msgstr "Drukarka przetwarza"
+
+#: gtklpq/printer.c:425
+msgid "Printer Stopped"
+msgstr "Drukarka zatrzymana"
+
+#: gtklpq/printer.c:465 gtklpq/printer.c:467
+msgid "Start Printer"
+msgstr "Uruchom drukarkę"
+
+#: gtklpq/printer.c:503 gtklpq/printer.c:505
+msgid "Accept Jobs"
+msgstr "Akceptuj zadania"
+
+#: gtklpq/printer.c:719 gtklpq/printer.c:744
+msgid "Job(s)"
+msgstr "Zadania"
+
+#: gtklpq/printer.c:779
+msgid "Untitled"
+msgstr "Nienazwane"
+
+#. Pending 3
+#: gtklpq/printer.c:850
+msgid "P"
+msgstr " "
+
+#: gtklpq/printer.c:854
+msgid "S"
+msgstr "S"
+
+#: gtklpq/printer.c:858
+msgid "ca"
+msgstr "ca"
+
+#: gtklpq/printer.c:862
+msgid "ab"
+msgstr "ab"
+
+#: gtklpq/printer.c:866
+msgid "."
+msgstr " "
+
+#: gtklpq/printer.c:1002
+msgid "No jobs."
+msgstr "Brak zadań."
+
+#: gtklpq/printer.c:1036 gtklpq/printer.c:1040 gtklpq/printer.c:1049
+msgid "Are you sure?"
+msgstr "Czy jesteś pewien?"
+
+#: gtklpq/printer.c:1110
+msgid "And for what reason ?"
+msgstr "Z jakiego powodu?"
+
+#: gtklpq/printer.c:1145
+msgid "Yes"
+msgstr "Tak"
+
+#: gtklpq/printer.c:1149
+msgid "No"
+msgstr "Nie"
+
+#: gtklpq/printer.c:1163
+msgid "Do you really want to cancel this job?"
+msgstr "Czy na pewno chcesz anulować to zadanie?"
+
+#: gtklpq/printer.c:1174
+msgid "Do you really want to cancel ALL jobs?"
+msgstr "Czy na pewno chcesz anulować WSZYSTKIE zadania?"
+
+#: gtklpq/printer.c:1186
+msgid "Do you really want to hold this job?"
+msgstr "Czy na pewno chcesz wstrzymać to zadanie?"
+
+#: gtklpq/printer.c:1196
+msgid "Do you really want to release this job?"
+msgstr "Czy na pewno chcesz wznowić to zadanie?"
+
+#: gtklpq/printer.c:1211
+msgid "Do you really want to move this Job to the following queue?"
+msgstr "Czy na pewno chcesz przesunąć to zadanie do tej kolejki?"
+
+#: gtklpq/printer.c:1223
+msgid "Do you really want to stop this printer?"
+msgstr "Czy na pewno chcesz zatrzymać drukarkę?"
+
+#: gtklpq/printer.c:1233
+msgid "Do you really want to start this printer?"
+msgstr "Czy na pewno chcesz uruchomić drukarkę?"
+
+#: gtklpq/printer.c:1246
+msgid "Do you really want to change the job priority?"
+msgstr "Czy na pewno chcesz zmienić priorytet zadania?"
+
+#: gtklpq/printer.c:1259
+msgid "Do you really want to reject jobs for this printer?"
+msgstr "Czy na pewno chcesz odrzucić zadania drukowania dla tej drukarki?"
+
+#: gtklpq/printer.c:1269
+msgid "Do you really want to accept jobs for this printer?"
+msgstr "Czy na pewno chcesz zaakceptować zadania dla tej drukarki?"
+
+#: gtklpq/printer.c:1348 gtklpq/printer.c:1358
+msgid "Unable to change priority!"
+msgstr "Nie można zmienić priorytetu zadania!"
+
+#: gtklpq/printer.c:1542
+msgid "Job or printer not found!"
+msgstr "Zadanie lub drukarka nie zostały znalezione!"
+
+#: gtklpq/printer.c:1546
+msgid "Authorization failed!"
+msgstr "Autoryzacja nie powiodła się!"
+
+#: gtklpq/printer.c:1549
+msgid "You don't own this job!"
+msgstr "Nie jesteś właścicielem tego zadania!"
+
+#: gtklpq/printer.c:1553 gtklpq/printer.c:1589
+msgid "Unable to do so!"
+msgstr "Nie można tego zrobić!"
+
+#: gtklpq/printer.c:1561
+msgid "Unable to cancel job(s)!"
+msgstr "Nie można anulować zadania!"
+
+#: gtklpq/printer.c:1566
+msgid "Unable to cancel printer!"
+msgstr "Nie można przerwać drukowania!"
+
+#: gtklpq/printer.c:1572
+msgid "Unable to start printer!"
+msgstr "Nie można uruchomić drukarki!"
+
+#: gtklpq/printer.c:1578
+msgid "Unable to accept jobs for this printer!"
+msgstr "Nie można zaakceptować zadań dla tej drukarki!"
+
+#: gtklpq/printer.c:1584
+msgid "Unable to reject jobs for this printer!"
+msgstr "Nie można odrzucić zadań dla tej drukarki!"
+
+#~ msgid "You have installed too many printers or templates !"
+#~ msgstr "Zainstalowano za dużo drukarek lub szablonów!"
+
+#~ msgid "visit"
+#~ msgstr "odwiedź"

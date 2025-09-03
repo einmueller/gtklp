@@ -1,0 +1,962 @@
+# Traditional Chinese translation for gtklp.
+# Copyright (C) YEAR Tobias Müller
+# This file is distributed under the same license as the PACKAGE package.
+# Hsiu-Ching Cheng <barramundi9@hotmail.com>, YEAR.
+# Ambrose LI Cheuk-Wing <acli@ada.dhs.org>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtklp 1.3.4\n"
+"Report-Msgid-Bugs-To: gtklp@sirtobi.com\n"
+"POT-Creation-Date: 2007-09-08 14:32+0200\n"
+"PO-Revision-Date: 2005-04-30 11:18-0400\n"
+"Last-Translator: Ambrose Li <acli@ada.dhs.org>\n"
+"Language-Team: zh <zh-l10n@linux.org.tw>\n"
+"Language: cht\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gtklp/file.c:285 gtklp/file.c:288
+msgid "Print File..."
+msgstr "列印中..."
+
+#: gtklp/file.c:435
+msgid "Files to print"
+msgstr "欲列印檔案"
+
+#: gtklp/file.c:473
+msgid "Add"
+msgstr "增加"
+
+#: gtklp/file.c:482 gtklp/gtklp_functions.c:2963
+msgid "Remove"
+msgstr "移除"
+
+#: gtklp/file.c:491
+msgid "Remove All"
+msgstr "全部移除"
+
+#: gtklp/file.c:516
+msgid "File"
+msgstr "檔案"
+
+#. PrinterLocation
+#: gtklp/general.c:74
+msgid "Location"
+msgstr "地點"
+
+#: gtklp/general.c:455
+msgid "Duplex Settings"
+msgstr "雙面列印設定"
+
+#: gtklp/general.c:479
+msgid "No Duplex"
+msgstr "單面列印"
+
+#: gtklp/general.c:496
+msgid "Long edge binding"
+msgstr "長邊裝訂"
+
+#: gtklp/general.c:513
+msgid "Short edge binding"
+msgstr "短邊裝訂"
+
+#: gtklp/general.c:542
+msgid "Media Selections"
+msgstr "紙張選擇"
+
+#: gtklp/general.c:556
+msgid "Media Size"
+msgstr "紙張大小"
+
+#: gtklp/general.c:631
+msgid "Media Type"
+msgstr "紙張類別"
+
+#: gtklp/general.c:653
+msgid "Media Source"
+msgstr "紙張來源"
+
+#: gtklp/general.c:704
+msgid "Number of Copies"
+msgstr "列印份數"
+
+#  NOTE IBM 譯法
+#: gtklp/general.c:724
+msgid "Collate Copies"
+msgstr "逐份列印 (Collate)"
+
+#  FIXME 譯文有譯改進
+#: gtklp/general.c:924
+msgid "Other actions"
+msgstr "其他動作"
+
+#  FIXME 譯文有譯改進
+#. Button
+#: gtklp/general.c:935
+msgid "Call GtkLPQ"
+msgstr "執行 GtkLPQ"
+
+#: gtklp/general.c:955 gtklpq/printer.c:161
+msgid "Printer"
+msgstr "印表機"
+
+#. Add Favorites Button
+#: gtklp/general.c:989
+msgid "Add favorite"
+msgstr ""
+
+#. Remove Favorites Button
+#: gtklp/general.c:996
+msgid "Remove favorite"
+msgstr ""
+
+#: gtklp/general.c:1041
+msgid "General"
+msgstr "一般"
+
+#: gtklp/gtklp.c:266
+msgid "Please wait!"
+msgstr "請稍待!"
+
+#: gtklp/gtklp.c:290 gtklpq/gtklpq.c:306
+msgid "This option requires an value !"
+msgstr "這個選項需要輸入一個值!"
+
+#: gtklp/gtklp.c:327
+msgid ""
+"Usage: gtklp [-P|-d printer] [-c configdir] [-S server] [-U user] [-p port] "
+"[-l] [-D] [-V] [-b] [-i] [-# n] [-C] [-H] [-E] [-J jobname] [-q priority] [-"
+"o option=value ...] [file(s)]\n"
+msgstr ""
+"用法: gtklp [-P|-d 印表機名稱] [-c 設定檔目錄] [-S 伺服器名稱] [-U 使用者名"
+"稱] [-p 通訊埠] [-l] [-D] [-V] [-b] [-i] [-# n] [-C] [-H] [-E] [-J 列印工作名"
+"稱] [-q 先後順序] [-o 選項=值 ...] [檔案]\n"
+
+#: gtklp/gtklp.c:340
+msgid "Function is not supported for now !"
+msgstr "這個功能暫時未有支援!"
+
+#: gtklp/gtklp.c:369 gtklpq/gtklpq.c:261
+msgid "Invalid Portnumber !"
+msgstr "無效的通訊埠號碼!"
+
+#: gtklp/gtklp.c:397 gtklpq/gtklpq.c:281
+msgid "Invalid Printername !"
+msgstr "無效的印表機名稱!"
+
+#: gtklp/gtklp.c:416 gtklpq/gtklpq.c:317
+msgid "Invalid Servername !"
+msgstr "無效的印表機伺服器名稱!"
+
+#: gtklp/gtklp.c:428 gtklpq/gtklpq.c:329
+msgid "Invalid Username !"
+msgstr "無效的使用者名稱!"
+
+#: gtklp/gtklp.c:469 gtklp/gtklptab.c:678 gtklpq/gtklpq.c:338
+msgid "version"
+msgstr "版本"
+
+#: gtklp/gtklp.c:536
+#, c-format
+msgid "-E: %s\n"
+msgstr "-E: %s\n"
+
+#: gtklp/gtklp.c:538 gtklpq/gtklpq.c:364
+msgid "Sorry, this function is not compiled in !"
+msgstr "抱歉，這個功能沒有被編譯入此軟體!"
+
+#: gtklp/gtklp.c:572
+msgid "Too many files to print !"
+msgstr "要列印的檔案太多了!"
+
+#: gtklp/gtklp.c:624 gtklpq/gtklpq.c:387
+msgid "No Cups-Server found !"
+msgstr "找不到 CUPS 伺服器!"
+
+#: gtklp/gtklp.c:652 gtklpq/gtklpq.c:399
+#, c-format
+msgid "Unable to connect to Server %s !"
+msgstr "無法連接至伺服器「%s」!"
+
+#: gtklp/gtklp.c:708 gtklpq/gtklpq.c:450
+msgid "No Printer found to use as default !"
+msgstr "找不到可作為預設的印表機!"
+
+#: gtklp/gtklp.c:737
+msgid "Print"
+msgstr "列印"
+
+#: gtklp/gtklp.c:751
+msgid "Reset All"
+msgstr "重設所有設定"
+
+#  FIXME 看了原始碼都不知所云 ^^;
+#: gtklp/gtklp.c:763
+msgid "Templates"
+msgstr "樣式"
+
+#: gtklp/gtklp.c:775
+msgid "Close"
+msgstr "關閉"
+
+#: gtklp/gtklp_functions.c:916
+msgid ""
+"The PPD for this printer has changed!\n"
+"Resetting..."
+msgstr ""
+"這個印表機的 PPD 檔已經變更!\n"
+"重設中..."
+
+#: gtklp/gtklp_functions.c:1560 gtklp/gtklp_functions.c:1584
+#: gtklp/gtklp_functions.c:1699
+msgid "Error saving user-settings!"
+msgstr "儲存使用者設定時發生錯誤!"
+
+#: gtklp/gtklp_functions.c:1643
+msgid "Too many printers!"
+msgstr "太多印表機了!"
+
+#: gtklp/gtklp_functions.c:1654
+msgid "Unable to add instance!"
+msgstr "無法增加 instance!"
+
+#: gtklp/gtklp_functions.c:2169 gtklp/gtklp_functions.c:2174
+#: gtklp/gtklp_functions.c:2781
+msgid "Options saved!"
+msgstr "選項儲存完畢!"
+
+#: gtklp/gtklp_functions.c:2244
+msgid "Instance removed!"
+msgstr "Instance 移除完畢!"
+
+#: gtklp/gtklp_functions.c:2253
+msgid "Saved Defaults loaded!"
+msgstr "已載入已儲存的預設值!"
+
+#: gtklp/gtklp_functions.c:2324
+msgid ""
+"Unable to print,\n"
+"unknown file format!"
+msgstr ""
+"無法列印,\n"
+"不詳的檔案格式!"
+
+#: gtklp/gtklp_functions.c:2329 gtklp/gtklp_functions.c:2396
+msgid "JobID"
+msgstr "列印工作 ID"
+
+#: gtklp/gtklp_functions.c:2337
+msgid "Dont know what to print!"
+msgstr "不知該列印什麼!"
+
+#: gtklp/gtklp_functions.c:2357 gtklp/gtklp_functions.c:2366
+#: gtklp/gtklp_functions.c:2392
+msgid "Unable to print!"
+msgstr "無法列印!"
+
+#: gtklp/gtklp_functions.c:2388
+msgid "(stdin)"
+msgstr "標準輸入(stdin)"
+
+#: gtklp/gtklp_functions.c:2503 gtklp/gtklp_functions.c:2509
+msgid "Conflicts"
+msgstr "衝突"
+
+#: gtklp/gtklp_functions.c:2556 gtklp/gtklptab.c:753 libgtklp/libgtklp.c:130
+#: libgtklp/libgtklp.c:741 libgtklp/libgtklp.c:958
+msgid "Ok"
+msgstr "Ok"
+
+#: gtklp/gtklp_functions.c:2793 gtklp/gtklp_functions.c:2816
+#: gtklp/gtklp_functions.c:2958 gtklp/gtklptab.c:952
+msgid "Save"
+msgstr "儲存"
+
+#: gtklp/gtklp_functions.c:2829
+msgid "New"
+msgstr "新增"
+
+#: gtklp/gtklp_functions.c:2863 gtklp/gtklp_functions.c:2869
+msgid "Printer Templates"
+msgstr "印表機樣版"
+
+#: gtklp/gtklp_functions.c:2900
+msgid "Printer: "
+msgstr "印表機:"
+
+#: gtklp/gtklp_functions.c:2905
+msgid "Instance: "
+msgstr "Instance:"
+
+#: gtklp/gtklp_functions.c:2971 libgtklp/libgtklp.c:745
+msgid "Cancel"
+msgstr "取消"
+
+#  NOTE 所謂「Look」係指 Gtklp 自己的介面選項
+#: gtklp/gtklptab.c:288
+msgid "Look"
+msgstr "介面選項"
+
+#  NOTE 這是解顯示或隱藏「輸出」分頁，和「輸出值」無關
+#: gtklp/gtklptab.c:305
+msgid "Show Output"
+msgstr "顯示「輸出」選項標籤"
+
+#  NOTE 這是解顯示或隱藏「文字」分頁
+#: gtklp/gtklptab.c:312
+msgid "Show Text"
+msgstr "顯示「文字」選項標籤"
+
+#  NOTE 這是解顯示或隱藏「影像」分頁
+#: gtklp/gtklptab.c:319
+msgid "Show Image"
+msgstr "顯示「影像」選項標籤"
+
+#  NOTE 這是解顯示或隱藏「HP-GL/2」分頁
+#: gtklp/gtklptab.c:326
+msgid "Show HP-GL/2"
+msgstr "顯示「HP-GL/2」選項標籤"
+
+#  NOTE 這是解顯示或隱藏「特殊」分頁，和「特殊值」無關
+#: gtklp/gtklptab.c:333
+msgid "Show Special"
+msgstr "顯示「特殊」選項標籤"
+
+#: gtklp/gtklptab.c:339
+msgid "Show PPD"
+msgstr "顯示「PPD」選項標籤"
+
+#  NOTE 所謂「Feel」係指影響 Gtklp 的運作的各種偏好
+#: gtklp/gtklptab.c:452
+msgid "Feel"
+msgstr "偏好設定"
+
+#: gtklp/gtklptab.c:470
+msgid "Remember last printer"
+msgstr "記住上次最後使用的印表機"
+
+#: gtklp/gtklptab.c:477
+msgid "Remember last Tab"
+msgstr "記住上次最後所在的標籤"
+
+#: gtklp/gtklptab.c:486
+msgid "Save all preferences on exit"
+msgstr "退出時儲存所有偏好設定"
+
+#: gtklp/gtklptab.c:495
+msgid "Save number of copies on exit"
+msgstr "退出時儲存列印份數"
+
+#: gtklp/gtklptab.c:503
+msgid "Clear file list on print"
+msgstr "列印時清除檔案清單"
+
+#: gtklp/gtklptab.c:510
+msgid "Exit on print"
+msgstr "列印後退出"
+
+#: gtklp/gtklptab.c:517
+msgid "Show JobIDs"
+msgstr "顯示工作ID (JobID)"
+
+#: gtklp/gtklptab.c:529
+msgid "Enable Constraints check"
+msgstr "啟用限制檢查"
+
+#: gtklp/gtklptab.c:535
+msgid "Check now"
+msgstr "立刻檢查"
+
+#: gtklp/gtklptab.c:545
+msgid "Remember size and position"
+msgstr ""
+
+#. from
+#: gtklp/gtklptab.c:690
+msgid "written by"
+msgstr "作者"
+
+# FIXME
+#. for
+#: gtklp/gtklptab.c:717
+msgid "written for cups"
+msgstr "Common Unix Printing System (CUPS)"
+
+#: gtklp/gtklptab.c:787
+msgid "Help"
+msgstr "說明"
+
+#. Buttons
+#: gtklp/gtklptab.c:798
+msgid "Help on Options"
+msgstr "選項說明"
+
+#: gtklp/gtklptab.c:805
+#, c-format
+msgid "About %s"
+msgstr "關於 %s"
+
+#: gtklp/gtklptab.c:846
+msgid "Commands and Paths"
+msgstr "指令及路徑"
+
+#: gtklp/gtklptab.c:859
+msgid "Browser Command"
+msgstr "瀏覽器指令"
+
+#: gtklp/gtklptab.c:872
+msgid "Help URL"
+msgstr "說明連結"
+
+#: gtklp/gtklptab.c:885
+msgid "Gtklpq Command"
+msgstr "Gtklpq 指令"
+
+#: gtklp/hpgl2.c:114 gtklp/special.c:353
+msgid "Options"
+msgstr "選項"
+
+#: gtklp/hpgl2.c:131
+msgid "Printing in Black"
+msgstr "黑白列印"
+
+#: gtklp/hpgl2.c:138
+msgid "Fit on Page"
+msgstr "縮至紙張大小"
+
+#: gtklp/hpgl2.c:185
+msgid "Pen Width"
+msgstr "畫筆粗幼"
+
+#. label
+#: gtklp/hpgl2.c:205
+msgid "micrometers"
+msgstr "微米"
+
+#  NOTE 此處的「Default」係表示「使用預設值」，並非只係「預設」
+#. Buttons
+#. Buttons CPI
+#. Buttons LPI
+#. Buttons CPI
+#: gtklp/hpgl2.c:210 gtklp/image.c:304 gtklp/image.c:358 gtklp/output.c:767
+#: gtklp/output.c:846 gtklp/text.c:270 gtklp/text.c:297 gtklp/text.c:324
+msgid "Default"
+msgstr "使用預設值"
+
+#: gtklp/hpgl2.c:228
+msgid "HP-GL/2"
+msgstr "HP-GL/2"
+
+#: gtklp/image.c:138 gtklp/image.c:231
+msgid "None"
+msgstr "無"
+
+#: gtklp/image.c:140 gtklp/image.c:232
+msgid "Sheet relativ"
+msgstr "依紙張大小"
+
+#: gtklp/image.c:142 gtklp/image.c:233
+msgid "Image relativ"
+msgstr "依圖片大小"
+
+#: gtklp/image.c:144 gtklp/image.c:234
+msgid "PPI"
+msgstr "PPI"
+
+#: gtklp/image.c:212
+msgid "Scaling"
+msgstr "放大/縮小"
+
+#  FIXME 譯文有待改進
+#: gtklp/image.c:277
+msgid "Color HUE rotation"
+msgstr "色相偏移 (Hue rotation)"
+
+#: gtklp/image.c:310 gtklp/image.c:364 gtklp/output.c:773 gtklp/output.c:852
+msgid "Reset"
+msgstr "重設"
+
+#  NOTE Gimp 譯「彩度」，不譯「飽和度」（相者都是對的）
+#: gtklp/image.c:331
+msgid "Color saturation"
+msgstr "彩度（顏色飽和度）"
+
+#: gtklp/image.c:433
+msgid "Position"
+msgstr "位置"
+
+#: gtklp/image.c:491
+msgid "Image"
+msgstr "影像"
+
+#: gtklp/output.c:413
+msgid "Sheet Usage"
+msgstr "紙張用法"
+
+#: gtklp/output.c:425
+msgid "Sheets per page"
+msgstr "每頁紙張數"
+
+#: gtklp/output.c:456
+msgid "Layout"
+msgstr "版面配置"
+
+#: gtklp/output.c:491
+msgid "Border"
+msgstr "邊界"
+
+#: gtklp/output.c:577
+msgid "Orientation"
+msgstr "縱向/橫向"
+
+#: gtklp/output.c:609
+msgid "Mirror Output"
+msgstr "鏡射"
+
+#: gtklp/output.c:633
+msgid "Ranges"
+msgstr "範圍"
+
+#: gtklp/output.c:645
+msgid "Print Range"
+msgstr "列印範圍"
+
+#: gtklp/output.c:659
+msgid "(e.g. 1-4,9,10-12)"
+msgstr "(例如: 1-4,9,10-12)"
+
+#: gtklp/output.c:670
+msgid "All"
+msgstr "全部"
+
+#: gtklp/output.c:677
+msgid "Even"
+msgstr "偶數"
+
+#: gtklp/output.c:683
+msgid "Odd"
+msgstr "奇數"
+
+#: gtklp/output.c:689
+msgid "Reverse Output Order"
+msgstr "顛倒輸出次序"
+
+#: gtklp/output.c:719
+msgid "Brightness"
+msgstr "亮度"
+
+#: gtklp/output.c:798
+msgid "Gamma correction"
+msgstr "伽瑪值校正"
+
+#: gtklp/output.c:868
+msgid "Output"
+msgstr "輸出"
+
+#: gtklp/ppd.c:441
+msgid "PPD"
+msgstr "PPD"
+
+#: gtklp/special.c:116
+msgid "Banners"
+msgstr "標題頁"
+
+#. Start
+#: gtklp/special.c:139
+msgid "Start:"
+msgstr "開始:"
+
+#. Stop
+#: gtklp/special.c:162
+msgid "End:"
+msgstr "結束:"
+
+#: gtklp/special.c:206
+msgid ""
+"You have chosen to store your password on the disk.\n"
+"This is not secure, so I recommend against doing so.\n"
+"You have been warned."
+msgstr ""
+"提醒你……\n"
+"你已選擇將密碼儲存在磁碟上。\n"
+"這並不安全且我不建議你這樣作。"
+
+#: gtklp/special.c:222
+msgid "Password"
+msgstr "密碼"
+
+#. Login
+#: gtklp/special.c:245 libgtklp/libgtklp.c:703
+msgid "Login:"
+msgstr "登入:"
+
+#. Password
+#: gtklp/special.c:261 libgtklp/libgtklp.c:708
+msgid "Password:"
+msgstr "密碼:"
+
+#: gtklp/special.c:300
+msgid "Job Name"
+msgstr "工作名稱"
+
+#: gtklp/special.c:369
+msgid "Raw output"
+msgstr "以 Raw 模式輸出"
+
+#: gtklp/special.c:395
+msgid "Extra Options"
+msgstr "額外選項"
+
+#: gtklp/special.c:428
+msgid "Special"
+msgstr "特殊"
+
+#  NOTE「Spacing」指「間隔」，與「空白」無關
+#: gtklp/text.c:238
+msgid "Sizes and Spacings"
+msgstr "大小及間隔"
+
+#. Label CPI
+#: gtklp/text.c:254
+msgid "Chars per Inch"
+msgstr "每吋字數"
+
+#. Label LPI
+#: gtklp/text.c:281
+msgid "Lines per Inch"
+msgstr "每吋行數"
+
+#  NOTE 此處之「Column」並非指直行，應是指「欄」
+#. Label CPP
+#: gtklp/text.c:308
+msgid "Columns per Page"
+msgstr "每頁欄數"
+
+#: gtklp/text.c:474
+msgid "Margins"
+msgstr "邊界"
+
+#. Label Top
+#: gtklp/text.c:490
+msgid "Top"
+msgstr "上端"
+
+#. Label Bottom
+#: gtklp/text.c:541
+msgid "Bottom"
+msgstr "底部"
+
+#. Label Left
+#: gtklp/text.c:593
+msgid "Left"
+msgstr "左邊"
+
+#. Label Right
+#: gtklp/text.c:644
+msgid "Right"
+msgstr "右邊"
+
+#: gtklp/text.c:736
+msgid "Text formatting"
+msgstr "文字格式"
+
+#  NOTE 此處的「Pretty Print」係指「Syntax Highlighting」
+#: gtklp/text.c:753
+msgid "Use Pretty Print"
+msgstr "使用Syntax Highlighting列印"
+
+#: gtklp/text.c:757
+msgid "Wrap text"
+msgstr "文字換行"
+
+#: gtklp/text.c:773
+msgid "Text"
+msgstr "文字"
+
+#. --- Info ---
+#: libgtklp/libgtklp.c:152
+msgid "Message"
+msgstr "訊息"
+
+#. --- Error ---
+#: libgtklp/libgtklp.c:169 libgtklp/libgtklp.c:890 libgtklp/libgtklp.c:903
+#: gtklpq/printer.c:691 gtklpq/printer.c:992
+msgid "Error"
+msgstr "錯誤"
+
+#: libgtklp/libgtklp.c:187
+msgid "Fehlerteufel"
+msgstr "啊 ..."
+
+#: libgtklp/libgtklp.c:199
+msgid "Warning!"
+msgstr "注意"
+
+#: libgtklp/libgtklp.c:537 libgtklp/libgtklp.c:565
+msgid "No printers found !"
+msgstr "找不到印表機!"
+
+#: libgtklp/libgtklp.c:550 libgtklp/libgtklp.c:552
+msgid "The given printer does not exist!"
+msgstr "這台印表機並不存在!"
+
+#: libgtklp/libgtklp.c:594
+msgid "Internal program error !"
+msgstr "內部程式錯誤!"
+
+#: libgtklp/libgtklp.c:661 libgtklp/libgtklp.c:671
+msgid "Password verification"
+msgstr "密碼確認"
+
+#: gtklpq/gtklpq.c:223
+msgid "GtkLPQ"
+msgstr "GtkLPQ"
+
+#  FIXME incomplete translation
+#: gtklpq/gtklpq.c:299
+msgid ""
+"Usage: gtklpq [-P|-d Printer] [-S server] [-p port] [-D] [-V] [-U user] [-t "
+"timeout] [-g geometry] [-C] [-h] [-E]"
+msgstr ""
+"用法: gtklpq [-P|-d 印表機名稱] [-S 伺服器名稱] [-p 通訊埠號碼] [-D] [-V] [-"
+"C] [-h] [-U 使用者名稱] [-t timeout] [-g geometry] [-E]"
+
+#: gtklpq/gtklpq.c:560 gtklpq/gtklpq.c:561
+msgid "Cancel Job"
+msgstr "取消列印工作"
+
+#: gtklpq/gtklpq.c:574 gtklpq/gtklpq.c:575
+msgid "Cancel All"
+msgstr "取消所有列印工作"
+
+#: gtklpq/gtklpq.c:588 gtklpq/gtklpq.c:589 gtklpq/printer.c:262
+#: gtklpq/printer.c:263 gtklpq/printer.c:951 gtklpq/printer.c:953
+msgid "Hold Job"
+msgstr "暫停列印"
+
+#: gtklpq/gtklpq.c:602 gtklpq/gtklpq.c:603
+msgid "Move Job"
+msgstr "移動列印工作"
+
+#: gtklpq/gtklpq.c:618 gtklpq/gtklpq.c:619 gtklpq/printer.c:521
+#: gtklpq/printer.c:523
+msgid "Reject Jobs"
+msgstr "拒絕列印工作"
+
+#: gtklpq/gtklpq.c:634 gtklpq/gtklpq.c:635 gtklpq/printer.c:483
+#: gtklpq/printer.c:485
+msgid "Stop Printer"
+msgstr "停止印表機"
+
+#: gtklpq/gtklpq.c:648 gtklpq/gtklpq.c:649
+msgid "Priority"
+msgstr "先後順序"
+
+#: gtklpq/gtklpq.c:669
+msgid "Exit"
+msgstr "退出"
+
+#. Hold 4
+#: gtklpq/printer.c:243 gtklpq/printer.c:846
+msgid "H"
+msgstr "H"
+
+#: gtklpq/printer.c:251 gtklpq/printer.c:252 gtklpq/printer.c:932
+#: gtklpq/printer.c:934
+msgid "Release Job"
+msgstr "釋放工作"
+
+#. Active 5
+#: gtklpq/printer.c:266 gtklpq/printer.c:842
+msgid "A"
+msgstr "A"
+
+#  NOTE 此處之「Rank」係指列印之優先次序（上稱「先後順序」），並非「級數」
+#: gtklpq/printer.c:280 gtklpq/printer.c:335 gtklpq/printer.c:358
+#: gtklpq/printer.c:714 gtklpq/printer.c:738
+msgid "Rank"
+msgstr "列印順序"
+
+#: gtklpq/printer.c:281 gtklpq/printer.c:340 gtklpq/printer.c:364
+#: gtklpq/printer.c:715 gtklpq/printer.c:740
+msgid "Owner"
+msgstr "所有者"
+
+#: gtklpq/printer.c:282 gtklpq/printer.c:345 gtklpq/printer.c:370
+#: gtklpq/printer.c:716 gtklpq/printer.c:742
+msgid "Job"
+msgstr "工作"
+
+#: gtklpq/printer.c:283 gtklpq/printer.c:351 gtklpq/printer.c:377
+msgid "File(s)"
+msgstr "檔案"
+
+#: gtklpq/printer.c:284 gtklpq/printer.c:717 gtklpq/printer.c:746
+msgid "#"
+msgstr "份數"
+
+#: gtklpq/printer.c:285 gtklpq/printer.c:718 gtklpq/printer.c:748
+msgid "Size"
+msgstr "大小"
+
+#  NOTE「Queue」應係「佇列」，但在這裡「列印工作一覽」（或列表）應比較清楚
+#: gtklpq/printer.c:298
+msgid "Queue"
+msgstr "列印工作一覽"
+
+#: gtklpq/printer.c:415
+msgid "Printer Idle"
+msgstr "印表機閒置中"
+
+#: gtklpq/printer.c:420
+msgid "Printer Processing"
+msgstr "印表機列印中"
+
+#: gtklpq/printer.c:425
+msgid "Printer Stopped"
+msgstr "印表機已停止"
+
+#: gtklpq/printer.c:465 gtklpq/printer.c:467
+msgid "Start Printer"
+msgstr "啟動印表機"
+
+#: gtklpq/printer.c:503 gtklpq/printer.c:505
+msgid "Accept Jobs"
+msgstr "接受列印工作"
+
+#: gtklpq/printer.c:719 gtklpq/printer.c:744
+msgid "Job(s)"
+msgstr "工作"
+
+#: gtklpq/printer.c:779
+msgid "Untitled"
+msgstr "無標題"
+
+#. Pending 3
+#: gtklpq/printer.c:850
+msgid "P"
+msgstr "P"
+
+#: gtklpq/printer.c:854
+msgid "S"
+msgstr "S"
+
+#: gtklpq/printer.c:858
+msgid "ca"
+msgstr "ca"
+
+#: gtklpq/printer.c:862
+msgid "ab"
+msgstr "ab"
+
+#: gtklpq/printer.c:866
+msgid "."
+msgstr "."
+
+#: gtklpq/printer.c:1002
+msgid "No jobs."
+msgstr "沒有列印工作"
+
+#: gtklpq/printer.c:1036 gtklpq/printer.c:1040 gtklpq/printer.c:1049
+msgid "Are you sure?"
+msgstr "你確定嗎?"
+
+#: gtklpq/printer.c:1110
+msgid "And for what reason ?"
+msgstr "原因為何?"
+
+#: gtklpq/printer.c:1145
+msgid "Yes"
+msgstr "是"
+
+#: gtklpq/printer.c:1149
+msgid "No"
+msgstr "不是"
+
+#: gtklpq/printer.c:1163
+msgid "Do you really want to cancel this job?"
+msgstr "你確定要取消這個列印工作嗎?"
+
+#: gtklpq/printer.c:1174
+msgid "Do you really want to cancel ALL jobs?"
+msgstr "你確定真的要取消所有的列印工作嗎?"
+
+#: gtklpq/printer.c:1186
+msgid "Do you really want to hold this job?"
+msgstr "你確定真的要暫停這個列印工作嗎?"
+
+#: gtklpq/printer.c:1196
+msgid "Do you really want to release this job?"
+msgstr "你確定真的要釋放這個工作?"
+
+#: gtklpq/printer.c:1211
+msgid "Do you really want to move this Job to the following queue?"
+msgstr "你確定真的要將這個工作移至以下的佇列 (queue) 嗎?"
+
+#: gtklpq/printer.c:1223
+msgid "Do you really want to stop this printer?"
+msgstr "你確定要停止這台印表機嗎?"
+
+#: gtklpq/printer.c:1233
+msgid "Do you really want to start this printer?"
+msgstr "你確定要啟動這台印表機嗎?"
+
+#: gtklpq/printer.c:1246
+msgid "Do you really want to change the job priority?"
+msgstr "你確定要改變這個列印工作的順序嗎?"
+
+#: gtklpq/printer.c:1259
+msgid "Do you really want to reject jobs for this printer?"
+msgstr "你確定要拒絕這台印表機的工作嗎?"
+
+#: gtklpq/printer.c:1269
+msgid "Do you really want to accept jobs for this printer?"
+msgstr "你真的要接受這台印表機的工作嗎?"
+
+#: gtklpq/printer.c:1348 gtklpq/printer.c:1358
+msgid "Unable to change priority!"
+msgstr "無法改變先後順序!"
+
+#: gtklpq/printer.c:1542
+msgid "Job or printer not found!"
+msgstr "找不到列印工作或印表機!"
+
+#: gtklpq/printer.c:1546
+msgid "Authorization failed!"
+msgstr "認證失敗!"
+
+#: gtklpq/printer.c:1549
+msgid "You don't own this job!"
+msgstr "你並不是這項列印工作的所有者!"
+
+#: gtklpq/printer.c:1553 gtklpq/printer.c:1589
+msgid "Unable to do so!"
+msgstr "無法執行!"
+
+#: gtklpq/printer.c:1561
+msgid "Unable to cancel job(s)!"
+msgstr "無法取消列印工作!"
+
+#: gtklpq/printer.c:1566
+msgid "Unable to cancel printer!"
+msgstr "無法取消印表機!"
+
+#: gtklpq/printer.c:1572
+msgid "Unable to start printer!"
+msgstr "無法啟動印表機!"
+
+#: gtklpq/printer.c:1578
+msgid "Unable to accept jobs for this printer!"
+msgstr "無法令這台印表機接受列印工作!"
+
+#: gtklpq/printer.c:1584
+msgid "Unable to reject jobs for this printer!"
+msgstr "無法令這台印表機拒絕列印工作!"
+
+#~ msgid "You have installed too many printers or templates !"
+#~ msgstr "你安裝了太多的印表機及樣式!"
+
+#~ msgid "visit"
+#~ msgstr "連結至網站"

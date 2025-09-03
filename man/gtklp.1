@@ -1,0 +1,261 @@
+.\" This code is licensed under the GNU GENERAL PUBLIC LICENSE,
+.\" see also http://www.gnu.org.
+.\" 
+.TH "gtklp" "1" "" "Tobias Mueller" "Printing"
+.SH "NAME"
+gtklp \- print files via CUPS
+.SH "SYNOPSIS"
+\fBgtklp\fR [\-P|\-d \fIprinter\fR] [\-c \fIconfigdir\fR] [\-S|\-h \fIserver\fR] [\-p \fIport\fR] [\-l] [\-D] [\-V] [\-b] [\-i] [\-F] [\-H] [\-C] [\-U \fIuser\fR] [\-#|\-n \fIn\fR] [\-E] [\-q \fIpriority\fR] [\-t|\-J \fIjobname\fR] [\-o \fIoption=value\fR ... ][\fIfile(s)\fR]
+
+\fBlp\fR [\-d \fIprinter\fR] [\-S|\-h \fIserver\fR] [\-p \fIport\fR] [\-D] [\-V] [\-b] [\-U \fIuser\fR] [\-#|\-n \fIn\fR] [\-E] [\-q \fIpriority\fR] [\-t|\-J \fIjobname\fR] [\-P \fIpage\-list\fR [\-H handling] [\-X] [\-o \fIoption=value\fR ... ][\fIfile(s)\fR]
+
+\fBlpr\fR [\-P|\-d \fIprinter\fR] [\-S|\-h \fIserver\fR] [\-p \fIport\fR] [\-D] [\-V] [\-b] [\-U \fIuser\fR] [\-#|\-n \fIn\fR] [\-E] [\-q \fIpriority\fR] [\-t|\-J|\-C|\-T \fIjobname\fR] [\-X] [\-o \fIoption=value\fR ... ][\fIfile(s)\fR]
+.SH "DESCRIPTION"
+\fBGtkLP\fR is an graphical frontend for \fICUPS\fR, the Common UNIX Printing System.
+.br 
+It is used to have an easy (and graphical) access to all of the many options
+of cups\-managed printers.
+.SH "OPTIONS"
+The following options are recognized by \fBgtklp\fR:
+.TP 5
+\-P \fIprinter\fR
+.br 
+Use \fIprinter\fR as default destination.
+.TP 5
+\-d \fIprinter\fR
+.br 
+This option is equivalent to "\-P".
+.TP 5
+\-c \fIconfigdir\fR
+.br 
+Use \fIconfigdir\fR to set an alternative path to the configfiles for \fBGtkLP\fR.
+.br 
+.TP 5
+\-S \fIserver\fR
+.br 
+The name of the CUPS\-Server.
+.TP 5
+\-h \fIserver\fR
+.br 
+The same as \-S.
+.TP 5
+\-p \fIport\fR
+.br 
+The port of CUPS\-Server, 631 per default.
+.TP 5
+\-l
+.br 
+Only list the chosen options as a list of commandline\-parameters for lpr.
+.br 
+Nice for scripting purposes...
+.TP 5
+\-D
+.br 
+Debug.
+.TP 5
+\-V
+.br 
+Displays the version of \fBGtkLP\fR.
+.TP 5
+\-b
+.br 
+Use builtin defaults instead of saved options
+.TP 5
+\-i
+.br 
+Ignore data on stdin.
+.br 
+Sometimes useful, e.g. for printing from some versions of the Acrobat Reader.
+.TP 5
+\-F
+.br 
+Hide the File\-Tab if file is given at the command\-line.
+.TP 5
+\-U \fIuser\fR
+.br 
+The name of the cups\-User to use.
+.TP 5
+\-# \fIn\fR
+.br 
+Make \fIn\fR copies per default.
+.TP 5
+\-n \fIn\fR
+.br 
+The same as \-#.
+.TP 5
+\-H
+.br 
+Help
+.TP 5
+\-C
+.br 
+Force console\-mode
+.TP 5
+\-o \fIoption=value\fR
+.br 
+Specify extra options, same syntax as lpr
+.TP 5
+\-E
+.br 
+Forces encryption when connecting to the server.
+.TP 5
+\-q \fIpriority\fR
+.br 
+Specify the priority of the print job, from 1 (lowest) to 100 (highest)
+.TP 5
+\-t \fIjobname\fR
+.br 
+Specify the jobname
+.TP 5
+\-J \fIjobname\fR
+.br 
+The same as \-t.
+.TP 0
+.br 
+.br 
+If called as lp, the following options differ from GtkLP`s options:
+.TP 5
+\-X
+Force X\-Mode, even if GTKLP_FORCEX is not set to 1
+.BR 
+.TP 5
+\-P \fIpage\-list\fR
+.br 
+Specifies which pages to print in the  document.  The
+list  can  contain a list of numbers and ranges (#\-#)
+separated by commas (e.g. 1,3\-5,16).
+.br 
+.TP 5
+\-H \fIhandling\fR
+Specifies  when the job should be printed. A value of
+\fIimmediate\fR will print the file immediately, a value of
+\fIhold\fR will hold the job indefinitely, and a time value
+(HH:MM) will hold the job until the  specified  time.
+(does this option work ?)
+.TP 0
+.br 
+.br 
+If called as lpr, the following options differ from GtkLP`s options:
+.TP 5
+\-X
+Force X\-Mode, even if GTKLP_FORCEX is not set to 1
+.BR 
+.TP 5
+\-C \fIjobname\fR
+Specify the jobname
+.BR 
+.TP 5
+\-T \fIjobname\fR
+The same as \-C.
+.BR 
+.TP 5
+\-p
+Specifies that the print  file  should  be  formatted
+with  a  shaded header with the date, time, job name,
+and  page  number.  This  option  is  equivalent   to
+"\-oprettyprint" and is only useful when printing text
+files.
+.BR 
+.TP 5
+\-l
+Specifies that the print file  is  already  formatted
+for  the  destination and should be sent without 
+filtering. This option is equivalent to "\-oraw".
+.TP 0
+.BR 
+Some other options from systemv`s lp and berkeley`s lpr are ignored
+without error message
+.SH "PATHS"
+\fBGtkLP\fR looks for config\-files under
+.br 
+\fI<configdir>\fR
+.br 
+then under
+.br 
+\fI$HOME/.gtklp/\fR
+.br 
+and at last under
+.br 
+\fI/etc/gtklp/\fR.
+.br 
+
+To hide Printers from users, use the following pathes:
+.br 
+\fI/etc/gtklp/accept/\fR
+.br 
+\fI/etc/gtklp/deny/\fR
+.br 
+\fI$HOME/.gtklp/\fR
+.br 
+
+Just put an empty file with the name of the printer the user
+should see by default to \fIaccept\fR,
+put an empty file with the name of the printer the user
+should never see to \fIdeny\fR.
+If only \fIaccept\fR exists, all but the accepted printers are allowed. 
+If only \fIdeny\fR exists, all but the denied printers are accepted. 
+.br 
+All users can \fIdeny\fR accepted printers, but they can't unhide denied ones.
+.SH "SPECIAL"
+In GtkLP you can define a browser to open the help URL, the CUPS\-Homepage and so on.
+Just use the your favorite HTML browser. The first $1 in command\-line will be substituted
+by the URL.
+
+If you can't connect to an X\-Server, GtkLP acts as console\-lpr.
+
+If called as lpr, or lp, GtkLP acts on console and has some other command\-line parameters, see above.
+.SH "VARIABLES"
+You can set the following environment variables to influence the behaviour of GtkLP:
+.TP 5
+CUPS_SERVER
+.br 
+The default CUPS\-server to connect to
+.TP 5
+IPP_PORT
+.br 
+The default Port of the CUPS\-server to connect to
+.TP 5
+PRINTER
+.br 
+The default printer to use
+.TP 5
+GTKLP_FORCEX
+.br 
+Set to 1 to force X\-Mode for lpr and lp
+.SH "ERROR"
+GtkLP produces the following Error\-Codes:
+.TP 5
+0
+normal program termination
+.br 
+.TP 5
+1
+small error, wrong parameters, etc.
+.br 
+.TP 5
+2
+Server Problems, server not found, no default printer found, etc.
+.br 
+.TP 5
+3
+BAD error. Fields declared too short, too many printers, etc.
+.SH "SEE ALSO"
+gtklpq(1), lpr(1), CUPS Software Users Manual
+.br 
+http://localhost:631/documentation.html
+.SH "COPYRIGHT"
+This program was written by T. Mueller, 2000, 2001, 2002.
+.br 
+It is licensed under the Terms of the GNU GENERAL PUBLIC LICENSE, 
+.br 
+see also http://www.gnu.org.
+
+.SH "CONTACT"
+The latest version of \fBGtkLP\fR is always available under
+.br 
+http://gtklp.sourceforge.net/
+.br 
+.br 
+Feel also free to contact me.
+.br 
+Please mail also, if you like the software !!! ;\-)

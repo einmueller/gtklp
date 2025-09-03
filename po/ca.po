@@ -1,0 +1,991 @@
+# ca  translation of gtklp.
+# Copyright (C) 2006 Tobias Müller
+# This file is distributed under the same license as the gtklp package.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtklp 1.3.4\n"
+"Report-Msgid-Bugs-To: gtklp@sirtobi.com\n"
+"POT-Creation-Date: 2007-09-08 14:32+0200\n"
+"PO-Revision-Date: 2006-05-18 12:35+0200\n"
+"Last-Translator: Lluís Vilanova <xscript@gmx.net>\n"
+"Language-Team: ca \n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gtklp/file.c:285 gtklp/file.c:288
+msgid "Print File..."
+msgstr "Imprimeix arxiu..."
+
+#: gtklp/file.c:435
+msgid "Files to print"
+msgstr "Arxius a imprimir"
+
+#: gtklp/file.c:473
+msgid "Add"
+msgstr "Afegeix"
+
+#: gtklp/file.c:482 gtklp/gtklp_functions.c:2963
+msgid "Remove"
+msgstr "Esborra"
+
+#: gtklp/file.c:491
+msgid "Remove All"
+msgstr "Esborra'ls tots"
+
+#: gtklp/file.c:516
+msgid "File"
+msgstr "Arxius"
+
+#. PrinterLocation
+#: gtklp/general.c:74
+msgid "Location"
+msgstr "Localització"
+
+#: gtklp/general.c:455
+msgid "Duplex Settings"
+msgstr "Impressió dúplex"
+
+#: gtklp/general.c:479
+msgid "No Duplex"
+msgstr "No dúplex"
+
+#: gtklp/general.c:496
+msgid "Long edge binding"
+msgstr "Marge d'enquadernació ample"
+
+#: gtklp/general.c:513
+msgid "Short edge binding"
+msgstr "Marge d'enquadernació estret"
+
+#: gtklp/general.c:542
+msgid "Media Selections"
+msgstr "Configuració del paper"
+
+#: gtklp/general.c:556
+msgid "Media Size"
+msgstr "Mida del paper"
+
+#: gtklp/general.c:631
+msgid "Media Type"
+msgstr "Tipus de paper"
+
+#: gtklp/general.c:653
+msgid "Media Source"
+msgstr "Origen del paper"
+
+#: gtklp/general.c:704
+msgid "Number of Copies"
+msgstr "Nombre de còpies"
+
+#: gtklp/general.c:724
+msgid "Collate Copies"
+msgstr "Intercala còpies"
+
+#: gtklp/general.c:924
+msgid "Other actions"
+msgstr "Altres accions"
+
+#. Button
+#: gtklp/general.c:935
+msgid "Call GtkLPQ"
+msgstr "Crida a GtkLPQ"
+
+#: gtklp/general.c:955 gtklpq/printer.c:161
+msgid "Printer"
+msgstr "Impressora"
+
+#. Add Favorites Button
+#: gtklp/general.c:989
+msgid "Add favorite"
+msgstr ""
+
+#. Remove Favorites Button
+#: gtklp/general.c:996
+msgid "Remove favorite"
+msgstr ""
+
+#: gtklp/general.c:1041
+msgid "General"
+msgstr "General"
+
+#: gtklp/gtklp.c:266
+msgid "Please wait!"
+msgstr "Espereu siusplau!"
+
+#: gtklp/gtklp.c:290 gtklpq/gtklpq.c:306
+msgid "This option requires an value !"
+msgstr "Aquesta opció requereix un valor!"
+
+#: gtklp/gtklp.c:327
+msgid ""
+"Usage: gtklp [-P|-d printer] [-c configdir] [-S server] [-U user] [-p port] "
+"[-l] [-D] [-V] [-b] [-i] [-# n] [-C] [-H] [-E] [-J jobname] [-q priority] [-"
+"o option=value ...] [file(s)]\n"
+msgstr ""
+"Ús: gtklp [-P|-d impressora] [-c configdir] [-S servidor] [-U usuari] [-p "
+"port] [-l] [-D] [-V] [-b] [-i] [-# n] [-C] [-H] [-E] [-J treball] [-q "
+"prioritat][-o opció=valor ...] [arxiu(s)]\n"
+
+#: gtklp/gtklp.c:340
+msgid "Function is not supported for now !"
+msgstr "Funció de moment no suportada!"
+
+#: gtklp/gtklp.c:369 gtklpq/gtklpq.c:261
+msgid "Invalid Portnumber !"
+msgstr "Port no vàlid!"
+
+#: gtklp/gtklp.c:397 gtklpq/gtklpq.c:281
+msgid "Invalid Printername !"
+msgstr "Nom d'impressora no vàlid!"
+
+#: gtklp/gtklp.c:416 gtklpq/gtklpq.c:317
+msgid "Invalid Servername !"
+msgstr "Nom de servidor no vàlid!"
+
+#: gtklp/gtklp.c:428 gtklpq/gtklpq.c:329
+msgid "Invalid Username !"
+msgstr "Nom d'usuari no vàlid!"
+
+#: gtklp/gtklp.c:469 gtklp/gtklptab.c:678 gtklpq/gtklpq.c:338
+msgid "version"
+msgstr "versió"
+
+#: gtklp/gtklp.c:536
+#, c-format
+msgid "-E: %s\n"
+msgstr "-E: %s\n"
+
+#: gtklp/gtklp.c:538 gtklpq/gtklpq.c:364
+msgid "Sorry, this function is not compiled in !"
+msgstr "Ho sento, aquesta funció no està compilada!"
+
+#: gtklp/gtklp.c:572
+msgid "Too many files to print !"
+msgstr "Massa arxius per imprimir!"
+
+#: gtklp/gtklp.c:624 gtklpq/gtklpq.c:387
+msgid "No Cups-Server found !"
+msgstr "No s'ha trobat cap servidor CUPS!"
+
+#: gtklp/gtklp.c:652 gtklpq/gtklpq.c:399
+#, c-format
+msgid "Unable to connect to Server %s !"
+msgstr "Impossible connectar amb el servidor %s!"
+
+#: gtklp/gtklp.c:708 gtklpq/gtklpq.c:450
+msgid "No Printer found to use as default !"
+msgstr "No s'ha trobat cap impressora per usar-la per defecte!"
+
+#: gtklp/gtklp.c:737
+msgid "Print"
+msgstr "Imprimeix"
+
+#: gtklp/gtklp.c:751
+msgid "Reset All"
+msgstr "Restableix tot"
+
+#: gtklp/gtklp.c:763
+msgid "Templates"
+msgstr "Plantilles"
+
+#: gtklp/gtklp.c:775
+msgid "Close"
+msgstr "Tanca"
+
+#: gtklp/gtklp_functions.c:916
+msgid ""
+"The PPD for this printer has changed!\n"
+"Resetting..."
+msgstr ""
+"La descripció PPD d'aquesta impressora ha canviat!\n"
+"Reiniciant..."
+
+#: gtklp/gtklp_functions.c:1560 gtklp/gtklp_functions.c:1584
+#: gtklp/gtklp_functions.c:1699
+msgid "Error saving user-settings!"
+msgstr "Error desant la configuració!"
+
+#: gtklp/gtklp_functions.c:1643
+msgid "Too many printers!"
+msgstr "Massa impressores!"
+
+#: gtklp/gtklp_functions.c:1654
+msgid "Unable to add instance!"
+msgstr "Impossible afegir instància!"
+
+#: gtklp/gtklp_functions.c:2169 gtklp/gtklp_functions.c:2174
+#: gtklp/gtklp_functions.c:2781
+msgid "Options saved!"
+msgstr "Opcions desades!"
+
+#: gtklp/gtklp_functions.c:2244
+msgid "Instance removed!"
+msgstr "Instància esborrada!"
+
+#: gtklp/gtklp_functions.c:2253
+msgid "Saved Defaults loaded!"
+msgstr "S'ha carregat la configuració per defecte!"
+
+#: gtklp/gtklp_functions.c:2324
+msgid ""
+"Unable to print,\n"
+"unknown file format!"
+msgstr ""
+"Impossible imprimir,\n"
+"format d'arxiu desconegut!"
+
+#: gtklp/gtklp_functions.c:2329 gtklp/gtklp_functions.c:2396
+msgid "JobID"
+msgstr "Identificador del treball"
+
+#: gtklp/gtklp_functions.c:2337
+msgid "Dont know what to print!"
+msgstr "No sé què imprimir!"
+
+#: gtklp/gtklp_functions.c:2357 gtklp/gtklp_functions.c:2366
+#: gtklp/gtklp_functions.c:2392
+msgid "Unable to print!"
+msgstr "Ha estat impossible imprimir!"
+
+#: gtklp/gtklp_functions.c:2388
+msgid "(stdin)"
+msgstr "(stdin)"
+
+#: gtklp/gtklp_functions.c:2503 gtklp/gtklp_functions.c:2509
+msgid "Conflicts"
+msgstr "Conflictes"
+
+#: gtklp/gtklp_functions.c:2556 gtklp/gtklptab.c:753 libgtklp/libgtklp.c:130
+#: libgtklp/libgtklp.c:741 libgtklp/libgtklp.c:958
+msgid "Ok"
+msgstr "D'acord"
+
+#: gtklp/gtklp_functions.c:2793 gtklp/gtklp_functions.c:2816
+#: gtklp/gtklp_functions.c:2958 gtklp/gtklptab.c:952
+msgid "Save"
+msgstr "Desa"
+
+#: gtklp/gtklp_functions.c:2829
+msgid "New"
+msgstr "Nou"
+
+#: gtklp/gtklp_functions.c:2863 gtklp/gtklp_functions.c:2869
+msgid "Printer Templates"
+msgstr "Plantilles d'impressora"
+
+#: gtklp/gtklp_functions.c:2900
+msgid "Printer: "
+msgstr "Impressora: "
+
+#: gtklp/gtklp_functions.c:2905
+msgid "Instance: "
+msgstr "Instància: "
+
+#: gtklp/gtklp_functions.c:2971 libgtklp/libgtklp.c:745
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: gtklp/gtklptab.c:288
+msgid "Look"
+msgstr "Aspecte"
+
+#: gtklp/gtklptab.c:305
+msgid "Show Output"
+msgstr "Mostra sortida"
+
+#: gtklp/gtklptab.c:312
+msgid "Show Text"
+msgstr "Mostra text"
+
+#: gtklp/gtklptab.c:319
+msgid "Show Image"
+msgstr "Mostra imatges"
+
+#: gtklp/gtklptab.c:326
+msgid "Show HP-GL/2"
+msgstr "Mostra HP-GL/2"
+
+#: gtklp/gtklptab.c:333
+msgid "Show Special"
+msgstr "Mostra especial"
+
+#: gtklp/gtklptab.c:339
+msgid "Show PPD"
+msgstr "Mostra PPD"
+
+#: gtklp/gtklptab.c:452
+msgid "Feel"
+msgstr "Comportament"
+
+#: gtklp/gtklptab.c:470
+msgid "Remember last printer"
+msgstr "Recorda l'última impressora"
+
+#: gtklp/gtklptab.c:477
+msgid "Remember last Tab"
+msgstr "Recorda l'última pestanya"
+
+#: gtklp/gtklptab.c:486
+msgid "Save all preferences on exit"
+msgstr "Desa preferències en sortir"
+
+#: gtklp/gtklptab.c:495
+msgid "Save number of copies on exit"
+msgstr "Desa el nombre de còpies en sortir"
+
+#: gtklp/gtklptab.c:503
+msgid "Clear file list on print"
+msgstr "Neteja la llista d'arxius després d'imprimir"
+
+#: gtklp/gtklptab.c:510
+msgid "Exit on print"
+msgstr "Surt després d'imprimir"
+
+#: gtklp/gtklptab.c:517
+msgid "Show JobIDs"
+msgstr "Mostra identificadors dels treballs"
+
+#: gtklp/gtklptab.c:529
+msgid "Enable Constraints check"
+msgstr "Activa comprovacions de restriccions"
+
+#: gtklp/gtklptab.c:535
+msgid "Check now"
+msgstr "Comprova ara"
+
+#: gtklp/gtklptab.c:545
+msgid "Remember size and position"
+msgstr "Recorda mida i posició"
+
+#. from
+#: gtklp/gtklptab.c:690
+msgid "written by"
+msgstr "escrit per"
+
+#. for
+#: gtklp/gtklptab.c:717
+msgid "written for cups"
+msgstr "escrit per a CUPS"
+
+#: gtklp/gtklptab.c:787
+msgid "Help"
+msgstr "Ajuda"
+
+#. Buttons
+#: gtklp/gtklptab.c:798
+msgid "Help on Options"
+msgstr "Ajuda sobre les opcions"
+
+#: gtklp/gtklptab.c:805
+#, c-format
+msgid "About %s"
+msgstr "A propòsit de %s"
+
+#: gtklp/gtklptab.c:846
+msgid "Commands and Paths"
+msgstr "Comandes i rutes"
+
+#: gtklp/gtklptab.c:859
+msgid "Browser Command"
+msgstr "Comanda del navegador"
+
+#: gtklp/gtklptab.c:872
+msgid "Help URL"
+msgstr "URL d'ajuda"
+
+#: gtklp/gtklptab.c:885
+msgid "Gtklpq Command"
+msgstr "Comanda Gtklpq"
+
+#: gtklp/hpgl2.c:114 gtklp/special.c:353
+msgid "Options"
+msgstr "Opcions"
+
+#: gtklp/hpgl2.c:131
+msgid "Printing in Black"
+msgstr "Impressió en negre"
+
+#: gtklp/hpgl2.c:138
+msgid "Fit on Page"
+msgstr "Ajusta a la pàgina"
+
+#: gtklp/hpgl2.c:185
+msgid "Pen Width"
+msgstr "Ample del traç"
+
+#. label
+#: gtklp/hpgl2.c:205
+msgid "micrometers"
+msgstr "micròmetres"
+
+#. Buttons
+#. Buttons CPI
+#. Buttons LPI
+#. Buttons CPI
+#: gtklp/hpgl2.c:210 gtklp/image.c:304 gtklp/image.c:358 gtklp/output.c:767
+#: gtklp/output.c:846 gtklp/text.c:270 gtklp/text.c:297 gtklp/text.c:324
+msgid "Default"
+msgstr "Per defecte"
+
+#: gtklp/hpgl2.c:228
+msgid "HP-GL/2"
+msgstr "HP-GL/2"
+
+#: gtklp/image.c:138 gtklp/image.c:231
+msgid "None"
+msgstr "Cap"
+
+#: gtklp/image.c:140 gtklp/image.c:232
+msgid "Sheet relativ"
+msgstr "Respecte el full"
+
+#: gtklp/image.c:142 gtklp/image.c:233
+msgid "Image relativ"
+msgstr "Respecte la imatge"
+
+#: gtklp/image.c:144 gtklp/image.c:234
+msgid "PPI"
+msgstr "PPI"
+
+#: gtklp/image.c:212
+msgid "Scaling"
+msgstr "Escalat"
+
+#: gtklp/image.c:277
+msgid "Color HUE rotation"
+msgstr "Rotació en color HUE"
+
+#: gtklp/image.c:310 gtklp/image.c:364 gtklp/output.c:773 gtklp/output.c:852
+msgid "Reset"
+msgstr "Restableix"
+
+#: gtklp/image.c:331
+msgid "Color saturation"
+msgstr "Saturació del color"
+
+#: gtklp/image.c:433
+msgid "Position"
+msgstr "Posició"
+
+#: gtklp/image.c:491
+msgid "Image"
+msgstr "Imatge"
+
+#: gtklp/output.c:413
+msgid "Sheet Usage"
+msgstr "Format de pàgina"
+
+#: gtklp/output.c:425
+msgid "Sheets per page"
+msgstr "Pàgines per full"
+
+#: gtklp/output.c:456
+msgid "Layout"
+msgstr "Distribució"
+
+#: gtklp/output.c:491
+msgid "Border"
+msgstr "Vora"
+
+#: gtklp/output.c:577
+msgid "Orientation"
+msgstr "Orientació"
+
+#: gtklp/output.c:609
+msgid "Mirror Output"
+msgstr "Sortida reflexada (mirall)"
+
+#: gtklp/output.c:633
+msgid "Ranges"
+msgstr "Rangs"
+
+#: gtklp/output.c:645
+msgid "Print Range"
+msgstr "Imprimeix rang"
+
+#: gtklp/output.c:659
+msgid "(e.g. 1-4,9,10-12)"
+msgstr "(p.ex. 1-4,9,10-12)"
+
+#: gtklp/output.c:670
+msgid "All"
+msgstr "Tot"
+
+#: gtklp/output.c:677
+msgid "Even"
+msgstr "Parells"
+
+#: gtklp/output.c:683
+msgid "Odd"
+msgstr "Senars"
+
+#: gtklp/output.c:689
+msgid "Reverse Output Order"
+msgstr "Ordre de sortida invers"
+
+#: gtklp/output.c:719
+msgid "Brightness"
+msgstr "Lluentor"
+
+#: gtklp/output.c:798
+msgid "Gamma correction"
+msgstr "Correcció gamma"
+
+#: gtklp/output.c:868
+msgid "Output"
+msgstr "Sortida"
+
+#: gtklp/ppd.c:441
+msgid "PPD"
+msgstr "PPD"
+
+#: gtklp/special.c:116
+msgid "Banners"
+msgstr "Titulars"
+
+#. Start
+#: gtklp/special.c:139
+msgid "Start:"
+msgstr "Inici:"
+
+#. Stop
+#: gtklp/special.c:162
+msgid "End:"
+msgstr "Fi:"
+
+#: gtklp/special.c:206
+msgid ""
+"You have chosen to store your password on the disk.\n"
+"This is not secure, so I recommend against doing so.\n"
+"You have been warned."
+msgstr ""
+"Heu escollit desar la vostra contrasenya al disc.\n"
+"Això no és segur, per tant la recomanació és no fer-ho.\n"
+"Quedeu avisat/da."
+
+#: gtklp/special.c:222
+msgid "Password"
+msgstr "Contrasenya"
+
+#. Login
+#: gtklp/special.c:245 libgtklp/libgtklp.c:703
+msgid "Login:"
+msgstr "Identificador:"
+
+#. Password
+#: gtklp/special.c:261 libgtklp/libgtklp.c:708
+msgid "Password:"
+msgstr "Contrasenya:"
+
+#: gtklp/special.c:300
+msgid "Job Name"
+msgstr "Títol de la impressió"
+
+#: gtklp/special.c:369
+msgid "Raw output"
+msgstr "Sortida en cru (raw)"
+
+#: gtklp/special.c:395
+msgid "Extra Options"
+msgstr "Opcions extra"
+
+#: gtklp/special.c:428
+msgid "Special"
+msgstr "Especial"
+
+#: gtklp/text.c:238
+msgid "Sizes and Spacings"
+msgstr "Mides i espaiat"
+
+#. Label CPI
+#: gtklp/text.c:254
+msgid "Chars per Inch"
+msgstr "Caràct. per polzada"
+
+#. Label LPI
+#: gtklp/text.c:281
+msgid "Lines per Inch"
+msgstr "Línies per polzada"
+
+#. Label CPP
+#: gtklp/text.c:308
+msgid "Columns per Page"
+msgstr "Column. per pàg."
+
+#: gtklp/text.c:474
+msgid "Margins"
+msgstr "Marges"
+
+#. Label Top
+#: gtklp/text.c:490
+msgid "Top"
+msgstr "Superior"
+
+#. Label Bottom
+#: gtklp/text.c:541
+msgid "Bottom"
+msgstr "Inferior"
+
+#. Label Left
+#: gtklp/text.c:593
+msgid "Left"
+msgstr "Esquerre"
+
+#. Label Right
+#: gtklp/text.c:644
+msgid "Right"
+msgstr "Dret"
+
+#: gtklp/text.c:736
+msgid "Text formatting"
+msgstr "Format de text"
+
+#: gtklp/text.c:753
+msgid "Use Pretty Print"
+msgstr "Utilitza Pretty Print"
+
+#: gtklp/text.c:757
+msgid "Wrap text"
+msgstr "Ajusta longitud del text"
+
+#: gtklp/text.c:773
+msgid "Text"
+msgstr "Text"
+
+#. --- Info ---
+#: libgtklp/libgtklp.c:152
+msgid "Message"
+msgstr "Missatge"
+
+#. --- Error ---
+#: libgtklp/libgtklp.c:169 libgtklp/libgtklp.c:890 libgtklp/libgtklp.c:903
+#: gtklpq/printer.c:691 gtklpq/printer.c:992
+msgid "Error"
+msgstr "Error"
+
+#: libgtklp/libgtklp.c:187
+msgid "Fehlerteufel"
+msgstr "Dimoni d'errors"
+
+#: libgtklp/libgtklp.c:199
+msgid "Warning!"
+msgstr "Atenció!"
+
+#: libgtklp/libgtklp.c:537 libgtklp/libgtklp.c:565
+msgid "No printers found !"
+msgstr "No s'han trobat impressores!"
+
+#: libgtklp/libgtklp.c:550 libgtklp/libgtklp.c:552
+msgid "The given printer does not exist!"
+msgstr "La impressora indicada no existeix!"
+
+#: libgtklp/libgtklp.c:594
+msgid "Internal program error !"
+msgstr "Error intern del programa!"
+
+#: libgtklp/libgtklp.c:661 libgtklp/libgtklp.c:671
+msgid "Password verification"
+msgstr "Verificació de contrasenya"
+
+#: gtklpq/gtklpq.c:223
+msgid "GtkLPQ"
+msgstr "GtkLPQ"
+
+#: gtklpq/gtklpq.c:299
+msgid ""
+"Usage: gtklpq [-P|-d Printer] [-S server] [-p port] [-D] [-V] [-U user] [-t "
+"timeout] [-g geometry] [-C] [-h] [-E]"
+msgstr ""
+"Ús: gtklpq [-P|-d Impressora] [-S servidor] [-p port] [-D] [-V] [-U usuari] "
+"[-t temps d'espera] [-g geometria] [-C] [-h] [-E]"
+
+#: gtklpq/gtklpq.c:560 gtklpq/gtklpq.c:561
+msgid "Cancel Job"
+msgstr "Cancel·la treball"
+
+#: gtklpq/gtklpq.c:574 gtklpq/gtklpq.c:575
+msgid "Cancel All"
+msgstr "Cancel·la'ls tots"
+
+#: gtklpq/gtklpq.c:588 gtklpq/gtklpq.c:589 gtklpq/printer.c:262
+#: gtklpq/printer.c:263 gtklpq/printer.c:951 gtklpq/printer.c:953
+msgid "Hold Job"
+msgstr "Bloqueja treball"
+
+#: gtklpq/gtklpq.c:602 gtklpq/gtklpq.c:603
+msgid "Move Job"
+msgstr "Mou treball"
+
+#: gtklpq/gtklpq.c:618 gtklpq/gtklpq.c:619 gtklpq/printer.c:521
+#: gtklpq/printer.c:523
+msgid "Reject Jobs"
+msgstr "Rebutja treballs"
+
+#: gtklpq/gtklpq.c:634 gtklpq/gtklpq.c:635 gtklpq/printer.c:483
+#: gtklpq/printer.c:485
+msgid "Stop Printer"
+msgstr "Atura impressora"
+
+#: gtklpq/gtklpq.c:648 gtklpq/gtklpq.c:649
+msgid "Priority"
+msgstr "Prioritat"
+
+#: gtklpq/gtklpq.c:669
+msgid "Exit"
+msgstr "Surt"
+
+#. Hold 4
+#: gtklpq/printer.c:243 gtklpq/printer.c:846
+msgid "H"
+msgstr "H"
+
+#: gtklpq/printer.c:251 gtklpq/printer.c:252 gtklpq/printer.c:932
+#: gtklpq/printer.c:934
+msgid "Release Job"
+msgstr "Allibera treball"
+
+#. Active 5
+#: gtklpq/printer.c:266 gtklpq/printer.c:842
+msgid "A"
+msgstr "A"
+
+#: gtklpq/printer.c:280 gtklpq/printer.c:335 gtklpq/printer.c:358
+#: gtklpq/printer.c:714 gtklpq/printer.c:738
+msgid "Rank"
+msgstr "Ordre"
+
+#: gtklpq/printer.c:281 gtklpq/printer.c:340 gtklpq/printer.c:364
+#: gtklpq/printer.c:715 gtklpq/printer.c:740
+msgid "Owner"
+msgstr "Propietari/a"
+
+#: gtklpq/printer.c:282 gtklpq/printer.c:345 gtklpq/printer.c:370
+#: gtklpq/printer.c:716 gtklpq/printer.c:742
+msgid "Job"
+msgstr "Treball"
+
+#: gtklpq/printer.c:283 gtklpq/printer.c:351 gtklpq/printer.c:377
+msgid "File(s)"
+msgstr "Arxiu(s)"
+
+#: gtklpq/printer.c:284 gtklpq/printer.c:717 gtklpq/printer.c:746
+msgid "#"
+msgstr "#"
+
+#: gtklpq/printer.c:285 gtklpq/printer.c:718 gtklpq/printer.c:748
+msgid "Size"
+msgstr "Mida"
+
+#: gtklpq/printer.c:298
+msgid "Queue"
+msgstr "Cua"
+
+#: gtklpq/printer.c:415
+msgid "Printer Idle"
+msgstr "Impressora inactiva"
+
+#: gtklpq/printer.c:420
+msgid "Printer Processing"
+msgstr "Impressora processant"
+
+#: gtklpq/printer.c:425
+msgid "Printer Stopped"
+msgstr "Impressora aturada"
+
+#: gtklpq/printer.c:465 gtklpq/printer.c:467
+msgid "Start Printer"
+msgstr "Engega impressora"
+
+#: gtklpq/printer.c:503 gtklpq/printer.c:505
+msgid "Accept Jobs"
+msgstr "Accepta treballs"
+
+#: gtklpq/printer.c:719 gtklpq/printer.c:744
+msgid "Job(s)"
+msgstr "Treball(s)"
+
+#: gtklpq/printer.c:779
+msgid "Untitled"
+msgstr "(sense títol)"
+
+#. Pending 3
+#: gtklpq/printer.c:850
+msgid "P"
+msgstr "P"
+
+#: gtklpq/printer.c:854
+msgid "S"
+msgstr "S"
+
+#: gtklpq/printer.c:858
+msgid "ca"
+msgstr "ca"
+
+#: gtklpq/printer.c:862
+msgid "ab"
+msgstr "ab"
+
+#: gtklpq/printer.c:866
+msgid "."
+msgstr "."
+
+#: gtklpq/printer.c:1002
+msgid "No jobs."
+msgstr "Sense treballs."
+
+#: gtklpq/printer.c:1036 gtklpq/printer.c:1040 gtklpq/printer.c:1049
+msgid "Are you sure?"
+msgstr "Esteu segur?"
+
+#: gtklpq/printer.c:1110
+msgid "And for what reason ?"
+msgstr "I per quina raó?"
+
+#: gtklpq/printer.c:1145
+msgid "Yes"
+msgstr "Sí"
+
+#: gtklpq/printer.c:1149
+msgid "No"
+msgstr "No"
+
+#: gtklpq/printer.c:1163
+msgid "Do you really want to cancel this job?"
+msgstr "Esteu segur de voler cancel·lar aquest treball?"
+
+#: gtklpq/printer.c:1174
+msgid "Do you really want to cancel ALL jobs?"
+msgstr "Esteu segur de voler cancel·lar TOTS els treballs?"
+
+#: gtklpq/printer.c:1186
+msgid "Do you really want to hold this job?"
+msgstr "Esteu segur de voler bloquejar aquest treball?"
+
+#: gtklpq/printer.c:1196
+msgid "Do you really want to release this job?"
+msgstr "Esteu segur de voler alliberar aquest treball?"
+
+#: gtklpq/printer.c:1211
+msgid "Do you really want to move this Job to the following queue?"
+msgstr "Esteu segur de voler moure aquest treball a la següent cua?"
+
+#: gtklpq/printer.c:1223
+msgid "Do you really want to stop this printer?"
+msgstr "Esteu segur de voler aturar aquesta impressora?"
+
+#: gtklpq/printer.c:1233
+msgid "Do you really want to start this printer?"
+msgstr "Esteu segur de voler engegar aquesta impressora?"
+
+#: gtklpq/printer.c:1246
+msgid "Do you really want to change the job priority?"
+msgstr "Esteu segur de voler canviar la prioritat d'aquest treball?"
+
+#: gtklpq/printer.c:1259
+msgid "Do you really want to reject jobs for this printer?"
+msgstr "Esteu segur de voler rebutjar els treballs en aquesta impressora?"
+
+#: gtklpq/printer.c:1269
+msgid "Do you really want to accept jobs for this printer?"
+msgstr "Esteu segur de voler acceptar treballs per a aquesta impressora?"
+
+#: gtklpq/printer.c:1348 gtklpq/printer.c:1358
+msgid "Unable to change priority!"
+msgstr "No ha estat possible canviar la prioritat!"
+
+#: gtklpq/printer.c:1542
+msgid "Job or printer not found!"
+msgstr "Treball o impressora no trobats!"
+
+#: gtklpq/printer.c:1546
+msgid "Authorization failed!"
+msgstr "Ha fallat l'autorització!"
+
+#: gtklpq/printer.c:1549
+msgid "You don't own this job!"
+msgstr "Aquest treball no us pertany!"
+
+#: gtklpq/printer.c:1553 gtklpq/printer.c:1589
+msgid "Unable to do so!"
+msgstr "Impossible fer això!"
+
+#: gtklpq/printer.c:1561
+msgid "Unable to cancel job(s)!"
+msgstr "No ha estat possible cancel·lar el(s) treball(s)!"
+
+#: gtklpq/printer.c:1566
+msgid "Unable to cancel printer!"
+msgstr "No ha estat possible cancel·lar la impressora!"
+
+#: gtklpq/printer.c:1572
+msgid "Unable to start printer!"
+msgstr "Impossible engegar la impressora!"
+
+#: gtklpq/printer.c:1578
+msgid "Unable to accept jobs for this printer!"
+msgstr "No ha estat possible acceptar treballs en aquesta impressora!"
+
+#: gtklpq/printer.c:1584
+msgid "Unable to reject jobs for this printer!"
+msgstr "No ha estat possible rebutjar els treballs d'aquesta impressora!"
+
+#~ msgid "You have installed too many printers or templates !"
+#~ msgstr "Heu instal·lat massa impressores o plantilles!"
+
+#~ msgid "Gtklpq"
+#~ msgstr "Gtklpq"
+
+#~ msgid "visit"
+#~ msgstr "Visita"
+
+#, fuzzy
+#~ msgid "Type"
+#~ msgstr "Tipus"
+
+#, fuzzy
+#~ msgid "Source"
+#~ msgstr "Origen"
+
+#~ msgid "Center"
+#~ msgstr "Centrada"
+
+#~ msgid "1"
+#~ msgstr "1"
+
+#~ msgid "2"
+#~ msgstr "2"
+
+#~ msgid "3"
+#~ msgstr "3"
+
+#~ msgid "4"
+#~ msgstr "4"
+
+#, fuzzy
+#~ msgid "Pretty Print"
+#~ msgstr "Utilitza Pretty Print"
+
+#~ msgid "About"
+#~ msgstr "A propòsit"
+
+#~ msgid "Activate"
+#~ msgstr "Activa"
+
+#~ msgid "Sorry, Dont know why this fault occurs !"
+#~ msgstr "Ho sento, s'ha produit un error desconegut!"
+
+#~ msgid "(no title)"
+#~ msgstr "(sense títol)"
+
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "Use Margins"
+#~ msgstr "Utilitza Marges"
+
+#~ msgid "Unknown"
+#~ msgstr "Desconegut"

@@ -1,0 +1,83 @@
+2019-11-01  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.20.1.
+	* Rules-quot: Upgrade to gettext-0.20.1.
+	* en@boldquot.header: Upgrade to gettext-0.20.1.
+	* en@quot.header: Upgrade to gettext-0.20.1.
+	* insert-header.sin: Upgrade to gettext-0.20.1.
+	* remove-potcdate.sin: Upgrade to gettext-0.20.1.
+
+2017-01-09  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.19.8.1.
+	* Rules-quot: Upgrade to gettext-0.19.8.1.
+
+2014-02-26  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.18.1.
+	* Rules-quot: Upgrade to gettext-0.18.1.
+
+2013-03-12  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.18.2.
+
+2013-03-12  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.18.2.
+	* Rules-quot: Upgrade to gettext-0.18.2.
+
+2012-10-22  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.18.1.
+
+2012-10-22  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.18.1.
+	* Rules-quot: Upgrade to gettext-0.18.1.
+
+2008-12-04  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.17.
+
+2008-03-02  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.16.1.
+
+2007-02-08  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.15.
+
+2006-05-30  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.14.5.
+
+2006-02-14  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.14.3.
+
+2006-02-13  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.14.5.
+
+2005-07-28  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.14.3.
+
+2004-04-28  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.14.1.
+	* Rules-quot: Upgrade to gettext-0.14.1.
+
+2003-08-31  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.11.5.
+	* remove-potcdate.sin: New file, from gettext-0.11.5.
+
+2002-04-01  gettextize  <bug-gnu-utils@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.10.38.
+
+2002-04-01  gettextize  <bug-gnu-utils@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.10.38.
+

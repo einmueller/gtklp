@@ -1,0 +1,1032 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtklp 1.3.4\n"
+"Report-Msgid-Bugs-To: gtklp@sirtobi.com\n"
+"POT-Creation-Date: 2007-09-08 14:32+0200\n"
+"PO-Revision-Date: 2007-11-09 18:49+0100\n"
+"Last-Translator: Marek Straka <marek@straka.info>\n"
+"Language-Team: cz <cz@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gtklp/file.c:285 gtklp/file.c:288
+msgid "Print File..."
+msgstr "Tiskni soubor..."
+
+#: gtklp/file.c:435
+msgid "Files to print"
+msgstr "Soubory k tisku"
+
+#: gtklp/file.c:473
+msgid "Add"
+msgstr "Přidej"
+
+#: gtklp/file.c:482 gtklp/gtklp_functions.c:2963
+msgid "Remove"
+msgstr "Odstraň"
+
+#: gtklp/file.c:491
+msgid "Remove All"
+msgstr "Remove All"
+
+#: gtklp/file.c:516
+msgid "File"
+msgstr "Soubor"
+
+#. PrinterLocation
+#: gtklp/general.c:74
+msgid "Location"
+msgstr "Umístění"
+
+#: gtklp/general.c:455
+msgid "Duplex Settings"
+msgstr "Nastavení Duplexu"
+
+#: gtklp/general.c:479
+msgid "No Duplex"
+msgstr "Bez Duplexu"
+
+#: gtklp/general.c:496
+msgid "Long edge binding"
+msgstr "Vazba v dlouhé staně"
+
+#: gtklp/general.c:513
+msgid "Short edge binding"
+msgstr "Vazba v krátké straně"
+
+#: gtklp/general.c:542
+msgid "Media Selections"
+msgstr "Volba medií"
+
+#: gtklp/general.c:556
+msgid "Media Size"
+msgstr "Velikost média"
+
+#: gtklp/general.c:631
+msgid "Media Type"
+msgstr "Typ média"
+
+#: gtklp/general.c:653
+msgid "Media Source"
+msgstr "Zdroj média"
+
+#: gtklp/general.c:704
+msgid "Number of Copies"
+msgstr "Počet kopií"
+
+#: gtklp/general.c:724
+msgid "Collate Copies"
+msgstr "sloučit stejné stránky"
+
+#: gtklp/general.c:924
+msgid "Other actions"
+msgstr "Other actions"
+
+#. Button
+#: gtklp/general.c:935
+msgid "Call GtkLPQ"
+msgstr "Call GtkLPQ"
+
+#: gtklp/general.c:955 gtklpq/printer.c:161
+msgid "Printer"
+msgstr "Tiskárna"
+
+#. Add Favorites Button
+#: gtklp/general.c:989
+msgid "Add favorite"
+msgstr ""
+
+#. Remove Favorites Button
+#: gtklp/general.c:996
+msgid "Remove favorite"
+msgstr ""
+
+#: gtklp/general.c:1041
+msgid "General"
+msgstr "Obecné"
+
+#: gtklp/gtklp.c:266
+msgid "Please wait!"
+msgstr "Čekat prosím!"
+
+#: gtklp/gtklp.c:290 gtklpq/gtklpq.c:306
+msgid "This option requires an value !"
+msgstr "tato volba vyžaduje nějakou hodnotu !"
+
+#: gtklp/gtklp.c:327
+msgid ""
+"Usage: gtklp [-P|-d printer] [-c configdir] [-S server] [-U user] [-p port] "
+"[-l] [-D] [-V] [-b] [-i] [-# n] [-C] [-H] [-E] [-J jobname] [-q priority] [-"
+"o option=value ...] [file(s)]\n"
+msgstr ""
+"Použití: gtklp [-P|-d printer] [-c configdir] [-S server] [-U user] [-p "
+"port] [-l] [-D] [-V] [-b] [-i] [-# n] [-C] [-H] [-E] [-J jobname] [-q "
+"priority][-o option=value ...] [file(s)]\n"
+
+#: gtklp/gtklp.c:340
+msgid "Function is not supported for now !"
+msgstr "Funkce není zatím podporována !"
+
+#: gtklp/gtklp.c:369 gtklpq/gtklpq.c:261
+msgid "Invalid Portnumber !"
+msgstr "chybné číslo portu !"
+
+#: gtklp/gtklp.c:397 gtklpq/gtklpq.c:281
+msgid "Invalid Printername !"
+msgstr "Chybné jméno tiskárny !"
+
+#: gtklp/gtklp.c:416 gtklpq/gtklpq.c:317
+msgid "Invalid Servername !"
+msgstr "Chybné jméno serveru !"
+
+#: gtklp/gtklp.c:428 gtklpq/gtklpq.c:329
+msgid "Invalid Username !"
+msgstr "Chybné jméno uživatele !"
+
+#: gtklp/gtklp.c:469 gtklp/gtklptab.c:678 gtklpq/gtklpq.c:338
+msgid "version"
+msgstr "verze"
+
+#: gtklp/gtklp.c:536
+#, c-format
+msgid "-E: %s\n"
+msgstr "-E: %s\n"
+
+#: gtklp/gtklp.c:538 gtklpq/gtklpq.c:364
+msgid "Sorry, this function is not compiled in !"
+msgstr "Tato funkce není implementována !"
+
+#: gtklp/gtklp.c:572
+msgid "Too many files to print !"
+msgstr "Příliš mnoho tiskáren !"
+
+#: gtklp/gtklp.c:624 gtklpq/gtklpq.c:387
+msgid "No Cups-Server found !"
+msgstr "Nenalezen žádný CUPS server !"
+
+#: gtklp/gtklp.c:652 gtklpq/gtklpq.c:399
+#, fuzzy, c-format
+msgid "Unable to connect to Server %s !"
+msgstr "Nemohu zrušit úlohu(y)!"
+
+#: gtklp/gtklp.c:708 gtklpq/gtklpq.c:450
+msgid "No Printer found to use as default !"
+msgstr "Nenalezena žádná standartní tiskárna !"
+
+#: gtklp/gtklp.c:737
+msgid "Print"
+msgstr "Tisknout"
+
+#: gtklp/gtklp.c:751
+msgid "Reset All"
+msgstr "Obnovit vše"
+
+#: gtklp/gtklp.c:763
+msgid "Templates"
+msgstr "Šablony"
+
+#: gtklp/gtklp.c:775
+msgid "Close"
+msgstr "Zavřít"
+
+#: gtklp/gtklp_functions.c:916
+msgid ""
+"The PPD for this printer has changed!\n"
+"Resetting..."
+msgstr ""
+"PPD pro tuto tikárnu bylo změněn !\n"
+"Načítám znovu..."
+
+#: gtklp/gtklp_functions.c:1560 gtklp/gtklp_functions.c:1584
+#: gtklp/gtklp_functions.c:1699
+#, fuzzy
+msgid "Error saving user-settings!"
+msgstr "Chyba při ukládání uživatelských nastavení!"
+
+#: gtklp/gtklp_functions.c:1643
+#, fuzzy
+msgid "Too many printers!"
+msgstr "Too many printers !"
+
+#: gtklp/gtklp_functions.c:1654
+#, fuzzy
+msgid "Unable to add instance!"
+msgstr "Unable to add instance !"
+
+#: gtklp/gtklp_functions.c:2169 gtklp/gtklp_functions.c:2174
+#: gtklp/gtklp_functions.c:2781
+#, fuzzy
+msgid "Options saved!"
+msgstr "Volby uloženy!"
+
+#: gtklp/gtklp_functions.c:2244
+#, fuzzy
+msgid "Instance removed!"
+msgstr "Instance removed !"
+
+#: gtklp/gtklp_functions.c:2253
+#, fuzzy
+msgid "Saved Defaults loaded!"
+msgstr "Uložené implicitní hodnoty načteny!"
+
+#: gtklp/gtklp_functions.c:2324
+#, fuzzy
+msgid ""
+"Unable to print,\n"
+"unknown file format!"
+msgstr ""
+"Nemohu tisknout,\n"
+"neznámý formát souboru!"
+
+#: gtklp/gtklp_functions.c:2329 gtklp/gtklp_functions.c:2396
+msgid "JobID"
+msgstr "ID úlohy"
+
+#: gtklp/gtklp_functions.c:2337
+#, fuzzy
+msgid "Dont know what to print!"
+msgstr "Není co tisknout!"
+
+#: gtklp/gtklp_functions.c:2357 gtklp/gtklp_functions.c:2366
+#: gtklp/gtklp_functions.c:2392
+#, fuzzy
+msgid "Unable to print!"
+msgstr "Nemohu tisknout!"
+
+#: gtklp/gtklp_functions.c:2388
+msgid "(stdin)"
+msgstr "(stdin)"
+
+#: gtklp/gtklp_functions.c:2503 gtklp/gtklp_functions.c:2509
+msgid "Conflicts"
+msgstr "Konflikty"
+
+#: gtklp/gtklp_functions.c:2556 gtklp/gtklptab.c:753 libgtklp/libgtklp.c:130
+#: libgtklp/libgtklp.c:741 libgtklp/libgtklp.c:958
+msgid "Ok"
+msgstr "Ano"
+
+#: gtklp/gtklp_functions.c:2793 gtklp/gtklp_functions.c:2816
+#: gtklp/gtklp_functions.c:2958 gtklp/gtklptab.c:952
+msgid "Save"
+msgstr "Uložit"
+
+#: gtklp/gtklp_functions.c:2829
+msgid "New"
+msgstr "Nový"
+
+#: gtklp/gtklp_functions.c:2863 gtklp/gtklp_functions.c:2869
+msgid "Printer Templates"
+msgstr "Šablony tiskárny"
+
+#: gtklp/gtklp_functions.c:2900
+msgid "Printer: "
+msgstr "Tiskárna: "
+
+#: gtklp/gtklp_functions.c:2905
+msgid "Instance: "
+msgstr "Instance: "
+
+#: gtklp/gtklp_functions.c:2971 libgtklp/libgtklp.c:745
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: gtklp/gtklptab.c:288
+msgid "Look"
+msgstr "Náhled"
+
+#: gtklp/gtklptab.c:305
+#, fuzzy
+msgid "Show Output"
+msgstr "Výstup"
+
+#: gtklp/gtklptab.c:312
+#, fuzzy
+msgid "Show Text"
+msgstr "Ukaž "
+
+#: gtklp/gtklptab.c:319
+#, fuzzy
+msgid "Show Image"
+msgstr "Obrázek"
+
+#: gtklp/gtklptab.c:326
+#, fuzzy
+msgid "Show HP-GL/2"
+msgstr "HP-GL/2"
+
+#: gtklp/gtklptab.c:333
+#, fuzzy
+msgid "Show Special"
+msgstr "Speciální"
+
+#: gtklp/gtklptab.c:339
+#, fuzzy
+msgid "Show PPD"
+msgstr "Ukaž "
+
+#: gtklp/gtklptab.c:452
+msgid "Feel"
+msgstr "Feel"
+
+#: gtklp/gtklptab.c:470
+msgid "Remember last printer"
+msgstr "Pamatovat poslední tiskárnu"
+
+#: gtklp/gtklptab.c:477
+msgid "Remember last Tab"
+msgstr "Pamatovat poslední tab"
+
+#: gtklp/gtklptab.c:486
+msgid "Save all preferences on exit"
+msgstr "Při ukončení uložit všechna nastavení"
+
+#: gtklp/gtklptab.c:495
+#, fuzzy
+msgid "Save number of copies on exit"
+msgstr "Při odchodu ulož veškerá nastavení"
+
+#: gtklp/gtklptab.c:503
+msgid "Clear file list on print"
+msgstr "Smazat seznam souborů k tisku"
+
+#: gtklp/gtklptab.c:510
+msgid "Exit on print"
+msgstr "Po skončení tisku ukonči"
+
+#: gtklp/gtklptab.c:517
+msgid "Show JobIDs"
+msgstr "Ukaž ID úlohy"
+
+#: gtklp/gtklptab.c:529
+msgid "Enable Constraints check"
+msgstr "Aktivovat \"Constraints check\""
+
+#: gtklp/gtklptab.c:535
+msgid "Check now"
+msgstr "zjistit teď"
+
+#: gtklp/gtklptab.c:545
+msgid "Remember size and position"
+msgstr "Zapamatovat velikost a pozici"
+
+#. from
+#: gtklp/gtklptab.c:690
+msgid "written by"
+msgstr "Autor"
+
+#. for
+#: gtklp/gtklptab.c:717
+msgid "written for cups"
+msgstr "Naprogramováno pro cups"
+
+#: gtklp/gtklptab.c:787
+msgid "Help"
+msgstr "Nápověda"
+
+#. Buttons
+#: gtklp/gtklptab.c:798
+msgid "Help on Options"
+msgstr "Nápověda ve volbách"
+
+#: gtklp/gtklptab.c:805
+#, fuzzy, c-format
+msgid "About %s"
+msgstr "O programu "
+
+#: gtklp/gtklptab.c:846
+#, fuzzy
+msgid "Commands and Paths"
+msgstr "Commands and Pathes"
+
+#: gtklp/gtklptab.c:859
+msgid "Browser Command"
+msgstr "Příkaz pro prohlížeč"
+
+#: gtklp/gtklptab.c:872
+msgid "Help URL"
+msgstr "URL s nápovědou"
+
+#: gtklp/gtklptab.c:885
+msgid "Gtklpq Command"
+msgstr "Gtklpq příkaz"
+
+#: gtklp/hpgl2.c:114 gtklp/special.c:353
+msgid "Options"
+msgstr "Volby"
+
+#: gtklp/hpgl2.c:131
+msgid "Printing in Black"
+msgstr "Tisknout v černé"
+
+#: gtklp/hpgl2.c:138
+msgid "Fit on Page"
+msgstr "Přizpůsobit na stránce"
+
+#: gtklp/hpgl2.c:185
+msgid "Pen Width"
+msgstr "Tloušťka pera"
+
+#. label
+#: gtklp/hpgl2.c:205
+msgid "micrometers"
+msgstr "mikrometry"
+
+#. Buttons
+#. Buttons CPI
+#. Buttons LPI
+#. Buttons CPI
+#: gtklp/hpgl2.c:210 gtklp/image.c:304 gtklp/image.c:358 gtklp/output.c:767
+#: gtklp/output.c:846 gtklp/text.c:270 gtklp/text.c:297 gtklp/text.c:324
+msgid "Default"
+msgstr "standardní"
+
+#: gtklp/hpgl2.c:228
+msgid "HP-GL/2"
+msgstr "HP-GL/2"
+
+#: gtklp/image.c:138 gtklp/image.c:231
+msgid "None"
+msgstr "Žádné"
+
+#: gtklp/image.c:140 gtklp/image.c:232
+msgid "Sheet relativ"
+msgstr "Relativně ke stránce"
+
+#: gtklp/image.c:142 gtklp/image.c:233
+msgid "Image relativ"
+msgstr "Relativně k obrázku"
+
+#: gtklp/image.c:144 gtklp/image.c:234
+msgid "PPI"
+msgstr "PPI"
+
+#: gtklp/image.c:212
+msgid "Scaling"
+msgstr "Měřítko"
+
+#: gtklp/image.c:277
+msgid "Color HUE rotation"
+msgstr "Rotace HUE barvy"
+
+#: gtklp/image.c:310 gtklp/image.c:364 gtklp/output.c:773 gtklp/output.c:852
+msgid "Reset"
+msgstr "Obnovit"
+
+#: gtklp/image.c:331
+msgid "Color saturation"
+msgstr "Saturace barev"
+
+#: gtklp/image.c:433
+msgid "Position"
+msgstr "Pozice"
+
+#: gtklp/image.c:491
+msgid "Image"
+msgstr "Obrázek"
+
+#: gtklp/output.c:413
+msgid "Sheet Usage"
+msgstr "Použití papíru"
+
+#: gtklp/output.c:425
+msgid "Sheets per page"
+msgstr "Papírů na stránku"
+
+#: gtklp/output.c:456
+msgid "Layout"
+msgstr "Rozvržení"
+
+#: gtklp/output.c:491
+msgid "Border"
+msgstr "Orámování"
+
+#: gtklp/output.c:577
+msgid "Orientation"
+msgstr "Orientace"
+
+#: gtklp/output.c:609
+msgid "Mirror Output"
+msgstr "Zrcadlový výstup"
+
+#: gtklp/output.c:633
+msgid "Ranges"
+msgstr "Oblasti"
+
+#: gtklp/output.c:645
+msgid "Print Range"
+msgstr "Tisková oblast"
+
+#: gtklp/output.c:659
+msgid "(e.g. 1-4,9,10-12)"
+msgstr "(např. 1-4,9,10-12)"
+
+#: gtklp/output.c:670
+msgid "All"
+msgstr "Vše"
+
+#: gtklp/output.c:677
+msgid "Even"
+msgstr "Sudé"
+
+#: gtklp/output.c:683
+msgid "Odd"
+msgstr "Liché"
+
+#: gtklp/output.c:689
+msgid "Reverse Output Order"
+msgstr "Opačné pořadí výstupu"
+
+#: gtklp/output.c:719
+msgid "Brightness"
+msgstr "Světlost"
+
+#: gtklp/output.c:798
+msgid "Gamma correction"
+msgstr "Gamma korekce"
+
+#: gtklp/output.c:868
+msgid "Output"
+msgstr "Výstup"
+
+#: gtklp/ppd.c:441
+msgid "PPD"
+msgstr "PPD"
+
+#: gtklp/special.c:116
+msgid "Banners"
+msgstr "Bannery"
+
+#. Start
+#: gtklp/special.c:139
+msgid "Start:"
+msgstr "Začátek:"
+
+#. Stop
+#: gtklp/special.c:162
+msgid "End:"
+msgstr "Konec:"
+
+#: gtklp/special.c:206
+#, fuzzy
+msgid ""
+"You have chosen to store your password on the disk.\n"
+"This is not secure, so I recommend against doing so.\n"
+"You have been warned."
+msgstr ""
+"Zvolil jsi uložení hesla na disk.\n"
+"Z důvodů bezpečnosti to nedoporučuji.\n"
+" Byl jsi varován....."
+
+#: gtklp/special.c:222
+msgid "Password"
+msgstr "Heslo"
+
+#. Login
+#: gtklp/special.c:245 libgtklp/libgtklp.c:703
+msgid "Login:"
+msgstr "Login:"
+
+#. Password
+#: gtklp/special.c:261 libgtklp/libgtklp.c:708
+msgid "Password:"
+msgstr "Heslo:"
+
+#: gtklp/special.c:300
+msgid "Job Name"
+msgstr "Jméno úlohy"
+
+#: gtklp/special.c:369
+msgid "Raw output"
+msgstr "Výstup Raw"
+
+#: gtklp/special.c:395
+msgid "Extra Options"
+msgstr "Zváštní volby"
+
+#: gtklp/special.c:428
+msgid "Special"
+msgstr "Speciální"
+
+#: gtklp/text.c:238
+msgid "Sizes and Spacings"
+msgstr "Velikost a mezery"
+
+#. Label CPI
+#: gtklp/text.c:254
+msgid "Chars per Inch"
+msgstr "Znaků na palec"
+
+#. Label LPI
+#: gtklp/text.c:281
+msgid "Lines per Inch"
+msgstr "Řádků na palec"
+
+#. Label CPP
+#: gtklp/text.c:308
+msgid "Columns per Page"
+msgstr "Sloupců na stránku"
+
+#: gtklp/text.c:474
+msgid "Margins"
+msgstr "Okraje"
+
+#. Label Top
+#: gtklp/text.c:490
+msgid "Top"
+msgstr "Nahoře"
+
+#. Label Bottom
+#: gtklp/text.c:541
+msgid "Bottom"
+msgstr "Dole"
+
+#. Label Left
+#: gtklp/text.c:593
+msgid "Left"
+msgstr "Vlevo"
+
+#. Label Right
+#: gtklp/text.c:644
+msgid "Right"
+msgstr "Vpravo"
+
+#: gtklp/text.c:736
+msgid "Text formatting"
+msgstr "Formátování textu"
+
+#: gtklp/text.c:753
+msgid "Use Pretty Print"
+msgstr "Použít pěkný tisk"
+
+#: gtklp/text.c:757
+msgid "Wrap text"
+msgstr ""
+
+#: gtklp/text.c:773
+msgid "Text"
+msgstr "Text"
+
+#. --- Info ---
+#: libgtklp/libgtklp.c:152
+msgid "Message"
+msgstr "Zpráva"
+
+#. --- Error ---
+#: libgtklp/libgtklp.c:169 libgtklp/libgtklp.c:890 libgtklp/libgtklp.c:903
+#: gtklpq/printer.c:691 gtklpq/printer.c:992
+msgid "Error"
+msgstr "Chyba"
+
+#: libgtklp/libgtklp.c:187
+msgid "Fehlerteufel"
+msgstr "Fehlerteufel ! (ďábelská chyba)"
+
+#: libgtklp/libgtklp.c:199
+#, fuzzy
+msgid "Warning!"
+msgstr "Pozor!"
+
+#: libgtklp/libgtklp.c:537 libgtklp/libgtklp.c:565
+#, fuzzy
+msgid "No printers found !"
+msgstr "Úloha nebo tiskárna nebyla nalezena!"
+
+#: libgtklp/libgtklp.c:550 libgtklp/libgtklp.c:552
+#, fuzzy
+msgid "The given printer does not exist!"
+msgstr "Daná tiskárna neexistuje!"
+
+#: libgtklp/libgtklp.c:594
+msgid "Internal program error !"
+msgstr "Interní chyba v programu !"
+
+#: libgtklp/libgtklp.c:661 libgtklp/libgtklp.c:671
+msgid "Password verification"
+msgstr "Kontrola hesla"
+
+#: gtklpq/gtklpq.c:223
+msgid "GtkLPQ"
+msgstr "GtkLPQ"
+
+#: gtklpq/gtklpq.c:299
+#, fuzzy
+msgid ""
+"Usage: gtklpq [-P|-d Printer] [-S server] [-p port] [-D] [-V] [-U user] [-t "
+"timeout] [-g geometry] [-C] [-h] [-E]"
+msgstr ""
+"Použití: gtklpq [-P|-d Printer] [-S server] [-p port] [-D] [-V] [-C] [-h] [-"
+"U user] [-t timeout] [-g geometry] [-E]"
+
+#: gtklpq/gtklpq.c:560 gtklpq/gtklpq.c:561
+msgid "Cancel Job"
+msgstr "Zrušit úlohu"
+
+#: gtklpq/gtklpq.c:574 gtklpq/gtklpq.c:575
+msgid "Cancel All"
+msgstr "Zrušit vše"
+
+#: gtklpq/gtklpq.c:588 gtklpq/gtklpq.c:589 gtklpq/printer.c:262
+#: gtklpq/printer.c:263 gtklpq/printer.c:951 gtklpq/printer.c:953
+msgid "Hold Job"
+msgstr "Pozastavit úlohu"
+
+#: gtklpq/gtklpq.c:602 gtklpq/gtklpq.c:603
+msgid "Move Job"
+msgstr "Přesunout úlohu"
+
+#: gtklpq/gtklpq.c:618 gtklpq/gtklpq.c:619 gtklpq/printer.c:521
+#: gtklpq/printer.c:523
+#, fuzzy
+msgid "Reject Jobs"
+msgstr "Uvolni úlohu"
+
+#: gtklpq/gtklpq.c:634 gtklpq/gtklpq.c:635 gtklpq/printer.c:483
+#: gtklpq/printer.c:485
+msgid "Stop Printer"
+msgstr "Zastavit tiskárnu"
+
+#: gtklpq/gtklpq.c:648 gtklpq/gtklpq.c:649
+msgid "Priority"
+msgstr "Priorita"
+
+#: gtklpq/gtklpq.c:669
+msgid "Exit"
+msgstr "Ukončit"
+
+#. Hold 4
+#: gtklpq/printer.c:243 gtklpq/printer.c:846
+msgid "H"
+msgstr "P"
+
+#: gtklpq/printer.c:251 gtklpq/printer.c:252 gtklpq/printer.c:932
+#: gtklpq/printer.c:934
+msgid "Release Job"
+msgstr "Uvolnit úlohu"
+
+#. Active 5
+#: gtklpq/printer.c:266 gtklpq/printer.c:842
+msgid "A"
+msgstr "T"
+
+#: gtklpq/printer.c:280 gtklpq/printer.c:335 gtklpq/printer.c:358
+#: gtklpq/printer.c:714 gtklpq/printer.c:738
+msgid "Rank"
+msgstr "Pořadí"
+
+#: gtklpq/printer.c:281 gtklpq/printer.c:340 gtklpq/printer.c:364
+#: gtklpq/printer.c:715 gtklpq/printer.c:740
+msgid "Owner"
+msgstr "Vlastník"
+
+#: gtklpq/printer.c:282 gtklpq/printer.c:345 gtklpq/printer.c:370
+#: gtklpq/printer.c:716 gtklpq/printer.c:742
+msgid "Job"
+msgstr "Úloha"
+
+#: gtklpq/printer.c:283 gtklpq/printer.c:351 gtklpq/printer.c:377
+msgid "File(s)"
+msgstr "Soubor(y)"
+
+#: gtklpq/printer.c:284 gtklpq/printer.c:717 gtklpq/printer.c:746
+msgid "#"
+msgstr "#"
+
+#: gtklpq/printer.c:285 gtklpq/printer.c:718 gtklpq/printer.c:748
+msgid "Size"
+msgstr "Velikost"
+
+#: gtklpq/printer.c:298
+msgid "Queue"
+msgstr "Fronta"
+
+#: gtklpq/printer.c:415
+msgid "Printer Idle"
+msgstr "Tiskárna připravena"
+
+#: gtklpq/printer.c:420
+msgid "Printer Processing"
+msgstr "Tiskárna zpracovává"
+
+#: gtklpq/printer.c:425
+msgid "Printer Stopped"
+msgstr "Tiskárna zastavena"
+
+#: gtklpq/printer.c:465 gtklpq/printer.c:467
+msgid "Start Printer"
+msgstr "Zapnout  tiskárnu"
+
+#: gtklpq/printer.c:503 gtklpq/printer.c:505
+msgid "Accept Jobs"
+msgstr "Akceptovat úlohy"
+
+#: gtklpq/printer.c:719 gtklpq/printer.c:744
+#, fuzzy
+msgid "Job(s)"
+msgstr "Úloha"
+
+#: gtklpq/printer.c:779
+#, fuzzy
+msgid "Untitled"
+msgstr "bezejmený"
+
+#. Pending 3
+#: gtklpq/printer.c:850
+msgid "P"
+msgstr "P"
+
+#: gtklpq/printer.c:854
+msgid "S"
+msgstr "S"
+
+#: gtklpq/printer.c:858
+msgid "ca"
+msgstr "zr"
+
+#: gtklpq/printer.c:862
+msgid "ab"
+msgstr "se"
+
+#: gtklpq/printer.c:866
+msgid "."
+msgstr "."
+
+#: gtklpq/printer.c:1002
+msgid "No jobs."
+msgstr "Žádné úlohy."
+
+#: gtklpq/printer.c:1036 gtklpq/printer.c:1040 gtklpq/printer.c:1049
+#, fuzzy
+msgid "Are you sure?"
+msgstr "Jsi si jistý?"
+
+#: gtklpq/printer.c:1110
+msgid "And for what reason ?"
+msgstr "Z jakého důvodu ?"
+
+#: gtklpq/printer.c:1145
+msgid "Yes"
+msgstr "Ano"
+
+#: gtklpq/printer.c:1149
+msgid "No"
+msgstr "Ne"
+
+#: gtklpq/printer.c:1163
+#, fuzzy
+msgid "Do you really want to cancel this job?"
+msgstr "Chceš určitě zrušit tuto úlohu?"
+
+#: gtklpq/printer.c:1174
+#, fuzzy
+msgid "Do you really want to cancel ALL jobs?"
+msgstr "Chceš určitě zrušit VŠECHNY úlohy?"
+
+#: gtklpq/printer.c:1186
+#, fuzzy
+msgid "Do you really want to hold this job?"
+msgstr "Chceš určitě pozastavit tuto úlohu?"
+
+#: gtklpq/printer.c:1196
+#, fuzzy
+msgid "Do you really want to release this job?"
+msgstr "Chceš určitě uvolnit tuto úlohu?"
+
+#: gtklpq/printer.c:1211
+#, fuzzy
+msgid "Do you really want to move this Job to the following queue?"
+msgstr "Chceš určite přesunout tuto úlohu do následující fronty?"
+
+#: gtklpq/printer.c:1223
+#, fuzzy
+msgid "Do you really want to stop this printer?"
+msgstr "Chceš určitě zastavit tuto tikárnu?"
+
+#: gtklpq/printer.c:1233
+#, fuzzy
+msgid "Do you really want to start this printer?"
+msgstr "Chceš určitě nastartovat tuto tikárnu?"
+
+#: gtklpq/printer.c:1246
+#, fuzzy
+msgid "Do you really want to change the job priority?"
+msgstr "Chceš určite změnit prioritu úlohy?"
+
+#: gtklpq/printer.c:1259
+#, fuzzy
+msgid "Do you really want to reject jobs for this printer?"
+msgstr "Chceš určitě zastavit tuto tikárnu?"
+
+#: gtklpq/printer.c:1269
+#, fuzzy
+msgid "Do you really want to accept jobs for this printer?"
+msgstr "Chceš určitě zastavit tuto tikárnu?"
+
+#: gtklpq/printer.c:1348 gtklpq/printer.c:1358
+#, fuzzy
+msgid "Unable to change priority!"
+msgstr "Nemohu změnit prioritu!"
+
+#: gtklpq/printer.c:1542
+#, fuzzy
+msgid "Job or printer not found!"
+msgstr "Úloha nebo tiskárna nebyla nalezena!"
+
+#: gtklpq/printer.c:1546
+#, fuzzy
+msgid "Authorization failed!"
+msgstr "Authorizace selhala!"
+
+#: gtklpq/printer.c:1549
+#, fuzzy
+msgid "You don't own this job!"
+msgstr "Nevlastníš tuto úlohu!"
+
+#: gtklpq/printer.c:1553 gtklpq/printer.c:1589
+#, fuzzy
+msgid "Unable to do so!"
+msgstr "Nemohu to takto provést!"
+
+#: gtklpq/printer.c:1561
+#, fuzzy
+msgid "Unable to cancel job(s)!"
+msgstr "Nemohu zrušit úlohu(y)!"
+
+#: gtklpq/printer.c:1566
+#, fuzzy
+msgid "Unable to cancel printer!"
+msgstr "Nemohu změnit prioritu!"
+
+#: gtklpq/printer.c:1572
+#, fuzzy
+msgid "Unable to start printer!"
+msgstr "Nemohu tisknout!"
+
+#: gtklpq/printer.c:1578
+#, fuzzy
+msgid "Unable to accept jobs for this printer!"
+msgstr "Nemohu zrušit úlohu(y)!"
+
+#: gtklpq/printer.c:1584
+msgid "Unable to reject jobs for this printer!"
+msgstr "Nelze zrušit úlohy pro tuto tiskárnu!"
+
+#~ msgid "You have installed too many printers or templates !"
+#~ msgstr "Bylo nainstalováno příliš mnoho tiskáren nebo šablon !"
+
+#~ msgid "visit"
+#~ msgstr "navštívit"
+
+#, fuzzy
+#~ msgid "Type"
+#~ msgstr "Typ"
+
+#, fuzzy
+#~ msgid "Source"
+#~ msgstr "Zdroj"
+
+#~ msgid "Center"
+#~ msgstr "Uprostřed"
+
+#~ msgid "1"
+#~ msgstr "1"
+
+#~ msgid "2"
+#~ msgstr "2"
+
+#~ msgid "3"
+#~ msgstr "3"
+
+#~ msgid "4"
+#~ msgstr "4"
+
+#, fuzzy
+#~ msgid "Pretty Print"
+#~ msgstr "Použij pěkný tisk"
+
+#~ msgid "About"
+#~ msgstr "O programu"
+
+#~ msgid "Activate"
+#~ msgstr "Aktivuj"
+
+#~ msgid "Sorry, Dont know why this fault occurs !"
+#~ msgstr "Bohužel netuším co způsobilo toto selhání!"
+
+#~ msgid "(no title)"
+#~ msgstr "(bez názvu)"
+
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgid "Use Margins"
+#~ msgstr "Použij okraje"
+
+#~ msgid "Unknown"
+#~ msgstr "Neznámý"

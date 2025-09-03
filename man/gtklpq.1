@@ -1,0 +1,211 @@
+.\" This code is licensed under the GNU GENERAL PUBLIC LICENSE,
+.\" see also http://www.gnu.org.
+.TH "gtklpq" "1" "" "Tobias Mueller" "Printing"
+.SH "NAME"
+gtklpq \- manage print queues via CUPS
+.SH "SYNOPSIS"
+\fBgtklpq\fR [\-P|\-d \fIprinter\fR] [\-S \fIserver\fR] [\-p \fIport\fR] [\-D] [\-V] [\-U \fIuser\fR] [\-t \fItimeout\fR] [\-g \fIX\fRx\fIY\fR] [\-C] [\-h] [\-E]
+
+\fBlpq\fR [\-P|\-d \fIprinter\fR] [\-S \fIserver\fR] [\-p \fIport\fR] [\-D] [\-V] [\-U \fIuser\fR] [\-t \fItimeout\fR] [\-E]
+
+\fBlprm\fR [\-P|\-d \fIprinter\fR] [\-S \fIserver\fR] [\-p \fIport\fR] [\-D] [\-V] [\-U \fIuser\fR] [\-E] [\-] [job ID(s)]
+
+\fBreject\fR [\-h \fIserver\fR] [\-p \fIport\fR] [\-D] [\-V] [\-U \fIuser\fR] [\-E] [\-r \fIreason\fR] [destination(s)]
+
+\fBaccept\fR [\-h \fIserver\fR] [\-p \fIport\fR] [\-D] [\-V] [\-U \fIuser\fR] [\-E] [\-r \fIreason\fR] [destination(s)] 
+
+\fBdisable\fR [\-h \fIserver\fR] [\-c] [\-p \fIport\fR] [\-D] [\-V] [\-U \fIuser\fR] [\-E] [\-r \fIreason\fR] [destination(s)]
+
+\fBenable\fR [\-h \fIserver\fR] [\-p \fIport\fR] [\-D] [\-V] [\-U \fIuser\fR] [\-E] [\-r \fIreason\fR] [destination(s)] 
+.SH "DESCRIPTION"
+\fBGtkLPQ\fR is an graphical frontend for \fICUPS\fR, the Common UNIX Printing System.
+.br 
+It is used to manage CUPS\-Printqueues.
+.br 
+.TP 5
+.br 
+GtkLPQ
+.br 
+Graphical Frontend
+.TP 5
+lpq
+.br 
+Show print queue
+.TP 5
+lprm
+.br 
+Remove jobs
+.TP 5
+disable/enable
+.br 
+Disable/enable printer
+.TP 5
+reject/accept
+.br 
+Reject/Accept printjobs for this printer
+.TP 0
+.br 
+\fBGtkLPQ\fR is part of the \fBGtkLP\fR\-package.
+.SH "OPTIONS"
+The following options are recognized by \fBgtklpq\fR:
+.TP 5
+\-P \fIprinter\fR
+.br 
+Use \fIprinter\fR as default destination.
+.TP 5
+\-d \fIprinter\fR
+.br 
+This option is equivalent to "\-P".
+.TP 5
+\-S \fIserver\fR
+.br 
+The name of the CUPS\-Server.
+.TP 5
+\-p \fIport\fR
+.br 
+The port of CUPS\-Server, 631 per default.
+.TP 5
+\-D
+.br 
+Debug.
+.TP 5
+\-V
+.br 
+Displays the version of \fBGtkLPQ\fR.
+.TP 5
+\-U \fIuser\fR
+.br 
+The name of the cups\-User to use.
+.TP 5
+\-t \fItimeout\fR
+.br 
+The intervall in seconds between two queue\-updates.
+.TP 5
+\-g \fIX\fRx\fIY\fR
+.br 
+Pop up GtkLPQ at position (X,Y).
+.TP 5
+\-h
+.br 
+Help
+.TP 5
+\-C
+.br 
+Force console\-mode.
+.TP 5
+\-E
+.br 
+Forces encryption when connecting to the server.
+.TP 0
+.br 
+.br 
+If called as lpq, the following options differ from GtkLPQ`s options:
+.TP 5
+\-X
+.br 
+Force X\-Mode, even if GTKLP_FORCEX is not set to 1
+.TP 0
+.br .br 
+If called as lprm, the following options differ from GtkLPQ`s options:
+.TP 5
+\-
+.br 
+Cancel all jobs
+.TP 0
+.br 
+Without any given jobs, lprm removes the current job.
+.TP 0
+.br .br 
+If called as disable, the following options differ from GtkLPQ`s options:
+.TP 5
+\-c
+.br 
+Cancel all jobs
+.TP 5
+\-r reason
+Give an reason, why you do so
+
+.TP 0
+.br .br 
+If called as reject, the following options differ from GtkLPQ`s options:
+.TP 5
+\-r reason
+Give an reason, why you do so
+.SH "PATHS"
+To hide Printers from users, use the following pathes:
+.br 
+\fI/etc/gtklp/accept/\fR
+.br 
+\fI/etc/gtklp/deny/\fR
+.br 
+\fI$HOME/.gtklp/\fR
+.br 
+
+Just put an empty file with the name of the printer the user
+should see by default to \fIaccept\fR,
+put an empty file with the name of the printer the user
+should never see to \fIdeny\fR.
+.br 
+The \fIaccept\fR values can be overwritten by the user, the 
+\fIdeny\fR values can't. 
+.SH "SPECIAL"
+If you can`t connect to an X\-Server, GtkLPQ acts as console\-lpq.
+
+If called as lpq, enable, disable, accept, or reject, GtkLPQ acts on console like these tools and has some other command\-line parameters, see above.
+
+.SH "VARIABLES"
+You can set the following environment variables to influence the behaviour of GtkLPQ:
+.TP 5
+CUPS_SERVER
+.br 
+The default CUPS\-server to connect to
+.TP 5
+IPP_PORT
+.br 
+The default Port of the CUPS\-server to connect to
+.TP 5
+PRINTER
+.br 
+The default printer to use
+.TP 5
+GTKLP_FORCEX
+.br 
+Set to 1 to force X\-Mode for lpr and lp
+.SH "ERROR"
+GtkLPQ produces the follwoing Error\-Codes:
+.TP 5
+0
+normal program termination
+.br 
+.TP 5
+1
+small error, wrong parameters, etc.
+.br 
+.TP 5
+2
+Server Problems, server not found, no default printer found, etc.
+.br 
+.TP 5
+3
+BAD error. Fields declared too short, too many printers, etc.
+.SH "SEE ALSO"
+gtklp(1), lprm(1), lp(1), CUPS Software Users Manual
+.br 
+http://localhost:631/documentation.html
+.SH "COPYRIGHT"
+This program was written by T. Mueller, 2000, 2001, 2002.
+.br 
+It is licensed under the Terms of the GNU GENERAL PUBLIC LICENSE, 
+.br 
+see also http://www.gnu.org.
+
+.SH "CONTACT"
+The latest version of \fBGtkLPQ\fR is always available under
+.br 
+http://gtklp.sourceforge.net/
+.br 
+It is part of the \fBGtkLP\fR\-package.
+.br 
+Feel also free to contact me.
+.br 
+Please mail also, if you like the software !!! ;\-)

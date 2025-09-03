@@ -1,0 +1,927 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Zoran Spoja <zoran.spoja@micro-process.hr>\n"
+"Language-Team: \n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gtklp/file.c:285 gtklp/file.c:288
+msgid "Print File..."
+msgstr "Ispiši datoteku..."
+
+#: gtklp/file.c:435
+msgid "Files to print"
+msgstr "Datoteke za ispis"
+
+#: gtklp/file.c:473
+msgid "Add"
+msgstr "Dodaj"
+
+#: gtklp/file.c:482 gtklp/gtklp_functions.c:2963
+msgid "Remove"
+msgstr "Briši"
+
+#: gtklp/file.c:491
+msgid "Remove All"
+msgstr "Briši sve"
+
+#: gtklp/file.c:516
+msgid "File"
+msgstr "Datoteka"
+
+#. PrinterLocation
+#: gtklp/general.c:74
+msgid "Location"
+msgstr "Lokacija"
+
+#: gtklp/general.c:455
+msgid "Duplex Settings"
+msgstr "Postavke obostranog ispisa"
+
+#: gtklp/general.c:479
+msgid "No Duplex"
+msgstr "Obostrani ispis nije moguć"
+
+#: gtklp/general.c:496
+msgid "Long edge binding"
+msgstr "Uvez uz duži rub"
+
+#: gtklp/general.c:513
+msgid "Short edge binding"
+msgstr "Uvez uz kraći rub"
+
+#: gtklp/general.c:542
+msgid "Media Selections"
+msgstr "Odabir veličine papira"
+
+#: gtklp/general.c:556
+msgid "Media Size"
+msgstr "eličina papira"
+
+#: gtklp/general.c:631
+msgid "Media Type"
+msgstr "Vrsta papira"
+
+#: gtklp/general.c:653
+msgid "Media Source"
+msgstr "Ladica za papir"
+
+#: gtklp/general.c:704
+msgid "Number of Copies"
+msgstr "Broj kopija"
+
+#: gtklp/general.c:724
+msgid "Collate Copies"
+msgstr "Razvrstaj za uvez"
+
+#: gtklp/general.c:924
+msgid "Other actions"
+msgstr "Ostale mogućnosti"
+
+#. Button
+#: gtklp/general.c:935
+msgid "Call GtkLPQ"
+msgstr "Upravljanje poslovima"
+
+#: gtklp/general.c:955 gtklpq/printer.c:161
+msgid "Printer"
+msgstr "Pisač"
+
+#. Add Favorites Button
+#: gtklp/general.c:989
+msgid "Add favorite"
+msgstr "Dodaj favorit"
+
+#. Remove Favorites Button
+#: gtklp/general.c:996
+msgid "Remove favorite"
+msgstr "Briši favorit"
+
+#: gtklp/general.c:1041
+msgid "General"
+msgstr "Općenito"
+
+#: gtklp/gtklp.c:266
+msgid "Please wait!"
+msgstr "Sačekajte!"
+
+#: gtklp/gtklp.c:290 gtklpq/gtklpq.c:306
+msgid "This option requires an value !"
+msgstr "Ova mogućnost iziskuje neku vrijednost!"
+
+#: gtklp/gtklp.c:327
+msgid ""
+"Usage: gtklp [-P|-d printer] [-c configdir] [-S server] [-U user] [-p port] "
+"[-l] [-D] [-V] [-b] [-i] [-# n] [-C] [-H] [-E] [-J jobname] [-q priority] [-"
+"o option=value ...] [file(s)]\n"
+msgstr ""
+"Uporaba: gtklp [-P|-d printer] [-c configdir] [-S server] [-U user] [-p "
+"port] [-l] [-D] [-V] [-b] [-i] [-# n] [-C] [-H] [-E] [-J jobname] [-q "
+"priority] [-o option=value ...] [file(s)]\n"
+
+#: gtklp/gtklp.c:340
+msgid "Function is not supported for now !"
+msgstr "Funkcija nije podržana!"
+
+#: gtklp/gtklp.c:369 gtklpq/gtklpq.c:261
+msgid "Invalid Portnumber !"
+msgstr "Nevažeći TCP port!"
+
+#: gtklp/gtklp.c:397 gtklpq/gtklpq.c:281
+msgid "Invalid Printername !"
+msgstr "Nevažeći naziv pisača!"
+
+#: gtklp/gtklp.c:416 gtklpq/gtklpq.c:317
+msgid "Invalid Servername !"
+msgstr "Nevažeći naziv poslužitelja!"
+
+#: gtklp/gtklp.c:428 gtklpq/gtklpq.c:329
+msgid "Invalid Username !"
+msgstr "Nevažeća korisnička prijava!"
+
+#: gtklp/gtklp.c:469 gtklp/gtklptab.c:678 gtklpq/gtklpq.c:338
+msgid "version"
+msgstr "verzija"
+
+#: gtklp/gtklp.c:536
+#, c-format
+msgid "-E: %s\n"
+msgstr "-E: %s\n"
+
+#: gtklp/gtklp.c:538 gtklpq/gtklpq.c:364
+msgid "Sorry, this function is not compiled in !"
+msgstr "Isprika, ova funkcija nije uključena kod kompajliranja!"
+
+#: gtklp/gtklp.c:572
+msgid "Too many files to print !"
+msgstr "Previše datoteka za ispis!"
+
+#: gtklp/gtklp.c:624 gtklpq/gtklpq.c:387
+msgid "No Cups-Server found !"
+msgstr "Nije pronađen CUPS poslužitelj!"
+
+#: gtklp/gtklp.c:652 gtklpq/gtklpq.c:399
+#, c-format
+msgid "Unable to connect to Server %s !"
+msgstr "Nije moguće spajanje na poslužitelj %s!"
+
+#: gtklp/gtklp.c:708 gtklpq/gtklpq.c:450
+msgid "No Printer found to use as default !"
+msgstr "Nijedan pisač nije definiran kao zadani!"
+
+#: gtklp/gtklp.c:737
+msgid "Print"
+msgstr "Ispis"
+
+#: gtklp/gtklp.c:751
+msgid "Reset All"
+msgstr "Resetirati sve"
+
+#: gtklp/gtklp.c:763
+msgid "Templates"
+msgstr "Predlošci"
+
+#: gtklp/gtklp.c:775
+msgid "Close"
+msgstr "Zatvori"
+
+#: gtklp/gtklp_functions.c:916
+msgid ""
+"The PPD for this printer has changed!\n"
+"Resetting..."
+msgstr ""
+"Definicija pisača (PPD) za ovaj pisač je promijenjen!\n"
+"Resetiranje..."
+
+#: gtklp/gtklp_functions.c:1560 gtklp/gtklp_functions.c:1584
+#: gtklp/gtklp_functions.c:1699
+msgid "Error saving user-settings!"
+msgstr "Greška kod spremanja korisničkih postavki!"
+
+#: gtklp/gtklp_functions.c:1643
+msgid "Too many printers!"
+msgstr "Previše pisača!"
+
+#: gtklp/gtklp_functions.c:1654
+msgid "Unable to add instance!"
+msgstr "Nije moguće dodati instancu!"
+
+#: gtklp/gtklp_functions.c:2169 gtklp/gtklp_functions.c:2174
+#: gtklp/gtklp_functions.c:2781
+msgid "Options saved!"
+msgstr "Mogućnosti spremljene!"
+
+#: gtklp/gtklp_functions.c:2244
+msgid "Instance removed!"
+msgstr "Instanca ukljonjena!"
+
+#: gtklp/gtklp_functions.c:2253
+msgid "Saved Defaults loaded!"
+msgstr "Učitane su spremljene zadane postavke!"
+
+#: gtklp/gtklp_functions.c:2324
+msgid ""
+"Unable to print,\n"
+"unknown file format!"
+msgstr ""
+"Nije moguć ispis,\n"
+"nepoznat format datoteke!"
+
+#: gtklp/gtklp_functions.c:2329 gtklp/gtklp_functions.c:2396
+msgid "JobID"
+msgstr "ID posla"
+
+#: gtklp/gtklp_functions.c:2337
+msgid "Dont know what to print!"
+msgstr "Što treba ispisati?"
+
+#: gtklp/gtklp_functions.c:2357 gtklp/gtklp_functions.c:2366
+#: gtklp/gtklp_functions.c:2392
+msgid "Unable to print!"
+msgstr "Ispis nije moguć!"
+
+#: gtklp/gtklp_functions.c:2388
+msgid "(stdin)"
+msgstr "(stdin)"
+
+#: gtklp/gtklp_functions.c:2503 gtklp/gtklp_functions.c:2509
+msgid "Conflicts"
+msgstr "Sukobi"
+
+#: gtklp/gtklp_functions.c:2556 gtklp/gtklptab.c:753 libgtklp/libgtklp.c:130
+#: libgtklp/libgtklp.c:741 libgtklp/libgtklp.c:958
+msgid "Ok"
+msgstr "U redu"
+
+#: gtklp/gtklp_functions.c:2793 gtklp/gtklp_functions.c:2816
+#: gtklp/gtklp_functions.c:2958 gtklp/gtklptab.c:952
+msgid "Save"
+msgstr "Spremi"
+
+#: gtklp/gtklp_functions.c:2829
+msgid "New"
+msgstr "Novi"
+
+#: gtklp/gtklp_functions.c:2863 gtklp/gtklp_functions.c:2869
+msgid "Printer Templates"
+msgstr "Predlošci pisača"
+
+#: gtklp/gtklp_functions.c:2900
+msgid "Printer: "
+msgstr "Pisač:"
+
+#: gtklp/gtklp_functions.c:2905
+msgid "Instance: "
+msgstr "Instanca:"
+
+#: gtklp/gtklp_functions.c:2971 libgtklp/libgtklp.c:745
+msgid "Cancel"
+msgstr "Poništi"
+
+#: gtklp/gtklptab.c:288
+msgid "Look"
+msgstr "Prikaz kartica"
+
+#: gtklp/gtklptab.c:305
+msgid "Show Output"
+msgstr "Prikaži karticu Ispis"
+
+#: gtklp/gtklptab.c:312
+msgid "Show Text"
+msgstr "Prikaži tekst"
+
+#: gtklp/gtklptab.c:319
+msgid "Show Image"
+msgstr "Prikaži sliku"
+
+#: gtklp/gtklptab.c:326
+msgid "Show HP-GL/2"
+msgstr "Prikaži HP-GL/2"
+
+#: gtklp/gtklptab.c:333
+msgid "Show Special"
+msgstr "Prikaži Dodatno"
+
+#: gtklp/gtklptab.c:339
+msgid "Show PPD"
+msgstr "Prikaži definiciju pisača (PPD)"
+
+#: gtklp/gtklptab.c:452
+msgid "Feel"
+msgstr "Osjeti"
+
+#: gtklp/gtklptab.c:470
+msgid "Remember last printer"
+msgstr "Zapamti zadnji pisač"
+
+#: gtklp/gtklptab.c:477
+msgid "Remember last Tab"
+msgstr "Zapamti zadnju karticu"
+
+#: gtklp/gtklptab.c:486
+msgid "Save all preferences on exit"
+msgstr "Spremi sve postavke pri izlazu"
+
+#: gtklp/gtklptab.c:495
+msgid "Save number of copies on exit"
+msgstr "Spremi broj ispisa pri izlazu"
+
+#: gtklp/gtklptab.c:503
+msgid "Clear file list on print"
+msgstr "Kod ispisa briši popis datoteka"
+
+#: gtklp/gtklptab.c:510
+msgid "Exit on print"
+msgstr "Izlaz kod ispisa"
+
+#: gtklp/gtklptab.c:517
+msgid "Show JobIDs"
+msgstr "Prikaži ID poslova"
+
+#: gtklp/gtklptab.c:529
+msgid "Enable Constraints check"
+msgstr "Omogući provjeru ograničenja"
+
+#: gtklp/gtklptab.c:535
+msgid "Check now"
+msgstr "Provjeri sada"
+
+#: gtklp/gtklptab.c:545
+msgid "Remember size and position"
+msgstr "Zapamti veličinu i položaj"
+
+#. from
+#: gtklp/gtklptab.c:690
+msgid "written by"
+msgstr "napisao"
+
+#. for
+#: gtklp/gtklptab.c:717
+msgid "written for cups"
+msgstr "napisano za CUPS"
+
+#: gtklp/gtklptab.c:787
+msgid "Help"
+msgstr "Pomoć"
+
+#. Buttons
+#: gtklp/gtklptab.c:798
+msgid "Help on Options"
+msgstr "Pomoć za mogućnosti"
+
+#: gtklp/gtklptab.c:805
+#, c-format
+msgid "About %s"
+msgstr "O %s"
+
+#: gtklp/gtklptab.c:846
+msgid "Commands and Paths"
+msgstr "Naredbe i putanja"
+
+#: gtklp/gtklptab.c:859
+msgid "Browser Command"
+msgstr "Naredba za web preglednik"
+
+#: gtklp/gtklptab.c:872
+msgid "Help URL"
+msgstr "URL za pomoć"
+
+#: gtklp/gtklptab.c:885
+msgid "Gtklpq Command"
+msgstr "Naredba za upravljanje poslovima"
+
+#: gtklp/hpgl2.c:114 gtklp/special.c:353
+msgid "Options"
+msgstr "Opcije"
+
+#: gtklp/hpgl2.c:131
+msgid "Printing in Black"
+msgstr "Crni ispis"
+
+#: gtklp/hpgl2.c:138
+msgid "Fit on Page"
+msgstr "Pristajanje na veličinu stranice"
+
+#: gtklp/hpgl2.c:185
+msgid "Pen Width"
+msgstr "Širina pera"
+
+#. label
+#: gtklp/hpgl2.c:205
+msgid "micrometers"
+msgstr "micrometara"
+
+#. Buttons
+#. Buttons CPI
+#. Buttons LPI
+#. Buttons CPI
+#: gtklp/hpgl2.c:210 gtklp/image.c:304 gtklp/image.c:358 gtklp/output.c:767
+#: gtklp/output.c:846 gtklp/text.c:270 gtklp/text.c:297 gtklp/text.c:324
+msgid "Default"
+msgstr "Zadano"
+
+#: gtklp/hpgl2.c:228
+msgid "HP-GL/2"
+msgstr "HP-GL/2"
+
+#: gtklp/image.c:138 gtklp/image.c:231
+msgid "None"
+msgstr "Nijedan"
+
+#: gtklp/image.c:140 gtklp/image.c:232
+msgid "Sheet relativ"
+msgstr "U odnosu sa stranicom"
+
+#: gtklp/image.c:142 gtklp/image.c:233
+msgid "Image relativ"
+msgstr "U odnosu sa slikom"
+
+#: gtklp/image.c:144 gtklp/image.c:234
+msgid "PPI"
+msgstr "PPI"
+
+#: gtklp/image.c:212
+msgid "Scaling"
+msgstr "Proporcionalno smanjiti ili uvećati"
+
+#: gtklp/image.c:277
+msgid "Color HUE rotation"
+msgstr "Rotacija nijansi boja"
+
+#: gtklp/image.c:310 gtklp/image.c:364 gtklp/output.c:773 gtklp/output.c:852
+msgid "Reset"
+msgstr "Reset"
+
+#: gtklp/image.c:331
+msgid "Color saturation"
+msgstr "Zasićenost boja"
+
+#: gtklp/image.c:433
+msgid "Position"
+msgstr "Položaj"
+
+#: gtklp/image.c:491
+msgid "Image"
+msgstr "Slika"
+
+#: gtklp/output.c:413
+msgid "Sheet Usage"
+msgstr "Uporaba stranica"
+
+#: gtklp/output.c:425
+msgid "Sheets per page"
+msgstr "Stranica po listu"
+
+#: gtklp/output.c:456
+msgid "Layout"
+msgstr "Raspored stranica na listu"
+
+#: gtklp/output.c:491
+msgid "Border"
+msgstr "Okvir"
+
+#: gtklp/output.c:577
+msgid "Orientation"
+msgstr "Orijentacija"
+
+#: gtklp/output.c:609
+msgid "Mirror Output"
+msgstr "Zrcaljenje"
+
+#: gtklp/output.c:633
+msgid "Ranges"
+msgstr "Opseg"
+
+#: gtklp/output.c:645
+msgid "Print Range"
+msgstr "Opseg ispisa"
+
+#: gtklp/output.c:659
+msgid "(e.g. 1-4,9,10-12)"
+msgstr "(npr. 1-4,9,10-12)"
+
+#: gtklp/output.c:670
+msgid "All"
+msgstr "Sve"
+
+#: gtklp/output.c:677
+msgid "Even"
+msgstr "Parne"
+
+#: gtklp/output.c:683
+msgid "Odd"
+msgstr "Neparne"
+
+#: gtklp/output.c:689
+msgid "Reverse Output Order"
+msgstr "Ispiši u obrnutom redosljedu stranica"
+
+#: gtklp/output.c:719
+msgid "Brightness"
+msgstr "Svjetlina"
+
+#: gtklp/output.c:798
+msgid "Gamma correction"
+msgstr "Ispravak gamme"
+
+#: gtklp/output.c:868
+msgid "Output"
+msgstr "Ispis"
+
+#: gtklp/ppd.c:441
+msgid "PPD"
+msgstr "Pisač"
+
+#: gtklp/special.c:116
+msgid "Banners"
+msgstr "Početne i završne stranice"
+
+#. Start
+#: gtklp/special.c:139
+msgid "Start:"
+msgstr "Početna:"
+
+#. Stop
+#: gtklp/special.c:162
+msgid "End:"
+msgstr "Završna:"
+
+#: gtklp/special.c:206
+msgid ""
+"You have chosen to store your password on the disk.\n"
+"This is not secure, so I recommend against doing so.\n"
+"You have been warned."
+msgstr ""
+"Spremanje lozinke na računalo nije sigurno,\n"
+"i ne preporučuje se."
+
+#: gtklp/special.c:222
+msgid "Password"
+msgstr "Lozinka"
+
+#. Login
+#: gtklp/special.c:245 libgtklp/libgtklp.c:703
+msgid "Login:"
+msgstr "Prijava:"
+
+#. Password
+#: gtklp/special.c:261 libgtklp/libgtklp.c:708
+msgid "Password:"
+msgstr "Lozinka:"
+
+#: gtklp/special.c:300
+msgid "Job Name"
+msgstr "Naziv posla"
+
+#: gtklp/special.c:369
+msgid "Raw output"
+msgstr "\"RAW\" izlaz"
+
+#: gtklp/special.c:395
+msgid "Extra Options"
+msgstr "Dodatne mogućnosti"
+
+#: gtklp/special.c:428
+msgid "Special"
+msgstr "Dodatno"
+
+#: gtklp/text.c:238
+msgid "Sizes and Spacings"
+msgstr "Veličine i razmaci"
+
+#. Label CPI
+#: gtklp/text.c:254
+msgid "Chars per Inch"
+msgstr "Slova u inču (CPI)"
+
+#. Label LPI
+#: gtklp/text.c:281
+msgid "Lines per Inch"
+msgstr "Redova u inču"
+
+#. Label CPP
+#: gtklp/text.c:308
+msgid "Columns per Page"
+msgstr "Stupaca u stranici"
+
+#: gtklp/text.c:474
+msgid "Margins"
+msgstr "Margine"
+
+#. Label Top
+#: gtklp/text.c:490
+msgid "Top"
+msgstr "Vrho"
+
+#. Label Bottom
+#: gtklp/text.c:541
+msgid "Bottom"
+msgstr "Dno"
+
+#. Label Left
+#: gtklp/text.c:593
+msgid "Left"
+msgstr "Lijevo"
+
+#. Label Right
+#: gtklp/text.c:644
+msgid "Right"
+msgstr "Desno"
+
+#: gtklp/text.c:736
+msgid "Text formatting"
+msgstr "Oblikovanje teksta"
+
+#: gtklp/text.c:753
+msgid "Use Pretty Print"
+msgstr "Koristi \"Pretty Print\""
+
+#: gtklp/text.c:757
+msgid "Wrap text"
+msgstr "Omatanje teksta"
+
+#: gtklp/text.c:773
+msgid "Text"
+msgstr "Tekst"
+
+#. --- Info ---
+#: libgtklp/libgtklp.c:152
+msgid "Message"
+msgstr "Poruka"
+
+#. --- Error ---
+#: libgtklp/libgtklp.c:169 libgtklp/libgtklp.c:890 libgtklp/libgtklp.c:903
+#: gtklpq/printer.c:691 gtklpq/printer.c:992
+msgid "Error"
+msgstr "Greška"
+
+#: libgtklp/libgtklp.c:187
+msgid "Fehlerteufel"
+msgstr "Pogreška"
+
+#: libgtklp/libgtklp.c:199
+msgid "Warning!"
+msgstr "Upozorenje!"
+
+#: libgtklp/libgtklp.c:537 libgtklp/libgtklp.c:565
+msgid "No printers found !"
+msgstr "Nijedan pisač nije pronađen!"
+
+#: libgtklp/libgtklp.c:550 libgtklp/libgtklp.c:552
+msgid "The given printer does not exist!"
+msgstr "Upisani pisač ne postoji!"
+
+#: libgtklp/libgtklp.c:594
+msgid "Internal program error !"
+msgstr "Interna greška u programu!"
+
+#: libgtklp/libgtklp.c:661 libgtklp/libgtklp.c:671
+msgid "Password verification"
+msgstr "Potvrda lozinke"
+
+#: gtklpq/gtklpq.c:223
+msgid "GtkLPQ"
+msgstr "GtkLPQ"
+
+#: gtklpq/gtklpq.c:299
+msgid ""
+"Usage: gtklpq [-P|-d Printer] [-S server] [-p port] [-D] [-V] [-U user] [-t "
+"timeout] [-g geometry] [-C] [-h] [-E]"
+msgstr ""
+"Uporaba: gtklpq [-P|-d Printer] [-S server] [-p port] [-D] [-V] [-U user] [-"
+"t timeout] [-g geometry] [-C] [-h] [-E]"
+
+#: gtklpq/gtklpq.c:560 gtklpq/gtklpq.c:561
+msgid "Cancel Job"
+msgstr "Otkaži posao"
+
+#: gtklpq/gtklpq.c:574 gtklpq/gtklpq.c:575
+msgid "Cancel All"
+msgstr "Otkaži sve"
+
+#: gtklpq/gtklpq.c:588 gtklpq/gtklpq.c:589 gtklpq/printer.c:262
+#: gtklpq/printer.c:263 gtklpq/printer.c:951 gtklpq/printer.c:953
+msgid "Hold Job"
+msgstr "Zadrži posao"
+
+#: gtklpq/gtklpq.c:602 gtklpq/gtklpq.c:603
+msgid "Move Job"
+msgstr "Preseli posao"
+
+#: gtklpq/gtklpq.c:618 gtklpq/gtklpq.c:619 gtklpq/printer.c:521
+#: gtklpq/printer.c:523
+msgid "Reject Jobs"
+msgstr "Odbij poslove"
+
+#: gtklpq/gtklpq.c:634 gtklpq/gtklpq.c:635 gtklpq/printer.c:483
+#: gtklpq/printer.c:485
+msgid "Stop Printer"
+msgstr "Zaustavi pisač"
+
+#: gtklpq/gtklpq.c:648 gtklpq/gtklpq.c:649
+msgid "Priority"
+msgstr "Prioritet"
+
+#: gtklpq/gtklpq.c:669
+msgid "Exit"
+msgstr "Izlaz"
+
+#. Hold 4
+#: gtklpq/printer.c:243 gtklpq/printer.c:846
+msgid "H"
+msgstr "H"
+
+#: gtklpq/printer.c:251 gtklpq/printer.c:252 gtklpq/printer.c:932
+#: gtklpq/printer.c:934
+msgid "Release Job"
+msgstr "Otpusti posao"
+
+#. Active 5
+#: gtklpq/printer.c:266 gtklpq/printer.c:842
+msgid "A"
+msgstr "A"
+
+#: gtklpq/printer.c:280 gtklpq/printer.c:335 gtklpq/printer.c:358
+#: gtklpq/printer.c:714 gtklpq/printer.c:738
+msgid "Rank"
+msgstr "Rang"
+
+#: gtklpq/printer.c:281 gtklpq/printer.c:340 gtklpq/printer.c:364
+#: gtklpq/printer.c:715 gtklpq/printer.c:740
+msgid "Owner"
+msgstr "Vlasnik"
+
+#: gtklpq/printer.c:282 gtklpq/printer.c:345 gtklpq/printer.c:370
+#: gtklpq/printer.c:716 gtklpq/printer.c:742
+msgid "Job"
+msgstr "Posao"
+
+#: gtklpq/printer.c:283 gtklpq/printer.c:351 gtklpq/printer.c:377
+msgid "File(s)"
+msgstr "Datoteke"
+
+#: gtklpq/printer.c:284 gtklpq/printer.c:717 gtklpq/printer.c:746
+msgid "#"
+msgstr "Str."
+
+#: gtklpq/printer.c:285 gtklpq/printer.c:718 gtklpq/printer.c:748
+msgid "Size"
+msgstr "Veličina"
+
+#: gtklpq/printer.c:298
+msgid "Queue"
+msgstr "Red"
+
+#: gtklpq/printer.c:415
+msgid "Printer Idle"
+msgstr "Pisač miruje"
+
+#: gtklpq/printer.c:420
+msgid "Printer Processing"
+msgstr "Pisač obrađuje"
+
+#: gtklpq/printer.c:425
+msgid "Printer Stopped"
+msgstr "Pisač zaustavljen"
+
+#: gtklpq/printer.c:465 gtklpq/printer.c:467
+msgid "Start Printer"
+msgstr "Pokreni pisač"
+
+#: gtklpq/printer.c:503 gtklpq/printer.c:505
+msgid "Accept Jobs"
+msgstr "Prihvati poslove"
+
+#: gtklpq/printer.c:719 gtklpq/printer.c:744
+msgid "Job(s)"
+msgstr "Poslovi"
+
+#: gtklpq/printer.c:779
+msgid "Untitled"
+msgstr "Bez naslova"
+
+#. Pending 3
+#: gtklpq/printer.c:850
+msgid "P"
+msgstr "P"
+
+#: gtklpq/printer.c:854
+msgid "S"
+msgstr "S"
+
+#: gtklpq/printer.c:858
+msgid "ca"
+msgstr "ca"
+
+#: gtklpq/printer.c:862
+msgid "ab"
+msgstr "ab"
+
+#: gtklpq/printer.c:866
+msgid "."
+msgstr "."
+
+#: gtklpq/printer.c:1002
+msgid "No jobs."
+msgstr "Nema poslova."
+
+#: gtklpq/printer.c:1036 gtklpq/printer.c:1040 gtklpq/printer.c:1049
+msgid "Are you sure?"
+msgstr "Sigurno?"
+
+#: gtklpq/printer.c:1110
+msgid "And for what reason ?"
+msgstr "Razlog?"
+
+#: gtklpq/printer.c:1145
+msgid "Yes"
+msgstr "Da"
+
+#: gtklpq/printer.c:1149
+msgid "No"
+msgstr "Ne"
+
+#: gtklpq/printer.c:1163
+msgid "Do you really want to cancel this job?"
+msgstr "Da li zaista želite ponišiti ovaj posao?"
+
+#: gtklpq/printer.c:1174
+msgid "Do you really want to cancel ALL jobs?"
+msgstr "Da li zaista želite poništiti SVE poslove?"
+
+#: gtklpq/printer.c:1186
+msgid "Do you really want to hold this job?"
+msgstr "Da li zaista želite zadržati ovaj posao?"
+
+#: gtklpq/printer.c:1196
+msgid "Do you really want to release this job?"
+msgstr "Da li zaista želite otpustiti ovaj posao?"
+
+#: gtklpq/printer.c:1211
+msgid "Do you really want to move this Job to the following queue?"
+msgstr "Da li zaista želite preseliti ovaj posao u slijedeći red?"
+
+#: gtklpq/printer.c:1223
+msgid "Do you really want to stop this printer?"
+msgstr "Da li zaista želite zaustaviti ovaj pisač?"
+
+#: gtklpq/printer.c:1233
+msgid "Do you really want to start this printer?"
+msgstr "Da li zaista želite pokrenuti ovaj pisač?"
+
+#: gtklpq/printer.c:1246
+msgid "Do you really want to change the job priority?"
+msgstr "Da li zaista želite promijeniti prioritet ovom poslu?"
+
+#: gtklpq/printer.c:1259
+msgid "Do you really want to reject jobs for this printer?"
+msgstr "Da li zaista želite odbijati poslove na ovom pisaču?"
+
+#: gtklpq/printer.c:1269
+msgid "Do you really want to accept jobs for this printer?"
+msgstr "Da li zaista želite prihvaćati poslove na ovom pisaču?"
+
+#: gtklpq/printer.c:1348 gtklpq/printer.c:1358
+msgid "Unable to change priority!"
+msgstr "Nije moguće promijeniti prioritet!"
+
+#: gtklpq/printer.c:1542
+msgid "Job or printer not found!"
+msgstr "Posao ili pisač nije pronađen!"
+
+#: gtklpq/printer.c:1546
+msgid "Authorization failed!"
+msgstr "Neuspjela autorizacija!"
+
+#: gtklpq/printer.c:1549
+msgid "You don't own this job!"
+msgstr "Niste vlasnik ovog posla!"
+
+#: gtklpq/printer.c:1553 gtklpq/printer.c:1589
+msgid "Unable to do so!"
+msgstr "Nije moguće učiniti!"
+
+#: gtklpq/printer.c:1561
+msgid "Unable to cancel job(s)!"
+msgstr "Nije moguće poništiti posao/poslove!"
+
+#: gtklpq/printer.c:1566
+msgid "Unable to cancel printer!"
+msgstr "Nije moguće zaustaviti pisač!"
+
+#: gtklpq/printer.c:1572
+msgid "Unable to start printer!"
+msgstr "Nije moguće pokrenuti pisač!"
+
+#: gtklpq/printer.c:1578
+msgid "Unable to accept jobs for this printer!"
+msgstr "Nije moguće prihvatiti poslove za ovaj pisač!"
+
+#: gtklpq/printer.c:1584
+msgid "Unable to reject jobs for this printer!"
+msgstr "Nije moguće odbijati poslove za ovaj pisač!"
