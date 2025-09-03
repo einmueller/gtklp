@@ -33,46 +33,6 @@ The latest release is 1.3.4 from November 2019.
 
 # Documentation
 
-(!) This documentation is rather old. The source would perhaps not compile with newer libs...
-
-## Requirements
-To install, you'll need at least:
-
-* gtk+ 1.2.8 from gtk.org
-* glib 1.2.8 from gtk.org
-* cups 1.12 from cups.org 
-
-Maybe it works with different versions too, but it's not tested.
-Attention please: Gtk1 Support is only available up to version 1.2.6. You need Gtk2 for recent versions.
-
-You should also have <s>recent</s> old versions of:
-
-* gettext from gnu.org
-* autoconf from gnu.org
-* automake from gnu.org 
-
-If you use rpm-packages, don`t forget to install also the devel-packages !
-
-## Installation
-Since version 0.9d you should be able to do it the following way:
-
-1. unpack source-code
-2. execute an ./configure
-3. execute an make or gmake
-4. execute an make install or gmake install 
-
-If you want to install it to special locations, or if you have installed cups, or gtk to unusual places, please fiddle around with the command-line options of configure. You can see all options by executing ./configure --help.
-If configure fails on your system, try to edit Makefile.fallback and use make -f Makefile.fallback && make -f Makefile.fallback install or gmake -f Makefile.fallback && gmake -f Makefile.fallback install.
-... or just use some of the precompiled packages !
-
-## Languages
-Since version 0.9d GtkLP uses gettext, so the language of your interface depends on the environment-variable LC_ALL.
-If your language is not support right now, please
-
-1. Get the pot-file from the source
-2. Rename it to fit to your language
-3. For every string in msgid put your translation in the msgstr one line beneath. (or use a po-creation tool)
-
 ## Usage
 You can call GtkLP in three ways:
 
@@ -116,27 +76,82 @@ It has no config-files, so you have to call it with command-line-parameters.
 Look at the manpage to see them.
 If you call it as lpq and acts as normal lpq, the same for lprm, enable, disable, accept, reject. System specific issues
 
+## More info
+[Man-Page for GtkLP](gtklp_man.md)
+
+[Man-Page for GtkLPQ](gtklpq_man.md)
+
+[Changelog](changelog.md)
+
+# Compilation
+(!) This documentation is rather old. The source would perhaps not compile with newer libs...
+
+## Requirements
+To install, you'll need at least:
+
+* gtk+ 1.2.8 from gtk.org
+* glib 1.2.8 from gtk.org
+* cups 1.12 from cups.org 
+
+Maybe it works with different versions too, but it's not tested.
+Attention please: Gtk1 Support is only available up to version 1.2.6. You need Gtk2 for recent versions.
+
+You should also have <s>recent</s> old versions of:
+
+* gettext from gnu.org
+* autoconf from gnu.org
+* automake from gnu.org 
+
+If you use rpm-packages, don`t forget to install also the devel-packages !
+
+## Installation
+Since version 0.9d you should be able to do it the following way:
+
+1. unpack source-code
+2. execute an ./configure
+3. execute an make or gmake
+4. execute an make install or gmake install 
+
+If you want to install it to special locations, or if you have installed cups, or gtk to unusual places, please fiddle around with the command-line options of configure. You can see all options by executing ./configure --help.
+
+If configure fails on your system, try to edit Makefile.fallback and use make -f Makefile.fallback && make -f Makefile.fallback install or gmake -f Makefile.fallback && gmake -f Makefile.fallback install.
+
+... or just use some of the precompiled packages !
+
+## Languages
+Since version 0.9d GtkLP uses gettext, so the language of your interface depends on the environment-variable LC_ALL.
+If your language is not support right now, please
+
+1. Get the pot-file from the source
+2. Rename it to fit to your language
+3. For every string in msgid put your translation in the msgstr one line beneath. (or use a po-creation tool)
+
+
+
 ## Solutions
-Solaris:
+### Solaris
 Sometimes the compilations fails due to missing libraries (shouldn't configure find them??), on Solaris 10 try to use
      ./configure LDFLAGS=-lX11
 or
      gmake LDFLAGS=-lX11
 to compile GtkLP.
 
-Irix:
+### Irix
+
 There are problems compiling gtklp-1.0c under IRIX 6.5.22f, cause "basename" was not found when linking gtklp.
 Please use
      ./configure LDFLAGS=-lgen
 to solve this Problem.
 
+### Ugly fonts
 Also the fonts could look a little big ugly with Gtk2. In this case you should use Gtk1 instead:
      ./configure --enable-gtk1 LDFLAGS=-lgen
 Attention please: This option is not available in versions later than 1.2.6.
 
 Thanks to Dirk Engel for this hints!
 
-Systems with too many printers
+### Systems with too many printers
+
 For GtkLP before version 1.0g:
 If you have more than 100 printers in your network, you have to increase the value "MAX_PRT" in "includes/default.h" before compiling GtkLP or it won't work.
 
